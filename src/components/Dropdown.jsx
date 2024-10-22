@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import "./Navbar.css";
+import { LanguageContext } from "../App";
 
 export function Dropdown() {
   const [open, setOpen] = useState(false);
+  const lang = useContext(LanguageContext);
 
   const handleOpen = () => {
     setOpen(!open);
@@ -59,7 +61,7 @@ export function Dropdown() {
           />
           <form>
             <label>
-              Ricordami
+              {lang === "it" ? "Ricordami" : "Remember me"}
               <input
                 type="checkbox"
                 name="session"
@@ -70,7 +72,7 @@ export function Dropdown() {
             </label>
           </form>
           <button disabled={!data.username || !data.password} onClick={onLogin}>
-            Accedi
+            {lang === "it" ? "Accedi" : "Login"}
           </button>
           <button onClick={reset}>Reset</button>
         </div>
