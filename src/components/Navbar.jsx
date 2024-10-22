@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { Dropdown } from "./Dropdown";
 
-const Navbar = () => {
+export function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -30,6 +30,4 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}

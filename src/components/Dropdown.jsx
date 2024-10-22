@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./Navbar.css";
 
-const Dropdown = () => {
+export function Dropdown() {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -77,5 +77,4 @@ const Dropdown = () => {
       ) : null}
     </div>
   );
-};
-export default Dropdown;
+}
