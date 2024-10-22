@@ -1,0 +1,72 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background-image: linear-gradient(to right, white, lightblue);
+  color: black;
+}
+.navbar-left {
+  display: flex;
+}
+.navbar-left .logo {
+  height: 108px;
+  width: 192px;
+}
+.navbar-left .logo:hover {
+  cursor: pointer;
+}
+.navabr-center {
+  display: flex;
+}
+.icons {
+  height: 40px;
+  width: 40px;
+}
+.navbar-left .nav-links {
+  margin-left: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-left .nav-links div {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-left .nav-links div:hover {
+  cursor: pointer;
+}
+.navbar-right {
+  display: flex;
+  height: 108px;
+}
+.navbar-right div {
+  text-decoration: none;
+  text-align: center;
+}
+#userAreaLogo:hover {
+  cursor: pointer;
+}
+.loginDropdown {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-image: linear-gradient(to bottom, white, lightblue);
+  position: absolute;
+}
+#dropdown {
+  padding: 1rem;
+  width: 11.3rem;
+  position: relative;
+}
+#userAreaLogo {
+  height: 60px;
+  width: 60px;
+}
