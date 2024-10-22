@@ -1,3 +1,0 @@
-export function MapandCalendar() {
-  return;
-}
