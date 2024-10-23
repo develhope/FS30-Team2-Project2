@@ -14,12 +14,6 @@ function App() {
   }
   return (
     <>
-      <LanguageContext.Provider value={lang}>
-        <Navbar />
-        <Cards />
-        <MapandCalendar />
-        <Footer />
-      </LanguageContext.Provider>
       <div id="flagContainer">
         <img
           className="flags"
@@ -34,6 +28,12 @@ function App() {
           onClick={() => handleSetLang("en")}
         />
       </div>
+      <LanguageContext.Provider value={lang}>
+        <Navbar />
+        <Cards />
+        <MapandCalendar />
+        <Footer />
+      </LanguageContext.Provider>
     </>
   );
 }
