@@ -1,0 +1,12 @@
+#flagContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.flags {
+  height: 30px;
+  width: 30px;
+}
+.flags:hover {
+  cursor: pointer;
+}
