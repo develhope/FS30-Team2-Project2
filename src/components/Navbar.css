@@ -61,7 +61,7 @@
   background-image: linear-gradient(to bottom, white, lightblue);
   position: absolute;
 }
-#dropdown {
+.dropdown {
   padding: 1rem;
   width: 11.3rem;
   position: relative;
