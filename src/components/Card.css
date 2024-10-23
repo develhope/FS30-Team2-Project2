@@ -7,11 +7,11 @@
   background-image: linear-gradient(to bottom, white, lightblue);
   transition: 0.3s ease;
   margin: 2px 0;
-  box-shadow: 10px 10px 5px violet;
+  box-shadow: 10px 10px 5px lightskyblue;
 }
 .card:hover {
   cursor: pointer;
-  box-shadow: 20px 10px 5px violet;
+  box-shadow: 20px 10px 5px lightskyblue;
   margin: 0;
 }
 .card-image {
@@ -32,6 +32,7 @@
 }
 
 .cards-container {
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
