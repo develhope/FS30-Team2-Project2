@@ -3,6 +3,7 @@
   border-radius: 8px;
   padding: 16px;
   width: 150px;
+  height: 200px;
   text-align: center;
   background-image: linear-gradient(to bottom, white, lightblue);
   transition: 0.3s ease;
