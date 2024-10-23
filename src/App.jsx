@@ -1,4 +1,4 @@
-import { Cards } from "./components/Cards";
+import Cards from "./components/Cards";
 import { Footer } from "./components/Footer";
 import { MapandCalendar } from "./components/MapandCalendar";
 import { Navbar } from "./components/Navbar";
