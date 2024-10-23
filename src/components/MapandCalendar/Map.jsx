@@ -5,7 +5,7 @@ import {
 } from 'react-leaflet'
 
 
-const MapandCalendar = () => {
+const Map = () => {
 
   return (
     <>
@@ -16,7 +16,6 @@ const MapandCalendar = () => {
           <MapContainer center={[0.0, 0.0]} zoom={10}>
 
             <TileLayer
-
               url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
             />
           </MapContainer>
@@ -26,4 +25,4 @@ const MapandCalendar = () => {
     </>
   )
 }
-export default MapandCalendar
+export default Map

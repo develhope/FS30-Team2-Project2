@@ -1,9 +1,10 @@
 import Map from "./Map"
 import "./Map.css"
-export function MapandCalendar() {
+const MapandCalendar = () => {
   return (
     <div>
       <Map />
     </div>
   );
 }
+export default MapandCalendar
