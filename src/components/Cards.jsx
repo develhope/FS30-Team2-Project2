@@ -1,56 +1,40 @@
 import Card from "./Card";
 import "./Card.css";
+import { useEffect, useState } from "react";
 
-const cardContent = [
-  {
-    title: "titolo della card",
-    content: "questo è un contenutuo della card",
-    image: "./img/festival-luci-amsterdam-olanda-hd.jpg",
-  },
-  {
-    title: "titolo della card",
-    content: "questo è un contenutuo della card",
-    image: "./img/gettyimages-460767505-612x612.jpg",
-  },
-  {
-    title: "titolo della card",
-    content: "questo è un contenutuo della card",
-    image: "./img/2024021416353982631.jpg",
-  },
-  {
-    title: "titolo della card",
-    content: "questo è un contenutuo della card",
-    image: "./img/Dichiarazione-di-Indipendenza-Americana-840x560.webp",
-  },
-  {
-    title: "titolo della card",
-    content: "questo è un contenutuo della card",
-    image: "./img/4c1ed5d58db53d404bed6db60f8b81e7.jpg",
-  },
-  {
-    title: "titolo della card",
-    content: "questo è un contenutuo della card",
-    image: "./img/carnevale-di-rio.jpg",
-  },
-  {
-    title: "titolo della card",
-    content: "questo è un contenutuo della card",
-    image: "./img/Messico-cop-scaled-1.jpg",
-  },
+const Cards = () => {
+  const [countryList, setCountryList] = useState([]);
 
-  {
-    title: "titolo della card",
-    content: "questo è un contenutuo della card",
-    image: "./img/Holi-Festival2-600x391.jpg",
-  },
-];
+  async function getData() {
+    try {
+      const response = await fetch(
+        "https://api.sampleapis.com/countries/countries"
+      );
+      const data = await response.json();
+      setCountryList(data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  useEffect(() => {
+    getData();
+  }, []);
 
-export default function Cards() {
   return (
-    <div className="cards-container">
-      {cardContent.map((item) => (
-        <Card title={item.title} content={item.content} image={item.image} />
-      ))}
+    <div>
+      <div className="cards-container">
+        {countryList.map((country) => (
+          <div key={country.id}>
+            <Card
+              content={country.name}
+              image={country.media.flag}
+              title={country.capital}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
+
+export default Cards;
