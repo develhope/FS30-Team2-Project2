@@ -7,6 +7,8 @@
   font-size: 10px;
   background-image: linear-gradient(to right, white, lightblue);
   color: black;
+  position: sticky;
+  top: 30px;
 }
 .navbar-left {
   display: flex;
