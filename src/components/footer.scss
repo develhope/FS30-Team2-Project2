@@ -1,0 +1,31 @@
+/** @format */
+
+.footer {
+  background-color: rgb(119, 155, 65);
+  padding: 30px;
+}
+
+.columnsContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.footerColumns {
+  h4 {
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  ul {
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+
+p {
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
