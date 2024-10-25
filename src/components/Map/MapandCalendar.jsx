@@ -1,4 +1,4 @@
-import { Calendar } from "./Calendar";
+import { Calendar } from "../Calendar";
 import { Map } from "./Map";
 
 export function MapandCalendar() {

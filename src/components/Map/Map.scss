@@ -1,0 +1,43 @@
+#map {
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 8rem;
+  }
+  img {
+    position: relative;
+    height: 50%;
+    width: 70%;
+    margin-left: 6rem;
+  }
+  .continenti div {
+    position: relative;
+    border: solid black;
+  }
+  .europa {
+    margin:0 0 0 50rem;
+   
+    height: 180px;
+    width: 300px;
+  }
+  .asia {
+    height: 100px;
+    width: 150px;
+  }
+  .africa {
+    height: 100px;
+    width: 150px;
+  }
+  .oceania {
+    height: 100px;
+    width: 150px;
+  }
+  .america-nord {
+    height: 100px;
+    width: 150px;
+  }
+  .america-sud {
+    height: 100px;
+    width: 150px;
+  }
+}

@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 import Cards from "./components/Cards";
 import { Footer } from "./components/Footer";
-import { MapandCalendar } from "./components/MapandCalendar";
+import { MapandCalendar } from "./components/Map/MapandCalendar";
 import { Navbar } from "./components/Navbar";
 import "./App.css";
 
