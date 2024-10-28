@@ -72,3 +72,15 @@
   height: 60px;
   width: 60px;
 }
+#userLinks button {
+  border: none;
+  background-color: transparent;
+}
+#userLinks button:hover {
+  cursor: pointer;
+}
+#userLinks {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}

@@ -1,0 +1,63 @@
+.firstImage {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 0.5;
+}
+.secondImage {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.thirdImage {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 0.5;
+}
+#next {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 125px;
+  right: 0px;
+}
+#next:hover {
+  cursor: pointer;
+}
+#previous {
+  width: 50px;
+  height: 50px;
+  rotate: 180deg;
+  position: relative;
+  top: 125px;
+  left: 30px;
+}
+#previous:hover {
+  cursor: pointer;
+}
+#carousel {
+  display: flex;
+  justify-content: center;
+}
+.lateral img:hover {
+  cursor: pointer;
+}
+.central img:hover {
+  cursor: pointer;
+}
+#carousel div {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+#container {
+  background-image: url("src/assets/map.jpg");
+  background-position: bottom;
+  text-align: center;
+  padding: 10px;
+}
+#container h2 {
+  background-image: linear-gradient(to right, lightblue, sienna, lightblue);
+  border-radius: 10px;
+}
