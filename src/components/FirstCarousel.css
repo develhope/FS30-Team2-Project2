@@ -3,6 +3,7 @@
   height: 300px;
   position: relative;
   opacity: 0.5;
+  rotate: 5deg;
 }
 .secondImage {
   width: 300px;
@@ -14,6 +15,8 @@
   height: 300px;
   position: relative;
   opacity: 0.5;
+
+  rotate: -5deg;
 }
 #next {
   width: 50px;
@@ -43,6 +46,7 @@
 .lateral img:hover {
   cursor: pointer;
 }
+
 .central img:hover {
   cursor: pointer;
 }
