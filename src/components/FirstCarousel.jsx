@@ -5,15 +5,9 @@ import adventures from "../assets/adventures.jpg";
 import roadtrip from "../assets/roadtrip.jpg";
 import culture from "../assets/culture.jpg";
 import romance from "../assets/romance.jpg";
+import { useCarousel } from "./useCarousel";
 export function FirstCarousel() {
   const lang = useContext(LanguageContext);
-  const [page, setPage] = useState(0);
-  function increment(array) {
-    page !== array.length - 3 ? setPage(page + 1) : setPage(0);
-  }
-  function decrement(array) {
-    page !== 0 ? setPage(page - 1) : setPage(array.length - 3);
-  }
   const trips = [
     {
       image: adventures,
@@ -45,33 +39,20 @@ export function FirstCarousel() {
         lang === "it" ? "Viaggio romantico per due" : "Romantic Trip for two"
       }`,
     },
-    {
-      image: adventures,
-      description: `${
-        lang === "it"
-          ? "Viaggio avventuroso per due"
-          : "Adventurous Trip for two"
-      }`,
-    },
-    {
-      image: culture,
-      description: `${
-        lang === "it"
-          ? "Viaggio nella cultura per due"
-          : "Cultural Trip for two"
-      }`,
-    },
   ];
-  const first = page;
-  const second = page + 1 <= trips.length ? page + 1 : 0;
-  const third = page + 2 <= trips.length ? page + 2 : 1;
+
+  const { list, goLeft, goRight } = useCarousel(trips);
+
+  const first = list[0];
+  const second = list[1];
+  const third = list[2];
   return (
     <>
       <div id="container">
         <div id="carousel">
           <div>
             <img
-              onClick={() => decrement(trips)}
+              onClick={goLeft}
               id="previous"
               src="src\assets\next.png"
               alt="previous"
@@ -79,31 +60,27 @@ export function FirstCarousel() {
           </div>
           <div className="lateral">
             <img
-              onClick={() => decrement(trips)}
+              onClick={goLeft}
               className="firstImage"
-              src={trips[first].image}
+              src={first.image}
               alt="firstImage"
             />
           </div>
           <div className="central">
-            <img
-              className="secondImage"
-              src={trips[second].image}
-              alt="secondImage"
-            />
+            <img className="secondImage" src={second.image} alt="secondImage" />
           </div>
 
           <div className="lateral">
             <img
-              onClick={() => increment(trips)}
+              onClick={goRight}
               className="thirdImage"
-              src={trips[third].image}
+              src={third.image}
               alt="thirdImage"
             />
           </div>
           <div>
             <img
-              onClick={() => increment(trips)}
+              onClick={goRight}
               id="next"
               src="src\assets\next.png"
               alt="next"
@@ -111,7 +88,7 @@ export function FirstCarousel() {
           </div>
         </div>
         <div className="description">
-          <h2>{trips[second].description}</h2>
+          <h2>{second.description}</h2>
         </div>
       </div>
     </>
