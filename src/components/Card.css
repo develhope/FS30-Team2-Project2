@@ -17,11 +17,17 @@
   position: relative;
   top: 150px;
 }
+.previous:hover {
+  cursor: pointer;
+}
 .next {
   height: 50px;
   width: 50px;
   position: relative;
   top: 150px;
+}
+.next:hover {
+  cursor: pointer;
 }
 .card:hover {
   cursor: pointer;
