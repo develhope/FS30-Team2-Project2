@@ -1,9 +1,9 @@
 import Cardsapi from "../assets/cardsapi";
 import Card from "./Card";
 import "./Card.css";
-import { useCarousel } from "./useCarousel";
+import { useCarousel2 } from "./useCarousel2";
 const Cards = () => {
-  const { list, goLeft, goRight } = useCarousel(Cardsapi);
+  const { list, goLeft, goRight } = useCarousel2(Cardsapi);
   return (
     <div>
       <div className="cards-container">

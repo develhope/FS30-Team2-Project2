@@ -12,12 +12,14 @@ export default function Card({ title, content, image }) {
   return (
     <div
       className="card"
-      style={hidden ? { height: "200px" } : { height: "250px" }}
+      style={hidden ? { height: "200px" } : { height: "280px" }}
       onClick={handleToggle}
     >
-      {image && <img src={image} alt={title} className="card-image" />}
-      <h2 className="card-title">{title}</h2>
-      {!hidden && <p className="card-content">{content}</p>}
+      <div className="card-wrapper">
+        {image && <img src={image} alt={title} className="card-image" />}
+        <h2 className="card-title">{title}</h2>
+        {!hidden && <p className="card-content">{content}</p>}
+      </div>
     </div>
   );
 }

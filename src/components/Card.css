@@ -1,14 +1,17 @@
 .card {
-  border: 2px solid burlywood;
+  /* border: 2px solid burlywood; */
   border-radius: 8px;
   padding: 16px;
   width: 400px;
   height: 300px;
   text-align: center;
-  background-image: linear-gradient(to bottom, white, burlywood);
+  /* background-image: linear-gradient(to bottom, white, burlywood); */
+  background-image: url("../assets/scroll.png");
+  background-position: center;
+  background-size: 100% 100%;
   transition: 0.3s ease;
   margin: 2px 0;
-  box-shadow: 10px 10px 5px brown;
+  /* box-shadow: 10px 10px 5px burlywood; */
 }
 .previous {
   height: 50px;
@@ -17,24 +20,20 @@
   position: relative;
   top: 100px;
 }
-.previous:hover {
-  cursor: pointer;
-}
 .next {
   height: 50px;
   width: 50px;
   position: relative;
   top: 100px;
 }
-.next:hover {
-  cursor: pointer;
-}
 .card:hover {
   cursor: pointer;
-  box-shadow: 20px 10px 5px brown;
+  /* box-shadow: 20px 10px 5px burlywood; */
   margin: 0;
 }
 .card-image {
+  position: relative;
+  top: 20px;
   max-width: 100%;
   border-radius: 8px;
   height: 100px;
@@ -42,12 +41,15 @@
 }
 
 .card-title {
-  font-size: 1.5em;
+  position: relative;
+  top: 20px;
+  font-size: 1.3em;
   margin: 10px 0;
 }
 
 .card-content {
-  font-size: 1em;
+  margin-top: 20px;
+  font-size: 0.9em;
   color: #555;
 }
 
@@ -57,4 +59,8 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.card-wrapper {
+  padding: 20px;
 }
