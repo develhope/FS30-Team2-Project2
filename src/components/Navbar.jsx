@@ -10,8 +10,10 @@ export function Navbar() {
     <nav className="navbar">
       <div className="navbar-left">
         <Link to="/">
-          <img src="src\assets\1.2.png" alt="logo" className="logo" />
+          <img src="src\assets\eventive.png" alt="logo" className="logo" />
         </Link>
+      </div>
+      <div className="navbar-center">
         <div className="nav-links">
           <div href="/eventi">
             <Link to="/events">
@@ -20,7 +22,7 @@ export function Navbar() {
                 alt="events"
                 className="icons"
               />
-              <p>{lang === "it" ? "Eventi" : "Events"}</p>
+              <h4>{lang === "it" ? "Eventi" : "Events"}</h4>
             </Link>
           </div>
           <div href="/viaggi" id="viaggi">
@@ -30,7 +32,7 @@ export function Navbar() {
                 alt="travels"
                 className="icons"
               />
-              <p>{lang === "it" ? "Viaggi" : "Travels"}</p>
+              <h4>{lang === "it" ? "Viaggi" : "Travels"}</h4>
             </Link>
           </div>
           <div href="/recensioni">
@@ -41,12 +43,11 @@ export function Navbar() {
                 className="icons"
               />
 
-              <p>{lang === "it" ? "Recensioni" : "Reviews"}</p>
+              <h4>{lang === "it" ? "Recensioni" : "Reviews"}</h4>
             </Link>
           </div>
         </div>
       </div>
-      <div className="navbar-center"></div>
       <div className="navbar-right">
         <div>
           <Dropdown />

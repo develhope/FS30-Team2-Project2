@@ -45,30 +45,30 @@
   box-shadow: 10px 15px 5px rgb(49, 48, 48);
 }
 #next {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   position: relative;
-  top: 125px;
   right: 0px;
+  top: 125px;
 }
 #next:hover {
   cursor: pointer;
-  width: 60px;
-  height: 60px;
+  width: 110px;
+  height: 110px;
   top: 120px;
 }
 #previous {
-  width: 50px;
-  height: 50px;
-  rotate: 180deg;
+  width: 100px;
+  height: 100px;
+  rotate: y 180deg;
   position: relative;
   top: 125px;
   left: 30px;
 }
 #previous:hover {
   cursor: pointer;
-  width: 60px;
-  height: 60px;
+  width: 110px;
+  height: 110px;
   top: 120px;
 }
 #carousel {

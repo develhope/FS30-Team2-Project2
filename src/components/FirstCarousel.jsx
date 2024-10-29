@@ -55,7 +55,7 @@ export function FirstCarousel() {
             <img
               onClick={goLeft}
               id="previous"
-              src="src\assets\next.png"
+              src="src\assets\signpost.png"
               alt="previous"
             />
           </div>
@@ -83,7 +83,7 @@ export function FirstCarousel() {
             <img
               onClick={goRight}
               id="next"
-              src="src\assets\next.png"
+              src="src\assets\signpost.png"
               alt="next"
             />
           </div>
