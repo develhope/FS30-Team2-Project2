@@ -10,12 +10,20 @@
   height: 300px;
   position: relative;
 }
+.secondImage:hover {
+  bottom: 5px;
+}
+.firstImage:hover {
+  bottom: 5px;
+}
+.thirdImage:hover {
+  bottom: 5px;
+}
 .thirdImage {
   width: 300px;
   height: 300px;
   position: relative;
   opacity: 0.5;
-
   rotate: -5deg;
 }
 #next {
@@ -27,6 +35,9 @@
 }
 #next:hover {
   cursor: pointer;
+  width: 60px;
+  height: 60px;
+  top: 120px;
 }
 #previous {
   width: 50px;
@@ -38,6 +49,9 @@
 }
 #previous:hover {
   cursor: pointer;
+  width: 60px;
+  height: 60px;
+  top: 120px;
 }
 #carousel {
   display: flex;
