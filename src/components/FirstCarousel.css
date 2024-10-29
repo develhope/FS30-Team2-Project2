@@ -1,3 +1,9 @@
+#container {
+  background-image: url("src/assets/map.jpg");
+  background-position: bottom;
+  text-align: center;
+  padding: 10px;
+}
 .firstImage {
   width: 300px;
   height: 300px;
@@ -5,6 +11,10 @@
   opacity: 0.5;
   rotate: 5deg;
   box-shadow: 10px 10px 5px rgb(49, 48, 48);
+}
+.firstImage:hover {
+  bottom: 5px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
 }
 .secondImage {
   width: 300px;
@@ -16,14 +26,7 @@
   bottom: 5px;
   box-shadow: 10px 15px 5px rgb(49, 48, 48);
 }
-.firstImage:hover {
-  bottom: 5px;
-  box-shadow: 10px 15px 5px rgb(49, 48, 48);
-}
-.thirdImage:hover {
-  bottom: 5px;
-  box-shadow: 10px 15px 5px rgb(49, 48, 48);
-}
+
 .thirdImage {
   width: 300px;
   height: 300px;
@@ -31,6 +34,10 @@
   opacity: 0.5;
   rotate: -5deg;
   box-shadow: 10px 10px 5px rgb(49, 48, 48);
+}
+.thirdImage:hover {
+  bottom: 5px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
 }
 #next {
   width: 50px;
@@ -75,13 +82,20 @@
   height: 300px;
   padding: 10px;
 }
-#container {
-  background-image: url("src/assets/map.jpg");
-  background-position: bottom;
-  text-align: center;
-  padding: 10px;
+
+.description h2 {
+  background-image: url("../assets/wood.png");
+  background-position: center;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  width: 350px;
+  height: 30px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(49, 48, 48);
+  text-shadow: 2px 2px sienna;
 }
-#container h2 {
-  background-image: linear-gradient(to right, lightblue, sienna, lightblue);
-  border-radius: 10px;
+.description {
+  display: flex;
+  justify-content: center;
 }

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../App";
 import "./FirstCarousel.css";
 import adventures from "../assets/adventures.jpg";
@@ -8,11 +8,11 @@ import romance from "../assets/romance.jpg";
 export function FirstCarousel() {
   const lang = useContext(LanguageContext);
   const [page, setPage] = useState(0);
-  function increment() {
-    page !== 3 ? setPage(page + 1) : setPage(0);
+  function increment(array) {
+    page !== array.length - 3 ? setPage(page + 1) : setPage(0);
   }
-  function decrement() {
-    page !== 0 ? setPage(page - 1) : setPage(3);
+  function decrement(array) {
+    page !== 0 ? setPage(page - 1) : setPage(array.length - 3);
   }
   const trips = [
     {
@@ -63,15 +63,15 @@ export function FirstCarousel() {
     },
   ];
   const first = page;
-  const second = page + 1;
-  const third = page + 2;
+  const second = page + 1 <= trips.length ? page + 1 : 0;
+  const third = page + 2 <= trips.length ? page + 2 : 1;
   return (
     <>
       <div id="container">
         <div id="carousel">
           <div>
             <img
-              onClick={decrement}
+              onClick={() => decrement(trips)}
               id="previous"
               src="src\assets\next.png"
               alt="previous"
@@ -79,7 +79,7 @@ export function FirstCarousel() {
           </div>
           <div className="lateral">
             <img
-              onClick={decrement}
+              onClick={() => decrement(trips)}
               className="firstImage"
               src={trips[first].image}
               alt="firstImage"
@@ -95,7 +95,7 @@ export function FirstCarousel() {
 
           <div className="lateral">
             <img
-              onClick={increment}
+              onClick={() => increment(trips)}
               className="thirdImage"
               src={trips[third].image}
               alt="thirdImage"
@@ -103,14 +103,16 @@ export function FirstCarousel() {
           </div>
           <div>
             <img
-              onClick={increment}
+              onClick={() => increment(trips)}
               id="next"
               src="src\assets\next.png"
               alt="next"
             />
           </div>
         </div>
-        <h2>{trips[second].description}</h2>
+        <div className="description">
+          <h2>{trips[second].description}</h2>
+        </div>
       </div>
     </>
   );
