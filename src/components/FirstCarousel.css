@@ -99,3 +99,6 @@
   display: flex;
   justify-content: center;
 }
+.description:hover {
+  cursor: pointer;
+}
