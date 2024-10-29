@@ -49,6 +49,7 @@ export function FirstCarousel() {
   return (
     <>
       <div id="container">
+        <div className="wood"></div>
         <div id="carousel">
           <div>
             <img
@@ -90,6 +91,7 @@ export function FirstCarousel() {
         <div className="description">
           <h2>{second.description}</h2>
         </div>
+        <div className="wood"></div>
       </div>
     </>
   );
