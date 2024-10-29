@@ -1,0 +1,87 @@
+.firstImage {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 0.5;
+  rotate: 5deg;
+  box-shadow: 10px 10px 5px rgb(49, 48, 48);
+}
+.secondImage {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  box-shadow: 10px 10px 5px rgb(49, 48, 48);
+}
+.secondImage:hover {
+  bottom: 5px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
+}
+.firstImage:hover {
+  bottom: 5px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
+}
+.thirdImage:hover {
+  bottom: 5px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
+}
+.thirdImage {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 0.5;
+  rotate: -5deg;
+  box-shadow: 10px 10px 5px rgb(49, 48, 48);
+}
+#next {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 125px;
+  right: 0px;
+}
+#next:hover {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  top: 120px;
+}
+#previous {
+  width: 50px;
+  height: 50px;
+  rotate: 180deg;
+  position: relative;
+  top: 125px;
+  left: 30px;
+}
+#previous:hover {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  top: 120px;
+}
+#carousel {
+  display: flex;
+  justify-content: center;
+}
+.lateral img:hover {
+  cursor: pointer;
+}
+
+.central img:hover {
+  cursor: pointer;
+}
+#carousel div {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+#container {
+  background-image: url("src/assets/map.jpg");
+  background-position: bottom;
+  text-align: center;
+  padding: 10px;
+}
+#container h2 {
+  background-image: linear-gradient(to right, lightblue, sienna, lightblue);
+  border-radius: 10px;
+}
