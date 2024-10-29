@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
 export const LanguageContext = createContext("it");
 
@@ -67,18 +67,18 @@ function App() {
               }
             ></Route>
             <Route
-              path="/pippo"
+              path="/*"
               element={
                 <>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/en/5/50/Goofy_Duckipedia.png"
                     alt="pippo"
                   />
-                  <div>Pippo has been Found</div>
+                  <div>Goofy has not found the page you were looking for.</div>
+                  <Link to="/">Home?</Link>
                 </>
               }
             ></Route>
-            <Route path="*" element={<div>Page not Found</div>}></Route>
           </Routes>
 
           <Footer />
