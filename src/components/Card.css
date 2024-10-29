@@ -3,12 +3,21 @@
   border-radius: 8px;
   padding: 16px;
   width: 150px;
-  height: 200px;
+  height: 350px;
   text-align: center;
   background-image: linear-gradient(to bottom, white, lightblue);
   transition: 0.3s ease;
   margin: 2px 0;
   box-shadow: 10px 10px 5px lightskyblue;
+}
+.previous {
+  height: 50px;
+  width: 50px;
+  rotate: 180deg;
+}
+.next {
+  height: 50px;
+  width: 50px;
 }
 .card:hover {
   cursor: pointer;
@@ -35,7 +44,7 @@
 .cards-container {
   margin-top: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
