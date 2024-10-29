@@ -14,10 +14,14 @@
   height: 50px;
   width: 50px;
   rotate: 180deg;
+  position: relative;
+  top: 150px;
 }
 .next {
   height: 50px;
   width: 50px;
+  position: relative;
+  top: 150px;
 }
 .card:hover {
   cursor: pointer;
