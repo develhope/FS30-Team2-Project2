@@ -12,7 +12,7 @@ export default function Card({ title, content, image }) {
   return (
     <div
       className="card"
-      style={hidden ? { height: "200px" } : { height: "350px" }}
+      style={hidden ? { height: "200px" } : { height: "250px" }}
       onClick={handleToggle}
     >
       {image && <img src={image} alt={title} className="card-image" />}
