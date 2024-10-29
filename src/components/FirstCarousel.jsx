@@ -49,7 +49,6 @@ export function FirstCarousel() {
   return (
     <>
       <div id="container">
-        <div className="wood"></div>
         <div id="carousel">
           <div>
             <img
