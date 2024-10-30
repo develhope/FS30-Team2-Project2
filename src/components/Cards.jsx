@@ -2,6 +2,7 @@ import Cardsapi from "../assets/cardsapi";
 import Card from "./Card";
 import "./Card.css";
 import { useCarousel2 } from "./useCarousel2";
+import { WoodBar } from "./WoodBar";
 const Cards = () => {
   const { list, goLeft, goRight } = useCarousel2(Cardsapi);
   return (
@@ -10,7 +11,7 @@ const Cards = () => {
         <img
           onClick={goLeft}
           className="previous"
-          src="src\assets\next.png"
+          src="src\assets\signpost.png"
           alt="previous"
         />
         {list.slice(0, 3).map((event) => (
@@ -25,10 +26,11 @@ const Cards = () => {
         <img
           onClick={goRight}
           className="next"
-          src="src\assets\next.png"
+          src="src\assets\signpost.png"
           alt="next"
         />
       </div>
+      <WoodBar />
     </div>
   );
 };

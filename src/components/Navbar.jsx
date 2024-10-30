@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { Dropdown } from "./Dropdown";
 import { LanguageContext } from "../App";
 import { Link } from "react-router-dom";
+import { WoodBar } from "./WoodBar";
 
 export function Navbar() {
   const lang = useContext(LanguageContext);
@@ -55,7 +56,9 @@ export function Navbar() {
           </div>
         </div>
       </nav>
-      <div id="wood"></div>
+      <div className="wood">
+        <WoodBar />
+      </div>
     </>
   );
 }

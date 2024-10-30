@@ -3,12 +3,7 @@
   background-position: bottom;
   text-align: center;
 }
-.wood {
-  background-image: url("../assets/wood2.png");
-  background-position: bottom;
-  width: 100%;
-  height: 50px;
-}
+
 .firstImage {
   width: 300px;
   height: 300px;
@@ -44,32 +39,36 @@
   bottom: 5px;
   box-shadow: 10px 15px 5px rgb(49, 48, 48);
 }
+.arrowBg {
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  position: relative;
+  top: 100px;
+}
 #next {
   width: 100px;
   height: 100px;
   position: relative;
-  right: 0px;
-  top: 125px;
+  top: 40px;
 }
 #next:hover {
   cursor: pointer;
   width: 110px;
   height: 110px;
-  top: 120px;
 }
 #previous {
   width: 100px;
   height: 100px;
-  rotate: y 180deg;
   position: relative;
-  top: 125px;
-  left: 30px;
+  top: 40px;
+  rotate: y 180deg;
 }
 #previous:hover {
   cursor: pointer;
   width: 110px;
   height: 110px;
-  top: 120px;
 }
 #carousel {
   display: flex;
@@ -82,12 +81,16 @@
 .central img:hover {
   cursor: pointer;
 }
-#carousel div {
+.lateral {
   width: 300px;
   height: 300px;
   padding: 20px;
 }
-
+.central {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
 .description h2 {
   background-image: url("../assets/wood.png");
   background-position: center;

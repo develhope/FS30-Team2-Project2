@@ -1,11 +1,12 @@
-import { useContext, useEffect, useState } from "react";
-import { LanguageContext } from "../App";
+import { useContext } from "react";
 import "./FirstCarousel.css";
 import adventures from "../assets/adventures.jpg";
 import roadtrip from "../assets/roadtrip.jpg";
 import culture from "../assets/culture.jpg";
 import romance from "../assets/romance.jpg";
 import { useCarousel } from "./useCarousel";
+import { LanguageContext } from "../App";
+import { WoodBar } from "./WoodBar";
 export function FirstCarousel() {
   const lang = useContext(LanguageContext);
   const trips = [
@@ -50,7 +51,7 @@ export function FirstCarousel() {
     <>
       <div id="container">
         <div id="carousel">
-          <div>
+          <div className="arrowBg">
             <img
               onClick={goLeft}
               id="previous"
@@ -78,7 +79,7 @@ export function FirstCarousel() {
               alt="thirdImage"
             />
           </div>
-          <div>
+          <div className="arrowBg">
             <img
               onClick={goRight}
               id="next"
@@ -90,7 +91,7 @@ export function FirstCarousel() {
         <div className="description">
           <h2>{second.description}</h2>
         </div>
-        <div className="wood"></div>
+        <WoodBar />
       </div>
     </>
   );

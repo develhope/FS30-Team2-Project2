@@ -4,7 +4,6 @@
   gap: 5px;
   background-image: url("../src/assets/wood2.png");
   background-position: bottom;
-  background-size: 100%;
   position: sticky;
   top: 0px;
   z-index: 1;
