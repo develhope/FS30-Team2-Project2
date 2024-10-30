@@ -91,7 +91,9 @@ export function FirstCarousel() {
         <div className="description">
           <h2>{second.description}</h2>
         </div>
-        <WoodBar />
+        <div className="woodbarbottom">
+          <WoodBar />
+        </div>
       </div>
     </>
   );
