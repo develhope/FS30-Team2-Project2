@@ -12,7 +12,7 @@ export default function Card({ title, content, image }) {
   return (
     <div
       className="card"
-      style={hidden ? { height: "200px" } : { height: "280px" }}
+      style={hidden ? { height: "250px" } : { height: "300px" }}
       onClick={handleToggle}
     >
       <div className="card-wrapper">
