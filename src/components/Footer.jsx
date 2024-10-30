@@ -1,8 +1,13 @@
 /** @format */
+import { useContext } from "react";
 import "./footer.scss";
+import { LanguageContext } from "../App";
 
 export function Footer() {
+  const lang = useContext(LanguageContext);
+  
   return (
+  
     <footer className="footer">
       <div className="columnsContainer">
         <div className="footerColumns">
@@ -30,10 +35,10 @@ export function Footer() {
           <h4>Link inerenti</h4>
           <ul>
             <li>
-              <a href="/about">Who we are</a>
+              <a href="/about">Chi Siamo</a>
             </li>
             <li>
-              <a href="/services">services</a>
+              <a href="/services">Servizi</a>
             </li>
             <li>
               <a href="/privacy">privacy Policy</a>
@@ -55,8 +60,24 @@ export function Footer() {
         <a href="http://"></a>
       </div>
       <hr />
-      <div>
-      <p>&copy;<a href="/link">EventiveTravels</a>, all rights deserved.</p>
+      <div className="copyright">
+        <p>
+          &copy;<a href="/link">EventiveTravels</a>, all rights deserved.
+        </p>
+      </div>  
+        
+      <div id="flagFooterContainer">
+        <img
+          className="flags"
+          src="src\assets\italy.png"
+          alt="ita"
+          onClick={() => handleSetLang("it")}
+        />
+        <img
+          className="flags"
+          src="src\assets\united-kingdom.png"
+          alt="eng"
+          onClick={() => handleSetLang("en")}/>
       </div>
     </footer>
   );
