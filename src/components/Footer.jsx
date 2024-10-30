@@ -5,13 +5,12 @@ import { LanguageContext } from "../App";
 
 export function Footer() {
   const lang = useContext(LanguageContext);
-  
+
   return (
-  
     <footer className="footer">
       <div className="columnsContainer">
         <div className="footerColumns">
-          <h4>Chi Siamo</h4>
+          <h4> {lang === "it" ? "Chi SIamo" : "Who we are"}</h4>
           <ul>
             <li>Noemi D'asta</li>
             <li>Fiamma Ferrone</li>
@@ -64,8 +63,8 @@ export function Footer() {
         <p>
           &copy;<a href="/link">EventiveTravels</a>, all rights deserved.
         </p>
-      </div>  
-        
+      </div>
+
       <div id="flagFooterContainer">
         <img
           className="flags"
@@ -77,7 +76,8 @@ export function Footer() {
           className="flags"
           src="src\assets\united-kingdom.png"
           alt="eng"
-          onClick={() => handleSetLang("en")}/>
+          onClick={() => handleSetLang("en")}
+        />
       </div>
     </footer>
   );
