@@ -2,6 +2,7 @@
   background-image: url("src/assets/map.jpg");
   background-position: bottom;
   text-align: center;
+  height: 450px;
 }
 
 .firstImage {
@@ -106,7 +107,13 @@
 .description {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: -40px;
 }
 .description:hover {
   cursor: pointer;
+}
+.woodbarbottom {
+  position: relative;
+  bottom: -70px;
 }
