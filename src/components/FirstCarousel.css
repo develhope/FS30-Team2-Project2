@@ -1,0 +1,120 @@
+#container {
+  background-image: url("src/assets/map.jpg");
+  background-position: bottom;
+  text-align: center;
+  height: 450px;
+}
+
+.firstImage {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 0.5;
+  rotate: 5deg;
+  box-shadow: 10px 10px 5px rgb(49, 48, 48);
+}
+.firstImage:hover {
+  bottom: 5px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
+}
+.secondImage {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  box-shadow: 10px 10px 5px rgb(49, 48, 48);
+}
+.secondImage:hover {
+  bottom: 5px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
+}
+
+.thirdImage {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 0.5;
+  rotate: -5deg;
+  box-shadow: 10px 10px 5px rgb(49, 48, 48);
+}
+.thirdImage:hover {
+  bottom: 5px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
+}
+.arrowBg {
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  position: relative;
+  top: 100px;
+}
+#next {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 40px;
+}
+#next:hover {
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
+}
+#previous {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 40px;
+  rotate: y 180deg;
+}
+#previous:hover {
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
+}
+#carousel {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.lateral img:hover {
+  cursor: pointer;
+}
+
+.central img:hover {
+  cursor: pointer;
+}
+.lateral {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+.central {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+.description h2 {
+  background-image: url("../assets/wood.png");
+  background-position: center;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  width: 350px;
+  height: 30px;
+  box-shadow: 10px 15px 5px rgb(49, 48, 48);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(49, 48, 48);
+  text-shadow: 2px 2px sienna;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -40px;
+}
+.description:hover {
+  cursor: pointer;
+}
+.woodbarbottom {
+  position: relative;
+  bottom: -70px;
+}

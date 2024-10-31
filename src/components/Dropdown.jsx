@@ -109,14 +109,19 @@ export function Dropdown() {
   } else {
     return (
       <div className="dropdown">
-        <h2>
-          {lang === "it"
-            ? `ciao, ${loggedUsername}!`
-            : `hi, ${loggedUsername}!`}
-        </h2>
-        <button onClick={cleanMemory}>
-          {lang === "it" ? "Esci" : `Logout`}
-        </button>
+        <div className="hiddenDropdown">
+          <h2>
+            {lang === "it"
+              ? `Ciao, ${loggedUsername}!`
+              : `Hi, ${loggedUsername}!`}
+          </h2>
+          <div id="userLinks">
+            <button>{lang === "it" ? "Area Utente" : `User Area`}</button>
+            <button onClick={cleanMemory}>
+              {lang === "it" ? "Esci" : `Logout`}
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
