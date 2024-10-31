@@ -1,0 +1,79 @@
+#map {
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 8rem;
+  }
+  img {
+    position: relative;
+    height: 50%;
+    width: 70%;
+    margin-left: 6rem;
+  }
+  .continenti div {
+    position: relative;
+    border: solid black;
+  }
+
+  .europa {
+    left: 28rem;
+    bottom: 30rem;
+    height: 100px;
+    width: 150px;
+  }
+  .asia {
+    height: 100px;
+    width: 150px;
+  }
+  .africa {
+    height: 100px;
+    width: 150px;
+  }
+  .oceania {
+    height: 100px;
+    width: 150px;
+  }
+  .america-nord {
+    height: 100px;
+    width: 150px;
+  }
+  .america-sud {
+    height: 100px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 2560px) {
+  .continenti div {
+    background-color: lightgreen;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .continenti div {
+    background-color: blue;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .continenti div {
+    background-color: red;
+  }
+}
+@media screen and (max-width: 768px) {
+  .continenti div {
+    background-color: greenyellow;
+  }
+}
+@media screen and (max-width: 425px) {
+  .continenti div {
+    background-color: orange;
+  }
+}
+@media screen and (max-width: 375px) {
+  .continenti div {
+    background-color: purple;
+  }
+}
+@media screen and (max-width: 320px) {
+  .continenti div {
+    background-color: maroon;
+  }
+}
