@@ -5,6 +5,8 @@ import "./App.css";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
 import CalendarContent from "./components/CalendarContent";
+import { Events } from "./pages/Events";
+import { Travels } from "./pages/Travels";
 
 export const LanguageContext = createContext("it");
 
@@ -36,28 +38,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/" element={<CalendarContent />}></Route>
-            <Route
-              path="/events"
-              element={
-                <div>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Tenetur quam ea illo! Nam harum, earum aliquid odit minus
-                  aperiam inventore ab deleniti nihil doloremque sed incidunt
-                  natus itaque reprehenderit officiis.
-                </div>
-              }
-            ></Route>
-            <Route
-              path="/travels"
-              element={
-                <div>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Tenetur quam ea illo! Nam harum, earum aliquid odit minus
-                  aperiam inventore ab deleniti nihil doloremque sed incidunt
-                  natus itaque reprehenderit officiis.
-                </div>
-              }
-            ></Route>
+            <Route path="/events" element={<Events />}></Route>
+            <Route path="/travels" element={<Travels />}></Route>
             <Route
               path="/reviews"
               element={
