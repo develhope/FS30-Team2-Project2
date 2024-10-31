@@ -4,6 +4,8 @@ import { Navbar } from "./components/Navbar";
 import "./App.css";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
+import Calendar from "./components/CalendarContent";
+
 export const LanguageContext = createContext("it");
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/" element={<Calendar />}></Route>
             <Route
               path="/events"
               element={
