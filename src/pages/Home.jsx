@@ -6,8 +6,8 @@ export function Home() {
   return (
     <>
       <FirstCarousel />
-      <MapandCalendar />
       <Cards />
+      <MapandCalendar />
     </>
   );
 }
