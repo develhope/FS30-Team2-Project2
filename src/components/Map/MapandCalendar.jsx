@@ -1,11 +1,11 @@
-import { Calendar } from "../Calendar";
+import CalendarContent from "./CalendarContent";
 import { Map } from "./Map";
 
 export function MapandCalendar() {
   return (
     <>
       <Map />
-      <Calendar />
+      <CalendarContent />
     </>
   );
 }

@@ -1,16 +1,18 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 #flagContainer {
   display: flex;
   justify-content: flex-end;
   gap: 5px;
-  background-color: rgb(255, 255, 255);
+  background-image: url("../src/assets/wood2.png");
+  background-position: bottom;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 .flags {
   height: 30px;
