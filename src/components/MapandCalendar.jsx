@@ -5,9 +5,9 @@ export function MapandCalendar() {
   return (
     <>
       <div
-        style={{
-          display: "flex",
-        }}
+      // style={{
+      //   display: "flex",
+      // }}
       >
         <CalendarContent />
         <Map />
