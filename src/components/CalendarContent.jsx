@@ -23,6 +23,7 @@ export default function CalendarContent() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setEvents([...events, { ...eventDetails }]);
+    setEventDetails("");
 
     setShowForm(false);
   };
