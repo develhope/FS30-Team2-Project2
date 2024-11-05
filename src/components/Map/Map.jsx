@@ -3,7 +3,6 @@ import "./Map.scss"
 export function Map() {
   return <>
     <div id="map">
-      <h1>Mappa</h1>
       <img src="./img/WorldMap.jpg" />
       <div className="continenti">
         <div className="europa"><a href=""></a>europa</div>

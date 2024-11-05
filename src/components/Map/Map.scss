@@ -1,14 +1,12 @@
 #map {
-  h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 8rem;
-  }
+  height: 40rem;
+  width: 45rem;
+
   img {
+    height: 50rem;
+    width: 63rem;
     position: relative;
-    height: 50%;
-    width: 70%;
-    margin-left: 6rem;
+    margin-left: 90rem;
   }
   .continenti div {
     position: relative;
@@ -16,8 +14,8 @@
   }
 
   .europa {
-    left: 28rem;
-    bottom: 30rem;
+    left: 43rem;
+    bottom: 48rem;
     height: 100px;
     width: 150px;
   }
