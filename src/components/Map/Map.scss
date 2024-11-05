@@ -1,40 +1,50 @@
 #map {
-  
-  height: 40rem;
-  width: 45rem;
+  height: 60rem;
+  width: 100rem;
+  margin-left: 10rem;
+
   img {
-    height: 50rem;
-    width: 63rem;
+    height: 60rem;
+    width: 100rem;
     position: relative;
-    margin-left: 90rem;
   }
   .continenti div {
     position: relative;
     border: solid black;
   }
   .europa {
-    left: 43rem;
-    bottom: 48rem;
+    left: 45rem;
+    bottom: 45rem;
     height: 100px;
     width: 150px;
   }
   .asia {
+    left: 65rem;
+    bottom: 50rem;
     height: 100px;
     width: 150px;
   }
   .africa {
+    left: 48rem;
+    bottom: 45rem;
     height: 100px;
     width: 150px;
   }
   .oceania {
+    left: 78rem;
+    bottom: 42rem;
     height: 100px;
     width: 150px;
   }
   .america-nord {
+    left: 18rem;
+    bottom: 70rem;
     height: 100px;
     width: 150px;
   }
   .america-sud {
+    left: 27rem;
+    bottom: 58rem;
     height: 100px;
     width: 150px;
   }
