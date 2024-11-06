@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import "./Navbar.css";
 import { Dropdown } from "./Dropdown";
-import { LanguageContext } from "../App";
 import { Link } from "react-router-dom";
 import { WoodBar } from "./WoodBar";
+import { useLanguage } from "../context/LanguageContext";
 
 export function Navbar() {
-  const lang = useContext(LanguageContext);
+  const { language } = useLanguage();
   return (
     <>
       <nav className="navbar">
@@ -24,7 +24,7 @@ export function Navbar() {
                   alt="events"
                   className="icons"
                 />
-                <h4>{lang === "it" ? "Eventi" : "Events"}</h4>
+                <h4>{language === "it" ? "Eventi" : "Events"}</h4>
               </Link>
             </div>
             <div href="/viaggi" id="viaggi">
@@ -34,7 +34,7 @@ export function Navbar() {
                   alt="travels"
                   className="icons"
                 />
-                <h4>{lang === "it" ? "Viaggi" : "Travels"}</h4>
+                <h4>{language === "it" ? "Viaggi" : "Travels"}</h4>
               </Link>
             </div>
             <div href="/recensioni">
@@ -45,7 +45,7 @@ export function Navbar() {
                   className="icons"
                 />
 
-                <h4>{lang === "it" ? "Recensioni" : "Reviews"}</h4>
+                <h4>{language === "it" ? "Recensioni" : "Reviews"}</h4>
               </Link>
             </div>
           </div>

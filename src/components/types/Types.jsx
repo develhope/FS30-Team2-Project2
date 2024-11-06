@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import "./Types.css";
-import { useContext } from "react";
-import { LanguageContext } from "../../App";
+import { useLanguage } from "../../context/LanguageContext";
 export function Types(props) {
-  const lang = useContext(LanguageContext);
+  const { language } = useLanguage();
   return (
     <>
       <div>
-        <h2>{lang === "it" ? "O scegli cosa" : "Or choose what"}</h2>
+        <h2>{language === "it" ? "O scegli cosa" : "Or choose what"}</h2>
       </div>
       <div className="container">
         <Link to={props.link1}>

@@ -1,19 +1,19 @@
-import { useContext } from "react";
 import "./FirstCarousel.css";
 import adventures from "../assets/adventures.jpg";
 import roadtrip from "../assets/roadtrip.jpg";
 import culture from "../assets/culture.jpg";
 import romance from "../assets/romance.jpg";
 import { useCarousel } from "./useCarousel";
-import { LanguageContext } from "../App";
 import { WoodBar } from "./WoodBar";
+import { useLanguage } from "../context/LanguageContext";
 export function FirstCarousel() {
-  const lang = useContext(LanguageContext);
+  const { language } = useLanguage();
+
   const trips = [
     {
       image: adventures,
       description: `${
-        lang === "it"
+        language === "it"
           ? "Viaggio avventuroso per due"
           : "Adventurous Trip for two"
       }`,
@@ -21,7 +21,7 @@ export function FirstCarousel() {
     {
       image: culture,
       description: `${
-        lang === "it"
+        language === "it"
           ? "Viaggio nella cultura per due"
           : "Cultural Trip for two"
       }`,
@@ -29,7 +29,7 @@ export function FirstCarousel() {
     {
       image: roadtrip,
       description: `${
-        lang === "it"
+        language === "it"
           ? "Viaggio On the Road per due"
           : "On the Road Trip for two"
       }`,
@@ -37,7 +37,9 @@ export function FirstCarousel() {
     {
       image: romance,
       description: `${
-        lang === "it" ? "Viaggio romantico per due" : "Romantic Trip for two"
+        language === "it"
+          ? "Viaggio romantico per due"
+          : "Romantic Trip for two"
       }`,
     },
   ];

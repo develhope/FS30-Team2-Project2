@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 import "./Navbar.css";
-import { LanguageContext } from "../App";
 
 export function Dropdown() {
   const [open, setOpen] = useState(false);
-  const lang = useContext(LanguageContext);
+  const { language } = useLanguage();
 
   const handleOpen = () => {
     setOpen(!open);
@@ -85,7 +85,7 @@ export function Dropdown() {
             />
             <form>
               <label>
-                {lang === "it" ? "Ricordami" : "Remember me"}
+                {language === "it" ? "Ricordami" : "Remember me"}
                 <input
                   type="checkbox"
                   name="session"
@@ -99,7 +99,7 @@ export function Dropdown() {
               disabled={!data.username || !data.password}
               onClick={onLogin}
             >
-              {lang === "it" ? "Accedi" : "Login"}
+              {language === "it" ? "Accedi" : "Login"}
             </button>
             <button onClick={reset}>Reset</button>
           </div>
@@ -111,14 +111,14 @@ export function Dropdown() {
       <div className="dropdown">
         <div className="hiddenDropdown">
           <h2>
-            {lang === "it"
+            {language === "it"
               ? `Ciao, ${loggedUsername}!`
               : `Hi, ${loggedUsername}!`}
           </h2>
           <div id="userLinks">
-            <button>{lang === "it" ? "Area Utente" : `User Area`}</button>
+            <button>{language === "it" ? "Area Utente" : `User Area`}</button>
             <button onClick={cleanMemory}>
-              {lang === "it" ? "Esci" : `Logout`}
+              {language === "it" ? "Esci" : `Logout`}
             </button>
           </div>
         </div>
