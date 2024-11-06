@@ -1,16 +1,15 @@
 /** @format */
-import { useContext } from "react";
+
 import "./footer.scss";
-import { LanguageContext } from "../App";
+import { useLanguage } from "../context/LanguageContext";
 
 export function Footer() {
-  const lang = useContext(LanguageContext);
-
+  const { language } = useLanguage();
   return (
     <footer className="footer">
       <div className="columnsContainer">
         <div className="footerColumns">
-          <h4> {lang === "it" ? "Chi SIamo" : "Who we are"}</h4>
+          <h4> {language === "it" ? "Chi SIamo" : "Who we are"}</h4>
           <ul>
             <li>Noemi D'asta</li>
             <li>Fiamma Ferrone</li>
@@ -63,21 +62,6 @@ export function Footer() {
         <p>
           &copy;<a href="/link">EventiveTravels</a>, all rights deserved.
         </p>
-      </div>
-
-      <div id="flagFooterContainer">
-        <img
-          className="flags"
-          src="src\assets\italy.png"
-          alt="ita"
-          onClick={() => handleSetLang("it")}
-        />
-        <img
-          className="flags"
-          src="src\assets\united-kingdom.png"
-          alt="eng"
-          onClick={() => handleSetLang("en")}
-        />
       </div>
     </footer>
   );
