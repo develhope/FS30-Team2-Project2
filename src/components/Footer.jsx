@@ -1,19 +1,18 @@
 /** @format */
-import { useContext } from "react";
+
 import "./footer.scss";
-import { LanguageContext } from "../App";
+
 import { Link } from "react-router-dom";
-
-
+import { useLanguage } from "../context/LanguageContext";
 
 export function Footer() {
-  const lang = useContext(LanguageContext);
-
+  const { language } = useLanguage();
   return (
     <footer className="footer">
       <div className="columnsContainer">
         <div className="footerColumns">
-          <h4>{lang === "it" ? "Chi SIamo" : "Who we are"}</h4>
+
+          <h4> {language === "it" ? "Chi SIamo" : "Who we are"}</h4>
           <ul>
             <li>Noemi D'asta</li>
             <li>Fiamma Ferrone</li>
@@ -34,18 +33,18 @@ export function Footer() {
           </ul>
         </div>
         <div className="footerColumns">
-          <h4>{lang === "it" ? "Link inerenti" : "Inerhent link"}</h4>
+          <h4>{language === "it" ? "Link inerenti" : "Inerhent link"}</h4>
           <ul>
           <Link to="/about">
             <li>
-              <a href="/about">{lang === "it" ? "Chi SIamo" : "Who we are"}</a>
+              <a href="/about">{language === "it" ? "Chi SIamo" : "Who we are"}</a>
             </li>
             </Link>
             <li>
-              <a href="/services">{lang === "it" ? "Servizi" : "Services"}</a>
+              <a href="/services">{language === "it" ? "Servizi" : "Services"}</a>
             </li>
             <li>
-              <a href="/privacy">{lang === "it" ? "Politica della privacy" : "Privicy Policy"}</a>
+              <a href="/privacy">{language === "it" ? "Politica della privacy" : "Privicy Policy"}</a>
             </li>
           </ul>
         </div>
