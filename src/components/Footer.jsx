@@ -57,7 +57,7 @@ export function Footer() {
         </div>
 
         <div className="footerColumns">
-          <h4>{lang === "it" ? "Strumenti" : "Who we are"}</h4>
+          <h4>{language === "it" ? "Strumenti" : "Who we are"}</h4>
           <ul>
             <li>React</li>
             <li>GitHub</li>
