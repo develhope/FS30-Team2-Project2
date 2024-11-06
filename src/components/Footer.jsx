@@ -2,6 +2,9 @@
 import { useContext } from "react";
 import "./footer.scss";
 import { LanguageContext } from "../App";
+import { Link } from "react-router-dom";
+
+
 
 export function Footer() {
   const lang = useContext(LanguageContext);
@@ -10,7 +13,7 @@ export function Footer() {
     <footer className="footer">
       <div className="columnsContainer">
         <div className="footerColumns">
-          <h4> {lang === "it" ? "Chi SIamo" : "Who we are"}</h4>
+          <h4>{lang === "it" ? "Chi SIamo" : "Who we are"}</h4>
           <ul>
             <li>Noemi D'asta</li>
             <li>Fiamma Ferrone</li>
@@ -20,7 +23,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="footerColumns">
-          <h4>Contatti</h4>
+          <h4>{lang === "it" ? "Contatti" : "Contacts"}</h4>
           <ul>
             <li>
               <a href="tel:+">3274984886</a>
@@ -31,22 +34,24 @@ export function Footer() {
           </ul>
         </div>
         <div className="footerColumns">
-          <h4>Link inerenti</h4>
+          <h4>{lang === "it" ? "Link inerenti" : "Inerhent link"}</h4>
           <ul>
+          <Link to="/about">
             <li>
-              <a href="/about">Chi Siamo</a>
+              <a href="/about">{lang === "it" ? "Chi SIamo" : "Who we are"}</a>
+            </li>
+            </Link>
+            <li>
+              <a href="/services">{lang === "it" ? "Servizi" : "Services"}</a>
             </li>
             <li>
-              <a href="/services">Servizi</a>
-            </li>
-            <li>
-              <a href="/privacy">privacy Policy</a>
+              <a href="/privacy">{lang === "it" ? "Politica della privacy" : "Privicy Policy"}</a>
             </li>
           </ul>
         </div>
 
         <div className="footerColumns">
-          <h4>Strumenti</h4>
+          <h4>{lang === "it" ? "Strumenti" : "Who we are"}</h4>
           <ul>
             <li>React</li>
             <li>GitHub</li>
@@ -58,26 +63,10 @@ export function Footer() {
         <a href="http://"></a>
         <a href="http://"></a>
       </div>
-      <hr />
       <div className="copyright">
         <p>
           &copy;<a href="/link">EventiveTravels</a>, all rights deserved.
         </p>
-      </div>
-
-      <div id="flagFooterContainer">
-        <img
-          className="flags"
-          src="src\assets\italy.png"
-          alt="ita"
-          onClick={() => handleSetLang("it")}
-        />
-        <img
-          className="flags"
-          src="src\assets\united-kingdom.png"
-          alt="eng"
-          onClick={() => handleSetLang("en")}
-        />
       </div>
     </footer>
   );

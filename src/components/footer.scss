@@ -1,15 +1,22 @@
 /** @format */
 
 .footer {
-  background-color: rgb(119, 155, 65);
   font-family: Arial, Helvetica, sans-serif;
   padding: 30px;
+  background-image: url("../assets/scroll.png");
+  background-position: absolute;
+  background-size: 100% 100%;
+  color: #4b3b3b;
+}
+
+hr{
+max-width: max-content;
 }
 
 .columnsContainer {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .footerColumns {
@@ -24,21 +31,20 @@
 }
 
 p {
-  display: flex;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
+.copyright {
+  bottom: 0;
+}
 
-.copyright{
-
-  bottom: 0;}
-
-  #flagFooterContainer{
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
-    position: sticky;
-    margin-left: 0;
-    top: 0px;
-  }
+#flagFooterContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  position: sticky;
+  margin-left: 0;
+  top: 0px;
+}
