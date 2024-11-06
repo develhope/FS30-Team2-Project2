@@ -11,7 +11,6 @@ export function Footer() {
     <footer className="footer">
       <div className="columnsContainer">
         <div className="footerColumns">
-
           <h4> {language === "it" ? "Chi SIamo" : "Who we are"}</h4>
           <ul>
             <li>Noemi D'asta</li>
@@ -22,7 +21,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="footerColumns">
-          <h4>{lang === "it" ? "Contatti" : "Contacts"}</h4>
+          <h4>{language === "it" ? "Contatti" : "Contacts"}</h4>
           <ul>
             <li>
               <a href="tel:+">3274984886</a>
@@ -35,16 +34,24 @@ export function Footer() {
         <div className="footerColumns">
           <h4>{language === "it" ? "Link inerenti" : "Inerhent link"}</h4>
           <ul>
-          <Link to="/about">
-            <li>
-              <a href="/about">{language === "it" ? "Chi SIamo" : "Who we are"}</a>
-            </li>
+            <Link to="/about">
+              <li>
+                <a href="/about">
+                  {language === "it" ? "Chi SIamo" : "Who we are"}
+                </a>
+              </li>
             </Link>
             <li>
-              <a href="/services">{language === "it" ? "Servizi" : "Services"}</a>
+              <a href="/services">
+                {language === "it" ? "Servizi" : "Services"}
+              </a>
             </li>
             <li>
-              <a href="/privacy">{language === "it" ? "Politica della privacy" : "Privicy Policy"}</a>
+              <a href="/privacy">
+                {language === "it"
+                  ? "Politica della privacy"
+                  : "Privicy Policy"}
+              </a>
             </li>
           </ul>
         </div>
