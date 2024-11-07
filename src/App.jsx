@@ -11,11 +11,13 @@ import { useLanguage } from "./context/LanguageContext";
 import { About } from "./pages/About";
 import { Services } from "./pages/Services";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { Pippo } from "./pages/Pippo";
+import { Reviews } from "./pages/Reviews";
 
 function App() {
   const { setLanguage } = useLanguage();
   return (
-    <div>
+    <div id="totalContainer">
       <div id="flagContainer">
         <img
           className="flags"
@@ -41,30 +43,8 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/policy" element={<PrivacyPolicy />}></Route>
-        <Route
-          path="/reviews"
-          element={
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-              quam ea illo! Nam harum, earum aliquid odit minus aperiam
-              inventore ab deleniti nihil doloremque sed incidunt natus itaque
-              reprehenderit officiis.
-            </div>
-          }
-        ></Route>
-        <Route
-          path="/*"
-          element={
-            <>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/5/50/Goofy_Duckipedia.png"
-                alt="pippo"
-              />
-              <div>Goofy has not found the page you were looking for.</div>
-              <Link to="/">Home?</Link>
-            </>
-          }
-        ></Route>
+        <Route path="/reviews" element={<Reviews />}></Route>
+        <Route path="/*" element={<Pippo />}></Route>
       </Routes>
 
       <Footer />

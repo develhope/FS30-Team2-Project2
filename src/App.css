@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+#totalContainer {
+  max-width: 100%;
+}
 
 #flagContainer {
   display: flex;
@@ -13,6 +16,7 @@
   position: sticky;
   top: 0px;
   z-index: 1;
+  padding-right: 1rem;
 }
 .flags {
   height: 30px;

@@ -12,35 +12,23 @@ export function FirstCarousel() {
   const trips = [
     {
       image: adventures,
-      description: `${
-        language === "it"
-          ? "Viaggio avventuroso per due"
-          : "Adventurous Trip for two"
-      }`,
+      descriptionIt: "Viaggio Avventuroso per due",
+      descriptionEng: "Adventurous Trip for two",
     },
     {
       image: culture,
-      description: `${
-        language === "it"
-          ? "Viaggio nella cultura per due"
-          : "Cultural Trip for two"
-      }`,
+      descriptionIt: "Viaggio nella Cultura per due",
+      descriptionEng: "Cultural Trip for two",
     },
     {
       image: roadtrip,
-      description: `${
-        language === "it"
-          ? "Viaggio On the Road per due"
-          : "On the Road Trip for two"
-      }`,
+      descriptionIt: "Viaggio On the Road per due",
+      descriptionEng: "On the Road Trip for two",
     },
     {
       image: romance,
-      description: `${
-        language === "it"
-          ? "Viaggio romantico per due"
-          : "Romantic Trip for two"
-      }`,
+      descriptionIt: "Viaggio romantico per due",
+      descriptionEng: "Romantic Trip for two",
     },
   ];
 
@@ -91,7 +79,9 @@ export function FirstCarousel() {
           </div>
         </div>
         <div className="description">
-          <h2>{second.description}</h2>
+          <h2>
+            {language === "it" ? second.descriptionIt : second.descriptionEng}
+          </h2>
         </div>
         <div className="woodbarbottom">
           <WoodBar />
