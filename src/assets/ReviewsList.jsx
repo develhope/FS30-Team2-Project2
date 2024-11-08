@@ -8,6 +8,7 @@ export const ReviewsList = [
       "An unforgettable experience! The trip was perfect, everything was organized down to the smallest detail. The tour guides were very knowledgeable and friendly. I recommend it to everyone!",
     titleIt: "Tour culturale in Toscana",
     titleEng: "Cultural tour in Tuscany",
+    date: "12/02/2023",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const ReviewsList = [
       "The trip was very nice, although some places were a bit too crowded. However, the organization was good and the activities were a lot of fun.",
     titleIt: "Vacanza estiva in Sardegna",
     titleEng: "Summer vacation in Sardinia",
+    date: "24/06/2022",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const ReviewsList = [
       "The service quality was not up to expectations. Some places were magnificent, but others were poorly managed.",
     titleIt: "Tour delle città d'arte italiane",
     titleEng: "Tour of Italy's art cities",
+    date: "29/03/2023",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const ReviewsList = [
       "A fantastic trip! The nature was breathtaking and the guide told us many interesting stories. Definitely worth doing again!",
     titleIt: "Escursione nelle Dolomiti",
     titleEng: "Dolomites hiking trip",
+    date: "05/09/2023",
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ export const ReviewsList = [
       "The event was very interesting, though a bit too long. I still enjoyed it a lot and learned many new things.",
     titleIt: "Festa tradizionale in Piemonte",
     titleEng: "Traditional festival in Piedmont",
+    date: "17/10/2023",
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ export const ReviewsList = [
       "Unfortunately, the experience was not positive. The transport was delayed and some activities were not carried out.",
     titleIt: "Viaggio in treno lungo la costa amalfitana",
     titleEng: "Train trip along the Amalfi Coast",
+    date: "14/05/2022",
   },
   {
     id: 7,
@@ -68,6 +74,7 @@ export const ReviewsList = [
       "Everything was perfect, from departure to arrival. The places we visited were spectacular and the atmosphere was fantastic.",
     titleIt: "Vacanza romantica a Venezia",
     titleEng: "Romantic vacation in Venice",
+    date: "20/08/2023",
   },
   {
     id: 8,
@@ -78,6 +85,7 @@ export const ReviewsList = [
       "Very nice, but with a few minor imperfections. A couple of excursions were not up to expectations, but overall it was a good trip.",
     titleIt: "Tour dei castelli in Baviera",
     titleEng: "Bavarian castle tour",
+    date: "02/07/2024",
   },
   {
     id: 9,
@@ -88,6 +96,7 @@ export const ReviewsList = [
       "The experience was good, but not excellent. Some places were too touristy, and I preferred the quieter ones.",
     titleIt: "Escursione nelle Cinque Terre",
     titleEng: "Cinque Terre excursion",
+    date: "01/06/2023",
   },
   {
     id: 10,
@@ -98,6 +107,7 @@ export const ReviewsList = [
       "A dream come true! Every corner was spectacular, and the people I met during the trip were all exceptional.",
     titleIt: "Visita guidata a Roma",
     titleEng: "Guided tour of Rome",
+    date: "15/03/2024",
   },
   {
     id: 11,
@@ -108,6 +118,7 @@ export const ReviewsList = [
       "The event was really emotional. Only a small problem with the organization, but nothing that ruined the overall experience.",
     titleIt: "Concerto al Teatro San Carlo",
     titleEng: "Concert at the San Carlo Theater",
+    date: "28/04/2023",
   },
   {
     id: 12,
@@ -118,6 +129,7 @@ export const ReviewsList = [
       "Dream trip! The view was incredible and the activities were organized flawlessly. Highly recommended!",
     titleIt: "Escursione alle Isole Eolie",
     titleEng: "Excursion to the Aeolian Islands",
+    date: "19/07/2022",
   },
   {
     id: 13,
@@ -128,6 +140,7 @@ export const ReviewsList = [
       "Good experience but nothing exceptional. Some moments were a bit boring, and the guide didn't always manage to engage the group.",
     titleIt: "Visita alle Grotte di Postumia",
     titleEng: "Visit to Postojna Caves",
+    date: "06/11/2023",
   },
   {
     id: 14,
@@ -138,6 +151,7 @@ export const ReviewsList = [
       "Nice experience, although we expected a bit more from the quality of the meals. But everything else was perfect!",
     titleIt: "Tour gastronomico in Emilia-Romagna",
     titleEng: "Food tour in Emilia-Romagna",
+    date: "25/09/2023",
   },
   {
     id: 15,
@@ -148,6 +162,7 @@ export const ReviewsList = [
       "A unique experience, to repeat! The destination was enchanting, and every activity was designed to give us an authentic experience.",
     titleIt: "Viaggio in barca a Capraia",
     titleEng: "Boat trip to Capraia",
+    date: "30/05/2023",
   },
   {
     id: 16,
@@ -158,6 +173,7 @@ export const ReviewsList = [
       "It was not what we expected. The quality of services was poor, and the program was not well structured.",
     titleIt: "Tour in autobus della Costa Azzurra",
     titleEng: "Bus tour of the French Riviera",
+    date: "18/01/2024",
   },
   {
     id: 17,
@@ -168,6 +184,7 @@ export const ReviewsList = [
       "An unforgettable day! The event was perfect, with many engaging activities. I can't wait to participate again!",
     titleIt: "Festival del Cinema di Venezia",
     titleEng: "Venice Film Festival",
+    date: "03/09/2024",
   },
   {
     id: 18,
@@ -178,6 +195,7 @@ export const ReviewsList = [
       "The trip was very nice, but I found that some places were too crowded. Still, it was a good way to discover the local culture.",
     titleIt: "Tour delle città imperiali",
     titleEng: "Tour of the Imperial Cities",
+    date: "21/04/2024",
   },
   {
     id: 19,
@@ -188,6 +206,7 @@ export const ReviewsList = [
       "Sufficient, but we expected more. Some excursions were not up to par and the accommodation was not very comfortable.",
     titleIt: "Vacanza in Sicilia",
     titleEng: "Sicilian vacation",
+    date: "16/08/2022",
   },
   {
     id: 20,
@@ -198,5 +217,6 @@ export const ReviewsList = [
       "Everything was perfect! The atmosphere was unique, and every detail was taken care of perfectly. An experience I will never forget.",
     titleIt: "Weekend a Firenze",
     titleEng: "Weekend in Florence",
+    date: "10/12/2023",
   },
 ];

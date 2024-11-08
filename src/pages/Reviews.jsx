@@ -16,6 +16,7 @@ export function Reviews() {
               stars={event.starNumber}
               review={language === "it" ? event.reviewIt : event.reviewEng}
               title={language === "it" ? event.titleIt : event.titleEng}
+              date={event.date}
             />
           </div>
         ))}

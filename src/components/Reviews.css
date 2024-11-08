@@ -1,21 +1,25 @@
 .reviewCardsContainer {
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
   background-image: url("../assets/map.jpg");
+  color: rgb(49, 48, 48);
 }
 .reviewCards {
-  background-image: url("../assets/scroll.png");
-  background-size: 100% 100%;
   width: 300px;
-  height: 400px;
 }
 .ratings {
   width: 130px;
   height: 130px;
 }
+.dateImage {
+  display: flex;
+}
 
 .reviewCard {
-  padding: 2rem;
+  padding: 3rem;
+  background-image: url("../assets/scroll.png");
+  background-size: 100% 100%;
 }
