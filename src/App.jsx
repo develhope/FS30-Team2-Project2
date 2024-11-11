@@ -13,6 +13,12 @@ import { Services } from "./pages/Services";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { Pippo } from "./pages/Pippo";
 import { Reviews } from "./pages/Reviews";
+import { Africa } from "./pages/continenti/Africa";
+import { Namerica } from "./pages/continenti/Namerica";
+import { Samerica } from "./pages/continenti/Samerica";
+import { Asia } from "./pages/continenti/Asia";
+import { Europa } from "./pages/continenti/Europa";
+import { Oceania } from "./pages/continenti/Oceania";
 
 function App() {
   const { setLanguage } = useLanguage();
@@ -44,12 +50,12 @@ function App() {
           <Route path="/services" element={<Services />}></Route>
           <Route path="/policy" element={<PrivacyPolicy />}></Route>
           <Route path="/reviews" element={<Reviews />}></Route>
-          <Route path="/africa" element={<></>}></Route>
-          <Route path="/Namerica" element={<></>}></Route>
-          <Route path="/Samerica" element={<></>}></Route>
-          <Route path="/asia" element={<></>}></Route>
-          <Route path="/europa" element={<></>}></Route>
-          <Route path="/oceania" element={<></>}></Route>
+          <Route path="/africa" element={<Africa />}></Route>
+          <Route path="/Namerica" element={<Namerica />}></Route>
+          <Route path="/Samerica" element={<Samerica />}></Route>
+          <Route path="/asia" element={<Asia />}></Route>
+          <Route path="/europa" element={<Europa />}></Route>
+          <Route path="/oceania" element={<Oceania />}></Route>
           <Route path="/*" element={<Pippo />}></Route>
         </Routes>
 
