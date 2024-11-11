@@ -44,6 +44,12 @@ function App() {
           <Route path="/services" element={<Services />}></Route>
           <Route path="/policy" element={<PrivacyPolicy />}></Route>
           <Route path="/reviews" element={<Reviews />}></Route>
+          <Route path="/africa" element={<></>}></Route>
+          <Route path="/Namerica" element={<></>}></Route>
+          <Route path="/Samerica" element={<></>}></Route>
+          <Route path="/asia" element={<></>}></Route>
+          <Route path="/europa" element={<></>}></Route>
+          <Route path="/oceania" element={<></>}></Route>
           <Route path="/*" element={<Pippo />}></Route>
         </Routes>
 

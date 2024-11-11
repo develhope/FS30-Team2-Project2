@@ -5,6 +5,7 @@ export function WoodBar() {
     backgroundPosition: "bottom",
     width: "100%",
     height: "50px",
+    width: "100vw",
   };
   return <div style={myStyle}></div>;
 }

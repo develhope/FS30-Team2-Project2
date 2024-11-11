@@ -19,6 +19,7 @@
   top: 0px;
   z-index: 1;
   padding-right: 1rem;
+  width: 100vw;
 }
 .flags {
   height: 30px;
