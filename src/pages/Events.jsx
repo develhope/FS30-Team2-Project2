@@ -12,7 +12,7 @@ export function Events() {
       <Animation textIt={"Eventi"} textEng={"Events"} />
       <WoodBar />
       <div className="banner">
-        <h2>
+        <h2 className="bannerText">
           {language === "it" ? "Scegli dove o quando" : "Choose where or when"}
         </h2>
       </div>

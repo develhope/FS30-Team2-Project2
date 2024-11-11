@@ -1,28 +1,41 @@
 import { useLanguage } from "../context/LanguageContext";
 import { Link } from "react-router-dom";
+import scroll from "../assets/scroll.png";
 
 export function Pippo() {
   const { language } = useLanguage();
   return (
     <>
       <div style={{ display: "flex", justifyContent: "center", gap: "3rem" }}>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/5/50/Goofy_Duckipedia.png"
-          alt="pippo"
-        />
+        <img src="src\assets\pippo.png" alt="pippo" />
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            backgroundImage: `url(${scroll})`,
+            backgroundSize: "100% 100%",
+            width: "400px",
+            height: "300px",
+            padding: "2rem",
+            textAlign: "center",
+            marginTop: "100px",
           }}
         >
           <h2>
             {language === "it"
-              ? "Pippo non ha trovato ciò che cercavi"
-              : "Goofy has not found the page you were looking for"}
+              ? "Il nostro Pippo non ha trovato ciò che cercavi"
+              : "Our Goofy has not found the page you were looking for"}
           </h2>
-          <Link to="/">Home?</Link>
+          <Link
+            to="/"
+            style={{
+              marginTop: "20px",
+              fontSize: "30px",
+            }}
+          >
+            Home?
+          </Link>
         </div>
       </div>
     </>

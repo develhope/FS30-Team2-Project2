@@ -17,7 +17,7 @@ import { Reviews } from "./pages/Reviews";
 function App() {
   const { setLanguage } = useLanguage();
   return (
-    <div id="totalContainer">
+    <>
       <div id="flagContainer">
         <img
           className="flags"
@@ -34,21 +34,22 @@ function App() {
       </div>
 
       <Navbar />
+      <div id="totalContainer">
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<CalendarContent />}></Route>
+          <Route path="/events" element={<Events />}></Route>
+          <Route path="/travels" element={<Travels />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/policy" element={<PrivacyPolicy />}></Route>
+          <Route path="/reviews" element={<Reviews />}></Route>
+          <Route path="/*" element={<Pippo />}></Route>
+        </Routes>
 
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/" element={<CalendarContent />}></Route>
-        <Route path="/events" element={<Events />}></Route>
-        <Route path="/travels" element={<Travels />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/services" element={<Services />}></Route>
-        <Route path="/policy" element={<PrivacyPolicy />}></Route>
-        <Route path="/reviews" element={<Reviews />}></Route>
-        <Route path="/*" element={<Pippo />}></Route>
-      </Routes>
-
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 

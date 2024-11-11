@@ -12,7 +12,7 @@ export function Travels() {
       <Animation textIt={"Viaggi"} textEng={"Travels"} />
       <WoodBar />
       <div className="banner">
-        <h2>
+        <h2 className="bannerText">
           {language === "it" ? "Scegli dove o quando" : "Choose where or when"}
         </h2>
       </div>
@@ -20,11 +20,11 @@ export function Travels() {
       <Types
         first={language === "it" ? "Avventura" : "Adventure"}
         second={language === "it" ? "Cultura" : "Cultural"}
-        third={language === "it" ? "Romantic" : "Romantic"}
+        third={language === "it" ? "Romantico" : "Romantic"}
+        link1={"/adventure"}
+        link2={"/culture"}
+        link3={"/romance"}
       />
-      link1={"/adventure"}
-      link2={"/culture"}
-      link3={"/romance"}
     </>
   );
 }

@@ -65,8 +65,6 @@ export function Animation({ textIt, textEng }) {
         style={{
           width: "180px",
           marginRight: "5rem",
-          backgroundImage: `url(${scroll})`,
-          backgroundSize: "100% 100%",
           paddingTop: "1.5rem",
           textAlign: "center",
           color: "sienna",

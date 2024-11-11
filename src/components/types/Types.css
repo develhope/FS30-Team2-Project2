@@ -2,8 +2,22 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
+  padding-bottom: 50px;
+}
+.container div {
+  background-image: url("/src/assets/scroll.png");
+  background-size: 100% 100%;
+  padding: 20px;
 }
 .banner {
   display: flex;
   justify-content: center;
+}
+.bannerText {
+  background-image: url("/src/assets/scroll.png");
+  background-size: 100% 100%;
+  padding: 10px;
+  position: relative;
+  top: -48px;
+  color: rgb(49, 48, 48);
 }
