@@ -1,9 +1,9 @@
 /** @format */
 
 import "./footer.scss";
-
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
+import React from "react";
 
 export function Footer() {
   const { language } = useLanguage();
@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="footer">
       <div className="columnsContainer">
         <div className="footerColumns">
-          <h4> {language === "it" ? "Chi SIamo" : "Who we are"}</h4>
+          <h4> {language === "it" ? "Chi Siamo" : "Who we are"}</h4>
           <ul>
             <li>Noemi D'asta</li>
             <li>Fiamma Ferrone</li>
@@ -21,47 +21,41 @@ export function Footer() {
           </ul>
         </div>
         <div className="footerColumns">
-          <h4>{language === "it" ? "Contatti" : "Contacts"}</h4>
-          <ul>
-            <li>
-              <a href="tel:+">3274984886</a>
-            </li>
-            <li>
-              <a href="/email">infoexample@gmail.com</a>
-            </li>
-          </ul>
-        </div>
-        <div className="footerColumns">
           <h4>{language === "it" ? "Link inerenti" : "Inerhent link"}</h4>
           <ul>
-            <Link to="/about">
+            <Link to="/About">
               <li>
                 <a href="/about">
-                  {language === "it" ? "Chi SIamo" : "Who we are"}
+                  {language === "it" ? "Contatti" : "Contacts"}
                 </a>
               </li>
             </Link>
-            <li>
-              <a href="/services">
-                {language === "it" ? "Servizi" : "Services"}
-              </a>
-            </li>
-            <li>
-              <a href="/privacy">
-                {language === "it"
-                  ? "Politica della privacy"
-                  : "Privicy Policy"}
-              </a>
-            </li>
+            <Link to="/Services">
+              <li>
+                <a href="/services">
+                  {language === "it" ? "Servizi" : "Services"}
+                </a>
+              </li>
+            </Link>
+            <Link to="/policy">
+              <li>
+                <a href="/PrivacyPolicy">
+                  {language === "it"
+                    ? "Politica della privacy"
+                    : "Privicy Policy"}
+                </a>
+              </li>
+            </Link>
           </ul>
+
         </div>
 
         <div className="footerColumns">
-          <h4>{language === "it" ? "Strumenti" : "Who we are"}</h4>
+          <h4>{language === "it" ? "Strumenti" : "Instruments"}</h4>
           <ul>
             <li>React</li>
             <li>GitHub</li>
-            <li>discord</li>
+            <li>Discord</li>
           </ul>
         </div>
       </div>
@@ -70,6 +64,9 @@ export function Footer() {
         <a href="http://"></a>
       </div>
       <div className="copyright">
+      <Link to="/"  className="footerLogo">
+            <img src="src\assets\eventive.png" alt="logo" className="logo" width={50} height={50}/>
+          </Link>
         <p>
           &copy;<a href="/link">EventiveTravels</a>, all rights deserved.
         </p>

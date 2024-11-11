@@ -1,0 +1,66 @@
+/** @format */
+
+.container {
+  display: flex;
+}
+
+.footerCard {
+  background-image: url("../assets/scroll.png");
+  background-position: absolute;
+  background-size: 100% 100%;
+  color: white;
+  width: 15rem;
+  height: 21.7rem;
+
+  .footerImg {
+    margin-top: 3.2rem;
+    margin-left: 18px;
+  }
+  h4 {
+    color: rgb(137, 96, 50);
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+  }
+}
+.contacts {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: black;
+}
+.email {
+  margin-top: 5px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  list-style-type: disc;
+}
+
+.numbers {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logoLinkedin {
+  display: flex;
+  justify-content: right;
+  margin-right: 14px;
+  position: baseline;
+  .imgLogo {
+    border-radius: 50%;
+  }
+}
