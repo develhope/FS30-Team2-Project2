@@ -117,7 +117,7 @@
 #userAreaLogo {
   position: relative;
   right: -30px;
-  top: 10px;
+  bottom: -40px;
   height: 60px;
   width: 60px;
 }

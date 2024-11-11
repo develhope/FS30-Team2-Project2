@@ -2,11 +2,15 @@ import { MapandCalendar } from "../components/MapandCalendar";
 import { useLanguage } from "../context/LanguageContext";
 import "../components/types/Types.css";
 import { Types } from "../components/types/Types";
+import { Animation } from "../components/Animation";
+import { WoodBar } from "../components/WoodBar";
 
 export function Travels() {
   const { language } = useLanguage();
   return (
     <>
+      <Animation textIt={"Viaggi"} textEng={"Travels"} />
+      <WoodBar />
       <div className="banner">
         <h2>
           {language === "it" ? "Scegli dove o quando" : "Choose where or when"}

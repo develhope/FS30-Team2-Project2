@@ -66,7 +66,7 @@ export function Dropdown() {
       <div className="dropdown">
         <img
           id="userAreaLogo"
-          src="src\assets\key.png"
+          src="src\assets\pirate.png"
           onClick={handleOpen}
           alt="userAreaLogo"
         />
