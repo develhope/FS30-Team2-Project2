@@ -4,7 +4,6 @@ import { Navbar } from "./components/Navbar";
 import "./App.css";
 import { Route, Routes, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
-import CalendarContent from "./components/CalendarContent";
 import { Events } from "./pages/Events";
 import { Travels } from "./pages/Travels";
 import { useLanguage } from "./context/LanguageContext";
@@ -43,7 +42,6 @@ function App() {
       <div id="totalContainer">
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/" element={<CalendarContent />}></Route>
           <Route path="/events" element={<Events />}></Route>
           <Route path="/travels" element={<Travels />}></Route>
           <Route path="/about" element={<About />}></Route>
