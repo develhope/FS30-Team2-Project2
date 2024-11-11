@@ -63,7 +63,6 @@ export function Animation({ textIt, textEng }) {
       </div>
       <div
         style={{
-          width: "180px",
           marginRight: "5rem",
           paddingTop: "1.5rem",
           textAlign: "center",
