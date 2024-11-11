@@ -63,11 +63,12 @@ export function Animation({ textIt, textEng }) {
       </div>
       <div
         style={{
-          width: "160px",
+          width: "180px",
           marginRight: "5rem",
           backgroundImage: `url(${scroll})`,
           backgroundSize: "100% 100%",
-          padding: "2rem",
+          paddingTop: "1.5rem",
+          textAlign: "center",
           color: "sienna",
         }}
       >
@@ -78,7 +79,7 @@ export function Animation({ textIt, textEng }) {
           style={{
             height: "40px",
             width: "40px",
-            marginLeft: "30px",
+            marginTop: "5px",
           }}
         />
       </div>
