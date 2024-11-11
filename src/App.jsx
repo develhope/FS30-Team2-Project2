@@ -4,7 +4,7 @@ import { Navbar } from "./components/Navbar";
 import "./App.css";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
-import CalendarContent from "./components/CalendarContent";
+
 import { Events } from "./pages/Events";
 import { Travels } from "./pages/Travels";
 
