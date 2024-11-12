@@ -102,6 +102,7 @@ export function Dropdown() {
               {language === "it" ? "Accedi" : "Login"}
             </button>
             <button onClick={reset}>Reset</button>
+            <button>{language === "it" ? "Nuovo utente?" : "New user?"}</button>
           </div>
         ) : null}
       </div>

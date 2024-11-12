@@ -18,6 +18,7 @@ import { Samerica } from "./pages/continenti/Samerica";
 import { Asia } from "./pages/continenti/Asia";
 import { Europa } from "./pages/continenti/Europa";
 import { Oceania } from "./pages/continenti/Oceania";
+import { Dashboard } from "./pages/Dashboard";
 
 function App() {
   const { setLanguage } = useLanguage();
@@ -54,6 +55,7 @@ function App() {
           <Route path="/asia" element={<Asia />}></Route>
           <Route path="/europa" element={<Europa />}></Route>
           <Route path="/oceania" element={<Oceania />}></Route>
+          <Route path="/dashboard" element={<Dashboard />}></Route>
           <Route path="/*" element={<Pippo />}></Route>
         </Routes>
 
