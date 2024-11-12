@@ -7,7 +7,7 @@
 .container div {
   background-image: url("/src/assets/scroll.png");
   background-size: 100% 100%;
-  padding: 20px;
+  padding: 30px;
 }
 .banner {
   display: flex;
@@ -20,4 +20,11 @@
   position: relative;
   top: -48px;
   color: rgb(49, 48, 48);
+}
+.typesLogo {
+  height: 50px;
+  width: 50px;
+}
+.type {
+  text-align: center;
 }

@@ -16,16 +16,19 @@ export function Types(props) {
         <Link to={props.link1}>
           <div className="type">
             <h2>{props.first}</h2>
+            <img className="typesLogo" src={props.image1} alt="image1" />
           </div>
         </Link>
         <Link to={props.link2}>
           <div className="type">
             <h2>{props.second}</h2>
+            <img className="typesLogo" src={props.image2} alt="image2" />
           </div>
         </Link>
         <Link to={props.link3}>
           <div className="type">
             <h2>{props.third}</h2>
+            <img className="typesLogo" src={props.image3} alt="image3" />
           </div>
         </Link>
       </div>
