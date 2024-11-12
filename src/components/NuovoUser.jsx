@@ -45,15 +45,17 @@ export function NuovoUser() {
           padding: "8rem 4vw",
         }}
       >
-        <label>{language === "it" ? "Nome Utente" : "Username"}</label>
+        <label style={{ fontSize: "15px" }}>
+          {language === "it" ? "Nome Utente" : "Username"}
+        </label>
         <input
           name="username2"
           value={data2.username}
           onChange={handleInput3}
         />
-        <label>Email</label>
+        <label style={{ fontSize: "15px" }}>Email</label>
         <input type="email2" name="email" value={data2.email} />
-        <label>Password</label>
+        <label style={{ fontSize: "15px" }}>Password</label>
         <input
           type="password"
           name="password"
@@ -62,12 +64,15 @@ export function NuovoUser() {
         />
 
         <button
-          style={{ marginTop: "10px" }}
+          style={{ marginTop: "10px", fontSize: "15px" }}
           disabled={!data2.username || !data2.password || !data2.email}
         >
           {language === "it" ? "Registrati" : "Sign in"}
         </button>
-        <button style={{ marginTop: "10px" }} onClick={reset2}>
+        <button
+          style={{ marginTop: "10px", fontSize: "15px" }}
+          onClick={reset2}
+        >
           Reset
         </button>
       </div>
