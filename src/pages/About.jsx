@@ -34,13 +34,13 @@ export function About() {
   return (
     <>
       <div className="container">
-        <div className="footerBigCard">
+        <div className="bigCardFooter">
           <img
-            src="\img\image.png"
+            src="\img\andreaImg.png"
             alt=""
             className="footerBigImg"
-            width={130}
-            height={120}
+            width={100}
+            height={100}
           />
           <h3>Andrea Cosma Marchetti</h3>
           <h5>Fullstack Developer</h5>
@@ -69,7 +69,7 @@ export function About() {
           />
         </div>
         <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={130} height={120} />
+          <img src="\img\noemiImg.jpeg" alt="" className="footerImg" width={100} height={100} />
           <h3>Noemi D'Asta</h3>
           <h5>Fullstack Developer</h5>
           <h6 className="h6Title">
@@ -96,8 +96,8 @@ export function About() {
             onClick={handleLinkedinNoemi}
           />
         </div>
-        <div className="footerBigCard">
-          <img src="" alt="" className="footerBigImg" width={130} height={120} />
+        <div className="bigCardFooter">
+          <img src="\img\GianCosimoImg.jpg" alt="" className="footerBigImg" width={90} height={110} />
           <h3>Giancosimo Calabrese</h3>
           <h5>Fullstack Developer</h5>
           <h6 className="h6Title">
@@ -125,7 +125,7 @@ export function About() {
           />
         </div>
         <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={130} height={120} />
+          <img src="" alt="" className="footerImg" width={100} height={100} />
           <h3>Fiamma Ferrone</h3>
           <h5>Fullstack Developer</h5>
           <h6 className="h6Title">
@@ -153,7 +153,7 @@ export function About() {
           />
         </div>
         <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={130} height={120} />
+          <img src="" alt="" className="footerImg" width={100} height={100} />
           <h3>Stanislao Tufo</h3>
           <h5>Fullstack Developer</h5>
           <h6 className="h6Title">

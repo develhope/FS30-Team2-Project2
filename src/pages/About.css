@@ -7,12 +7,17 @@
 .footerCard {
   background-image: url("../assets/scroll.png");
   background-size: 100% 100%;
-  width: 22rem;
+  width: 15rem;
   height: 22.5rem;
 }
 
 .footerImg {
+  width: 150px;
+  height: 118px;
+  margin-left: 20px;
   margin-top: 32px;
+  border-radius: 5px;
+  border: 2px solid rgb(137, 96, 50);
 }
 
 h3 {
@@ -48,22 +53,25 @@ h5 {
 
 .imgLogo {
   border-radius: 50%;
-  margin-top: 1px;
-  margin-left: 55px;
+  margin-top: 3px;
+  margin-left: 77px;
 }
 
-.footerBigCard {
+.bigCardFooter {
   background-image: url("../assets/scroll.png");
   background-size: 100% 100%;
-  width: 23rem;
-  height: 24.5rem;
+  width: 17rem;
+  height: 23rem;
   .footerBigImg {
+    width: 150px;
+    height: 120px;
     margin-top: 35px;
+    border-radius: 5px;
+    border: 2px solid rgb(137, 96, 50);
   }
   .bigImgLogo {
     border-radius: 50%;
-    margin-top: 3px;
-    margin-bottom: 8rem;
-    margin-left: 55px;
+    margin-top: 5px;
+    margin-left: 85px;
   }
 }
