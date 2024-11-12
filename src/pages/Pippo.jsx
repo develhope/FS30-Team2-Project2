@@ -1,11 +1,15 @@
 import { useLanguage } from "../context/LanguageContext";
 import { Link } from "react-router-dom";
 import scroll from "../assets/scroll.png";
+import { Animation } from "../components/Animation";
+import { WoodBar } from "../components/WoodBar";
 
 export function Pippo() {
   const { language } = useLanguage();
   return (
     <>
+      <Animation textIt={"404"} textEng={"404"} />
+      <WoodBar />
       <div style={{ display: "flex", justifyContent: "center", gap: "3rem" }}>
         <img src="src\assets\pippo.png" alt="pippo" />
         <div

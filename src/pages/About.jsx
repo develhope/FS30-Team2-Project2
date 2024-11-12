@@ -1,4 +1,6 @@
 /** @format */
+import { Animation } from "../components/Animation";
+import { WoodBar } from "../components/WoodBar";
 import "./About.css";
 
 export function About() {
@@ -33,6 +35,8 @@ export function About() {
 
   return (
     <>
+      <Animation textIt={"Contatti"} textEng={"About us"} />
+      <WoodBar />
       <div className="container">
         <div className="footerCard">
           <img

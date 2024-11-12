@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
-import scroll from "../assets/scroll.png";
 
 export function Animation({ textIt, textEng }) {
   const { language } = useLanguage();

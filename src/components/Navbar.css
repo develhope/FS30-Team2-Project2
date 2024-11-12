@@ -134,3 +134,57 @@
   gap: 10px;
   justify-content: center;
 }
+.opacityFilter {
+  width: 100vw;
+  height: 1000px;
+  position: absolute;
+  top: 140px;
+  right: 0px;
+  z-index: 0;
+  padding: 20px;
+  background-color: rgba(222, 161, 85, 0.4);
+  backdrop-filter: blur(5px);
+}
+.closeIcon {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  right: 50px;
+}
+.closeIcon:hover {
+  cursor: pointer;
+}
+#loggedParrot {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 11rem;
+  z-index: 3;
+}
+.parrotDropdown {
+  display: flex;
+}
+.unloggedParrot {
+  width: 150px;
+  height: 150px;
+}
+#popUp {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 3;
+  display: flex;
+}
+#popUpText {
+  background-image: url("../assets/scroll.png");
+  background-size: 100% 100%;
+  width: 10rem;
+  padding: 2rem;
+}
+#popUpLink {
+  color: sienna;
+}
+#popUpLink:hover {
+  cursor: pointer;
+}

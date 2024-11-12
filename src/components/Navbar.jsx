@@ -57,7 +57,7 @@ export function Navbar() {
         </div>
       </nav>
       <div className="wood">
-        <WoodBar />
+        <WoodBar style={{ zIndex: "1" }} />
       </div>
     </>
   );

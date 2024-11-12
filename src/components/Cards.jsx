@@ -30,7 +30,6 @@ const Cards = () => {
           alt="next"
         />
       </div>
-      <WoodBar />
     </div>
   );
 };
