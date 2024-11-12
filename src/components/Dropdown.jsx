@@ -8,7 +8,7 @@ export function Dropdown() {
   const [open, setOpen] = useState(false);
   const [nuovo, setNuovo] = useState(false);
   const { language } = useLanguage();
-
+  const [hidden, setHidden] = useState(false);
   const handleOpen = () => {
     setOpen(!open);
   };
@@ -28,6 +28,11 @@ export function Dropdown() {
         [name]: type === "checkbox" ? checked : value,
       };
     });
+  }
+  function handleToggle() {
+    {
+      hidden ? setHidden(false) : setHidden(true);
+    }
   }
   function reset() {
     setData({
@@ -74,18 +79,22 @@ export function Dropdown() {
             className="unloggedParrot"
             src="src\assets\parrot.png"
             alt="parrot"
+            onClick={handleToggle}
           />
-          <div id="popUpText">
-            <h2 id="popUpLink" onClick={handleNuovo}>
-              {language === "it" ? "Iscriviti" : "Sign in"}
-            </h2>
-            <h2>
-              {language === "it"
-                ? "per aggiungere eventi e viaggi al tuo calendario o crearne di nuovi!"
-                : "to add events and travels to your calendar or to create new ones!"}
-            </h2>
-          </div>
+          {!hidden && (
+            <div id="popUpText">
+              <h2 id="popUpLink" onClick={handleNuovo}>
+                {language === "it" ? "Iscriviti" : "Sign in"}
+              </h2>
+              <h2>
+                {language === "it"
+                  ? "per aggiungere eventi e viaggi al tuo calendario o crearne di nuovi!"
+                  : "to add events and travels to your calendar or to create new ones!"}
+              </h2>
+            </div>
+          )}
         </div>
+
         <div className="dropdown">
           <img
             id="userAreaLogo"
