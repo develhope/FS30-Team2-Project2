@@ -34,26 +34,29 @@ export function About() {
   return (
     <>
       <div className="container">
-        <div className="footerCard">
+        <div className="footerBigCard">
           <img
             src="\img\image.png"
             alt=""
-            className="footerImg"
+            className="footerBigImg"
             width={130}
             height={120}
           />
-          <h4>Andrea Cosma Marchetti</h4>
+          <h3>Andrea Cosma Marchetti</h3>
           <h5>Fullstack Developer</h5>
-          <h6 className="contacts">
+          <h6 className="h6Title">
             Contacts:
-            <p className="email">
-              email:
-              <a href="mailto:" className="email">
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
                 cmcmcmc@gmail.com
               </a>
             </p>
-            <p className="numbers">
-              number:<a href="tel:+">359595944</a>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                +39 359595944
+              </a>
             </p>
           </h6>
           <img
@@ -61,24 +64,27 @@ export function About() {
             alt=""
             width={40}
             height={40}
-            className="imgLogo"
+            className="bigImgLogo"
             onClick={handleLinkedinAndrea}
           />
         </div>
         <div className="footerCard">
           <img src="" alt="" className="footerImg" width={130} height={120} />
-          <h4>Noemi D'Asta</h4>
+          <h3>Noemi D'Asta</h3>
           <h5>Fullstack Developer</h5>
-          <h6 className="contacts">
+          <h6 className="h6Title">
             Contacts:
-            <p className="email">
-              email:
-              <a href="mailto:" className="email">
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
                 cmcmcmc@gmail.com
               </a>
             </p>
-            <p className="numbers">
-              number:<a href="tel:+">359595944</a>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                +39 359595944
+              </a>
             </p>
           </h6>
           <img
@@ -90,20 +96,23 @@ export function About() {
             onClick={handleLinkedinNoemi}
           />
         </div>
-        <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={130} height={120} />
-          <h4>Giancosimo Calabrese</h4>
+        <div className="footerBigCard">
+          <img src="" alt="" className="footerBigImg" width={130} height={120} />
+          <h3>Giancosimo Calabrese</h3>
           <h5>Fullstack Developer</h5>
-          <h6 className="contacts">
+          <h6 className="h6Title">
             Contacts:
-            <p className="email">
-              email:
-              <a href="mailto:" className="email">
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
                 cmcmcmc@gmail.com
               </a>
             </p>
-            <p className="numbers">
-              number:<a href="tel:+">359595944</a>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                +39 359595944
+              </a>
             </p>
           </h6>
           <img
@@ -111,24 +120,27 @@ export function About() {
             alt=""
             width={40}
             height={40}
-            className="imgLogo"
+            className="bigImgLogo"
             onClick={handleLinkedinGian}
           />
         </div>
         <div className="footerCard">
           <img src="" alt="" className="footerImg" width={130} height={120} />
-          <h4>Fiamma Ferrone</h4>
+          <h3>Fiamma Ferrone</h3>
           <h5>Fullstack Developer</h5>
-          <h6 className="contacts">
+          <h6 className="h6Title">
             Contacts:
-            <p className="email">
-              email:
-              <a href="mailto:" className="email">
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
                 cmcmcmc@gmail.com
               </a>
             </p>
-            <p className="numbers">
-              number:<a href="tel:+">359595944</a>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                +39 359595944
+              </a>
             </p>
           </h6>
           <img
@@ -142,18 +154,22 @@ export function About() {
         </div>
         <div className="footerCard">
           <img src="" alt="" className="footerImg" width={130} height={120} />
-          <h4>Stanislao Tufo</h4>
+          <h3>Stanislao Tufo</h3>
           <h5>Fullstack Developer</h5>
-          <h6 className="contacts">
+          <h6 className="h6Title">
             Contacts:
-            <p className="email">
-              email:
-              <a href="mailto:" className="email">
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
                 cmcmcmc@gmail.com
               </a>
             </p>
-            <p className="numbers">
-              number:<a href="tel:+">359595944</a>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                {" "}
+                +39 359595944
+              </a>
             </p>
           </h6>
           <img
