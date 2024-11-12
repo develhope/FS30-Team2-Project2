@@ -16,28 +16,28 @@ export function Footer() {
           <div className="footerColumns">
             <h4> {language === "it" ? "Chi Siamo" : "Who we are"}</h4>
             <ul>
-              <li>Noemi D'asta</li>
-              <li>Fiamma Ferrone</li>
-              <li>Giancosimo Calabrese</li>
-              <li>Andrea Cosma Marchetti</li>
-              <li>Stanislao Tufo</li>
+              <li classname="footerLi">Noemi D'asta</li>
+              <li classname="footerLi">Fiamma Ferrone</li>
+              <li classname="footerLi">Giancosimo Calabrese</li>
+              <li classname="footerLi">Andrea Cosma Marchetti</li>
+              <li classname="footerLi">Stanislao Tufo</li>
             </ul>
           </div>
           <div className="footerColumns">
             <h4>{language === "it" ? "Link inerenti" : "Inerhent link"}</h4>
             <ul>
               <Link to="/About">
-                <li>
+                <li classname="footerLi">
                     {language === "it" ? "Contatti" : "Contacts"}
                 </li>
               </Link>
               <Link to="/Services">
-                <li>
+                <li classname="footerLi">
                     {language === "it" ? "Servizi" : "Services"}
                 </li>
               </Link>
               <Link to="/policy">
-                <li>
+                <li classname="footerLi">
                     {language === "it"
                       ? "Politica della privacy"
                       : "Privicy Policy"}
@@ -49,9 +49,9 @@ export function Footer() {
           <div className="footerColumns">
             <h4>{language === "it" ? "Strumenti" : "Instruments"}</h4>
             <ul>
-              <li>React</li>
-              <li>GitHub</li>
-              <li>Discord</li>
+              <li classname="footerLi">React</li>
+              <li classname="footerLi">GitHub</li>
+              <li classname="footerLi">Discord</li>
             </ul>
           </div>
         </div>

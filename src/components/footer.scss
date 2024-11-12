@@ -1,7 +1,7 @@
 /** @format */
 
 .footer {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 30px;
   background-image: url("../assets/scroll.png");
   background-position: absolute;
@@ -24,47 +24,47 @@
   }
 
   ul {
-    padding: 4px;;
+    padding: 4px;
     align-items: center;
     text-align: center;
     list-style-type: none;
   }
-}
 
-li {
-  transition: 0.2s ease;
-}
-li:hover {
-  text-shadow: #333;
-  color: black;
-  font-size: larger;
-  text-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-  outline: none;
-  border: none;
-  font-size: larger;
-}
-
-p {
-  text-align: center;
-}
-
-.copyright {
-  margin-top: 10px;
-  bottom: 0;
-.rights{
-  margin-left: 7rem;
-}
-  .footerLogo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 17px;
-    margin-left: 25rem;
-    margin-bottom: 10px;
-    opacity: 0.5;
+  .footerLi {
+    transition: 0.2s ease;
   }
-  
-}
-a {
-  color: #4b3b3b;
+
+  .footerLi:hover {
+    text-shadow: #333;
+    color: black;
+    font-size: larger;
+    text-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    font-size: larger;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .copyright {
+    margin-top: 10px;
+    bottom: 0;
+    .rights {
+      margin-left: 7rem;
+    }
+    .footerLogo {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 17px;
+      margin-left: 25rem;
+      margin-bottom: 10px;
+      opacity: 0.5;
+    }
+  }
+  a {
+    color: #4b3b3b;
+  }
 }

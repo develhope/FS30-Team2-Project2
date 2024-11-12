@@ -1,6 +1,16 @@
 /** @format */
 
 .privacy-policy {
-    text-align: center;
+  margin: 20px 30px;
+  text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.hr {
+  margin: 10px auto;
+  background-color: black;
+  border: none;
+  width: 70%;
+  height: 2px;
 }
