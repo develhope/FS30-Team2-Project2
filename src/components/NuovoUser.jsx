@@ -7,17 +7,15 @@ export function NuovoUser() {
     username: "",
     password: "",
     email: "",
-    session: false,
   });
   function handleInput3(event) {
     const name = event.target.name;
     const value = event.target.value;
-    const checked = event.target.checked;
     const type = event.target.type;
     setData2((d) => {
       return {
         ...d,
-        [name]: type === "checkbox" ? checked : value,
+        [name]: value,
       };
     });
   }
@@ -26,7 +24,6 @@ export function NuovoUser() {
       username: "",
       password: "",
       email: "",
-      session: false,
     });
   }
   return (
@@ -49,12 +46,18 @@ export function NuovoUser() {
           {language === "it" ? "Nome Utente" : "Username"}
         </label>
         <input
-          name="username2"
+          type="text"
+          name="username"
           value={data2.username}
           onChange={handleInput3}
         />
         <label style={{ fontSize: "15px" }}>Email</label>
-        <input type="email2" name="email" value={data2.email} />
+        <input
+          type="email"
+          name="email"
+          value={data2.email}
+          onChange={handleInput3}
+        />
         <label style={{ fontSize: "15px" }}>Password</label>
         <input
           type="password"

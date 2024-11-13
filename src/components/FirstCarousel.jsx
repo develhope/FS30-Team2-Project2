@@ -12,23 +12,23 @@ export function FirstCarousel() {
   const trips = [
     {
       image: adventures,
-      descriptionIt: "Viaggio Avventuroso per due",
-      descriptionEng: "Adventurous Trip for two",
+      descriptionIt: "un Viaggio Avventuroso?",
+      descriptionEng: "an Adventurous Trip?",
     },
     {
       image: culture,
-      descriptionIt: "Viaggio nella Cultura per due",
-      descriptionEng: "Cultural Trip for two",
+      descriptionIt: "un Viaggio nella Cultura?",
+      descriptionEng: "a Cultural Trip?",
     },
     {
       image: roadtrip,
-      descriptionIt: "Viaggio On the Road per due",
-      descriptionEng: "On the Road Trip for two",
+      descriptionIt: "un Viaggio On the Road?",
+      descriptionEng: "an On the Road Trip?",
     },
     {
       image: romance,
-      descriptionIt: "Viaggio romantico per due",
-      descriptionEng: "Romantic Trip for two",
+      descriptionIt: "un Viaggio romantico?",
+      descriptionEng: "a Romantic Trip?",
     },
   ];
 
@@ -40,6 +40,11 @@ export function FirstCarousel() {
   return (
     <>
       <div id="container">
+        <div className="description" id="description2">
+          <h2>
+            {language === "it" ? "Cos'hai in mente?" : "What's on your mind?"}
+          </h2>
+        </div>
         <div id="carousel">
           <div className="arrowBg">
             <img

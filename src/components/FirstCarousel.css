@@ -111,6 +111,12 @@
   position: relative;
   bottom: -40px;
 }
+#description2 {
+  bottom: -5px;
+}
+#description2 h2 {
+  width: 300px;
+}
 .description:hover {
   cursor: pointer;
 }
