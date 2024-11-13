@@ -14,11 +14,6 @@ export function Travels() {
     <>
       <Animation textIt={"Viaggi"} textEng={"Travels"} />
       <WoodBar />
-      <div className="banner">
-        <h2 className="bannerText">
-          {language === "it" ? "Scegli dove o quando" : "Choose where or when"}
-        </h2>
-      </div>
       <MapandCalendar />
       <Types
         first={language === "it" ? "Avventura" : "Adventure"}
