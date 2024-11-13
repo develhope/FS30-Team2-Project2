@@ -9,32 +9,32 @@ export function Map() {
         <div className="continenti">
           <Link to="/europa">
             <div className="europa">
-              <a href=""></a>europa
+              <p>Europa</p>
             </div>
           </Link>
           <Link to="/asia">
             <div className="asia">
-              <a href=""></a>asia
+              <p>Asia</p>
             </div>
           </Link>
           <Link to="/africa">
             <div className="africa">
-              <a href=""></a>africa
+              <p>Africa</p>
             </div>
           </Link>
           <Link to="/oceania">
             <div className="oceania">
-              <a href=""></a>oceania
+              <p>Oceania</p>
             </div>
           </Link>
           <Link to="/Namerica">
             <div className="america-nord">
-              <a href=""></a>america del nord
+              <p>America del nord</p>
             </div>
           </Link>
           <Link to="/Samerica">
             <div className="america-sud">
-              <a href=""></a>america del sud
+              <p>America del sud</p>
             </div>
           </Link>
         </div>
