@@ -1,7 +1,7 @@
 #map {
   height: 60rem;
   width: 100rem;
-  margin-left: 6rem;
+  // margin-left: 6rem;
 
   img {
     height: 60rem;
@@ -13,42 +13,45 @@
     border: solid black;
   }
   .europa {
-    left: 40rem;
-    bottom: 49rem;
-    height: 180px;
-    width: 250px;
+    left: 49rem;
+    bottom: 48rem;
+    height: 150px;
+    width: 200px;
   }
   .asia {
-    left: 57rem;
+    left: 62rem;
     bottom: 60rem;
-    height: 220px;
-    width: 450px;
+    height: 280px;
+    width: 360px;
+    border-top-right-radius: 13rem;
   }
   .africa {
-    left: 42rem;
-    bottom: 60rem;
+    left: 48rem;
+    bottom: 65rem;
     height: 300px;
-    width: 300px;
+    width: 220px;
     border-bottom-left-radius: 12rem;
 
   }
   .oceania {
-    left: 74rem;
-    bottom: 70rem;
-    height: 180px;
-    width: 230px;
+    left: 68rem;
+    bottom: 78rem;
+    height: 250px;
+    width: 235px;
+    border-bottom-right-radius: 12rem;
   }
   .america-nord {
-    left: 15rem;
-    bottom: 103rem;
-    height: 200px;
-    width: 300px;
+    left: 24rem;
+    bottom: 110rem;
+    height: 190px;
+    width: 390px;
+    border-top-left-radius: 12rem;
   }
   .america-sud {
-    left: 20rem;
-    bottom: 100rem;
-    height: 350px;
-    width: 280px;
+    left: 33rem;
+    bottom: 110rem;
+    height: 330px;
+    width: 190px;
     border-bottom-left-radius: 10rem;
 
   }
