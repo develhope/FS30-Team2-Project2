@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import "./CalendarContent.css";
 
 import { Calendar, momentLocalizer, Views } from "react-big-calendar";
 import moment from "moment";
@@ -50,6 +51,7 @@ export default function CalendarContent() {
   return (
     <div style={{ height: `500px` }}>
       <Calendar
+        className="calendar-content"
         localizer={localizer}
         events={events}
         view={view}

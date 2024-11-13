@@ -7,6 +7,7 @@ export function MapandCalendar() {
       <div
         style={{
           display: "flex",
+          backgroundImage: "radial-gradient(beige, sienna)",
         }}
       >
         <CalendarContent />
