@@ -3,7 +3,7 @@ import "./PrivacyPolicy.css";
 
 export function PrivacyPolicy() {
   return (
-    <>
+    <div className="privacyContainer">
       <ol className="privacy-policy">
         <p>
           <li>
@@ -119,12 +119,6 @@ export function PrivacyPolicy() {
           <hr className="hr" />
         </p>
       </ol>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
-        cupiditate architecto necessitatibus suscipit officiis, nam non aut
-        corrupti quibusdam hic, velit quas dicta rerum temporibus alias commodi
-        cumque molestias pariatur.
-      </p>
-    </>
+    </div>
   );
 }

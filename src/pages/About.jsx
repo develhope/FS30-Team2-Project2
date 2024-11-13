@@ -53,13 +53,13 @@ export function About() {
             <p className="text">
               - Email:
               <a href="mailto:" className="text">
-                cmcmcmc@gmail.com
+                andreacosmamarchetti@yahoo.com
               </a>
             </p>
             <p className="text">
               - Number:
               <a href="tel:+" className="number">
-                +39 359595944
+                +39 3333306442
               </a>
             </p>
           </h6>
@@ -73,7 +73,13 @@ export function About() {
           />
         </div>
         <div className="footerCard">
-          <img src="\img\noemiImg.jpeg" alt="" className="footerImg" width={100} height={100} />
+          <img
+            src="\img\noemiImg.jpeg"
+            alt=""
+            className="footerImg"
+            width={100}
+            height={100}
+          />
           <h3>Noemi D'Asta</h3>
           <h5>Fullstack Developer</h5>
           <h6 className="h6Title">
@@ -81,13 +87,13 @@ export function About() {
             <p className="text">
               - Email:
               <a href="mailto:" className="text">
-                cmcmcmc@gmail.com
+                noemi.dasta18@gmail.com
               </a>
             </p>
             <p className="text">
               - Number:
               <a href="tel:+" className="number">
-                +39 359595944
+                +39 3274984986
               </a>
             </p>
           </h6>
@@ -100,8 +106,49 @@ export function About() {
             onClick={handleLinkedinNoemi}
           />
         </div>
+
+        <div className="footerCard">
+          <img
+            src="\img\ff.jpg"
+            alt=""
+            className="footerImg"
+            width={100}
+            height={100}
+          />
+          <h3>Fiamma Ferrone</h3>
+          <h5>Fullstack Developer</h5>
+          <h6 className="h6Title">
+            Contacts:
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
+                fiammaferrone149@gmail.com
+              </a>
+            </p>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                +39 3516418375
+              </a>
+            </p>
+          </h6>
+          <img
+            src="\img\logoLinkedin.png"
+            alt=""
+            width={40}
+            height={40}
+            className="imgLogo"
+            onClick={handleLinkedinFiamma}
+          />
+        </div>
         <div className="bigCardFooter">
-          <img src="\img\GianCosimoImg.jpg" alt="" className="footerBigImg" width={90} height={110} />
+          <img
+            src="\img\GianCosimoImg.jpg"
+            alt=""
+            className="footerBigImg"
+            width={90}
+            height={110}
+          />
           <h3>Giancosimo Calabrese</h3>
           <h5>Fullstack Developer</h5>
           <h6 className="h6Title">
@@ -109,7 +156,7 @@ export function About() {
             <p className="text">
               - Email:
               <a href="mailto:" className="text">
-                cmcmcmc@gmail.com
+                giancx91@gmail.com
               </a>
             </p>
             <p className="text">
@@ -129,35 +176,13 @@ export function About() {
           />
         </div>
         <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={100} height={100} />
-          <h3>Fiamma Ferrone</h3>
-          <h5>Fullstack Developer</h5>
-          <h6 className="h6Title">
-            Contacts:
-            <p className="text">
-              - Email:
-              <a href="mailto:" className="text">
-                cmcmcmc@gmail.com
-              </a>
-            </p>
-            <p className="text">
-              - Number:
-              <a href="tel:+" className="number">
-                +39 359595944
-              </a>
-            </p>
-          </h6>
           <img
-            src="\img\logoLinkedin.png"
+            src="\img\stani.jpg"
             alt=""
-            width={40}
-            height={40}
-            className="imgLogo"
-            onClick={handleLinkedinFiamma}
+            className="footerImg"
+            width={100}
+            height={100}
           />
-        </div>
-        <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={100} height={100} />
           <h3>Stanislao Tufo</h3>
           <h5>Fullstack Developer</h5>
           <h6 className="h6Title">
@@ -165,7 +190,7 @@ export function About() {
             <p className="text">
               - Email:
               <a href="mailto:" className="text">
-                cmcmcmc@gmail.com
+                stanitufo@gmail.com
               </a>
             </p>
             <p className="text">

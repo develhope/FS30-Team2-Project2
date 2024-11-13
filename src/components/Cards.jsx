@@ -2,8 +2,9 @@ import Cardsapi from "../assets/cardsapi";
 import Card from "./Card";
 import "./Card.css";
 import { useCarousel2 } from "./useCarousel2";
-import { WoodBar } from "./WoodBar";
+import { useLanguage } from "../context/LanguageContext";
 const Cards = () => {
+  const { language } = useLanguage();
   const { list, goLeft, goRight } = useCarousel2(Cardsapi);
   return (
     <div>
@@ -14,15 +15,25 @@ const Cards = () => {
           src="src\assets\signpost.png"
           alt="previous"
         />
-        {list.slice(0, 3).map((event) => (
-          <div key={event.id}>
-            <Card
-              content={event.content}
-              image={event.image}
-              title={event.title}
-            />
-          </div>
-        ))}
+        {language == "it"
+          ? list.slice(0, 3).map((event) => (
+              <div key={event.id}>
+                <Card
+                  content={event.contentIt}
+                  image={event.image}
+                  title={event.titleIt}
+                />
+              </div>
+            ))
+          : list.slice(0, 3).map((event) => (
+              <div key={event.id}>
+                <Card
+                  content={event.contentEng}
+                  image={event.image}
+                  title={event.titleEng}
+                />
+              </div>
+            ))}
         <img
           onClick={goRight}
           className="next"

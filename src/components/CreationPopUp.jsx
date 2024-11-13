@@ -40,7 +40,7 @@ export function CreationPopUp({ textIt, TextEng }) {
           top: "100px",
           left: "30vw",
           width: "40vw",
-          height: "500px",
+          boxSizing: "border-box",
           right: "30vw",
           backgroundImage: `url(${scroll})`,
           backgroundSize: "100% 100%",
