@@ -66,7 +66,8 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  height: 300px;
+  padding-top: 30px;
+  height: 330px;
   background-image: radial-gradient(beige, sienna);
   font-family: Arial, Helvetica, sans-serif;
 }
