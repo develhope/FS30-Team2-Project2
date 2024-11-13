@@ -13,74 +13,78 @@
     border: solid black;
   }
   .europa {
-    left: 45rem;
-    bottom: 45rem;
-    height: 100px;
-    width: 150px;
+    left: 40rem;
+    bottom: 49rem;
+    height: 180px;
+    width: 250px;
   }
   .asia {
-    left: 65rem;
-    bottom: 50rem;
-    height: 100px;
-    width: 150px;
+    left: 57rem;
+    bottom: 60rem;
+    height: 220px;
+    width: 450px;
   }
   .africa {
-    left: 48rem;
-    bottom: 45rem;
-    height: 100px;
-    width: 150px;
+    left: 42rem;
+    bottom: 60rem;
+    height: 300px;
+    width: 300px;
+    border-bottom-left-radius: 12rem;
+
   }
   .oceania {
-    left: 78rem;
-    bottom: 42rem;
-    height: 100px;
-    width: 150px;
+    left: 74rem;
+    bottom: 70rem;
+    height: 180px;
+    width: 230px;
   }
   .america-nord {
-    left: 18rem;
-    bottom: 70rem;
-    height: 100px;
-    width: 150px;
+    left: 15rem;
+    bottom: 103rem;
+    height: 200px;
+    width: 300px;
   }
   .america-sud {
-    left: 27rem;
-    bottom: 58rem;
-    height: 100px;
-    width: 150px;
+    left: 20rem;
+    bottom: 100rem;
+    height: 350px;
+    width: 280px;
+    border-bottom-left-radius: 10rem;
+
   }
 }
-@media screen and (max-width: 2560px) {
-  .continenti div {
-    background-color: lightgreen;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .continenti div {
-    background-color: blue;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .continenti div {
-    background-color: red;
-  }
-}
-@media screen and (max-width: 768px) {
-  .continenti div {
-    background-color: greenyellow;
-  }
-}
-@media screen and (max-width: 425px) {
-  .continenti div {
-    background-color: orange;
-  }
-}
-@media screen and (max-width: 375px) {
-  .continenti div {
-    background-color: purple;
-  }
-}
-@media screen and (max-width: 320px) {
-  .continenti div {
-    background-color: maroon;
-  }
-}
+// @media screen and (max-width: 2560px) {
+//   .continenti div {
+//     background-color: lightgreen;
+//   }
+// }
+// @media screen and (max-width: 1440px) {
+//   .continenti div {
+//     background-color: blue;
+//   }
+// }
+// @media screen and (max-width: 1024px) {
+//   .continenti div {
+//     background-color: red;
+//   }
+// }
+// @media screen and (max-width: 768px) {
+//   .continenti div {
+//     background-color: greenyellow;
+//   }
+// }
+// @media screen and (max-width: 425px) {
+//   .continenti div {
+//     background-color: orange;
+//   }
+// }
+// @media screen and (max-width: 375px) {
+//   .continenti div {
+//     background-color: purple;
+//   }
+// }
+// @media screen and (max-width: 320px) {
+//   .continenti div {
+//     background-color: maroon;
+//   }
+// }
