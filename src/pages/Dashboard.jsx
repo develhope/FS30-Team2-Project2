@@ -48,11 +48,11 @@ export function Dashboard() {
             onMouseEnter={handleHoverOn}
             onMouseLeave={handleHoverOff}
             style={{
-              width: "75px",
-              height: "75px",
+              width: "5vw",
+              height: "5vw",
               position: "sticky",
-              top: "20px",
-              right: "50px",
+              top: "50px",
+              left: "92vw",
             }}
           />
           <CreationPopUp textIt={"Evento"} textEng={"Events"} />
@@ -79,11 +79,11 @@ export function Dashboard() {
             onMouseEnter={handleHoverOn}
             onMouseLeave={handleHoverOff}
             style={{
-              width: "75px",
-              height: "75px",
+              width: "5vw",
+              height: "5vw",
               position: "sticky",
-              right: "50px",
-              top: "20px",
+              top: "50px",
+              left: "92vw",
             }}
           />
           <CreationPopUp textIt={"Viaggio"} textEng={"Travel"} />
