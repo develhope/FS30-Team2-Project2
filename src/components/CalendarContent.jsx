@@ -78,7 +78,7 @@ export default function CalendarContent() {
           <button onClick={() => setShowModal(false)}>Cancel</button>
         </div>
       )}
-      <h2>Eventi:</h2>
+
       <ul>
         {events.map((event, index) => (
           <li key={index}>
