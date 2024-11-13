@@ -7,61 +7,72 @@
 
 .footerCard {
   background-image: url("../assets/scroll.png");
-  background-position: absolute;
   background-size: 100% 100%;
-  color: white;
   width: 15rem;
-  height: 21.7rem;
-
-  .footerImg {
-    margin-top: 3.2rem;
-    margin-left: 18px;
-  }
-  h4 {
-    color: rgb(137, 96, 50);
-    text-align: center;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-  h5 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    margin-left: 20px;
-    color: black;
-  }
+  height: 22.5rem;
 }
-.contacts {
-  text-align: left;
+
+.footerImg {
+  width: 150px;
+  height: 118px;
   margin-left: 20px;
+  margin-top: 32px;
+  border-radius: 5px;
+  border: 2px solid rgb(137, 96, 50);
+}
+
+h3 {
+  color: rgb(137, 96, 50);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: black;
+}
+.h6Title {
+  text-align: left;
   margin-top: 3px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
   color: black;
 }
-.email {
+
+.text {
   margin-top: 5px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: smaller;
   list-style-type: disc;
+  color: black;
+  .number {
+    color: black;
+  }
 }
 
-.numbers {
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: smaller;
+.imgLogo {
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: 77px;
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.logoLinkedin {
-  display: flex;
-  justify-content: right;
-  margin-right: 14px;
-  position: baseline;
-  .imgLogo {
+.bigCardFooter {
+  background-image: url("../assets/scroll.png");
+  background-size: 100% 100%;
+  width: 17rem;
+  height: 23rem;
+  .footerBigImg {
+    width: 150px;
+    height: 120px;
+    margin-top: 35px;
+    border-radius: 5px;
+    border: 2px solid rgb(137, 96, 50);
+  }
+  .bigImgLogo {
     border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 85px;
   }
 }

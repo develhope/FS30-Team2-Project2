@@ -16,37 +16,31 @@ export function Footer() {
           <div className="footerColumns">
             <h4> {language === "it" ? "Chi Siamo" : "Who we are"}</h4>
             <ul>
-              <li>Noemi D'asta</li>
-              <li>Fiamma Ferrone</li>
-              <li>Giancosimo Calabrese</li>
-              <li>Andrea Cosma Marchetti</li>
-              <li>Stanislao Tufo</li>
+              <li className="footerLi">Noemi D'asta</li>
+              <li className="footerLi">Fiamma Ferrone</li>
+              <li className="footerLi">Giancosimo Calabrese</li>
+              <li className="footerLi">Andrea Cosma Marchetti</li>
+              <li className="footerLi">Stanislao Tufo</li>
             </ul>
           </div>
           <div className="footerColumns">
             <h4>{language === "it" ? "Link inerenti" : "Inerhent link"}</h4>
             <ul>
-              <Link to="/About">
-                <li>
-                  <a href="/about">
-                    {language === "it" ? "Contatti" : "Contacts"}
-                  </a>
+              <Link to="/About" className="links">
+                <li className="footerLi">
+                  {language === "it" ? "Contatti" : "Contacts"}
                 </li>
               </Link>
-              <Link to="/Services">
-                <li>
-                  <a href="/services">
-                    {language === "it" ? "Servizi" : "Services"}
-                  </a>
+              <Link to="/Services" className="links">
+                <li className="footerLi">
+                  {language === "it" ? "Servizi" : "Services"}
                 </li>
               </Link>
-              <Link to="/policy">
-                <li>
-                  <a href="/PrivacyPolicy">
-                    {language === "it"
-                      ? "Politica della privacy"
-                      : "Privicy Policy"}
-                  </a>
+              <Link to="/policy" className="links">
+                <li className="footerLi">
+                  {language === "it"
+                    ? "Politica della privacy"
+                    : "Privicy Policy"}
                 </li>
               </Link>
             </ul>
@@ -55,30 +49,23 @@ export function Footer() {
           <div className="footerColumns">
             <h4>{language === "it" ? "Strumenti" : "Instruments"}</h4>
             <ul>
-              <li>React</li>
-              <li>GitHub</li>
-              <li>Discord</li>
+              <li className="footerLi">React</li>
+              <li className="footerLi">GitHub</li>
+              <li className="footerLi">Discord</li>
             </ul>
           </div>
         </div>
-        <div className="socialIcons">
-          <a href="http://"></a>
-          <a href="http://"></a>
-        </div>
-        <div className="copyright">
-          <Link to="/" className="footerLogo">
-            <img
-              src="src\assets\eventive.png"
-              alt="logo"
-              className="logo"
-              width={50}
-              height={50}
-            />
-          </Link>
-          <p>
-            &copy;<a href="/link">EventiveTravels</a>, all rights deserved.
-          </p>
-        </div>
+
+        <img
+          src="src\assets\eventive.png"
+          alt="logo"
+          className="footerLogo"
+          width={105}
+          height={80}
+        />
+        <p className="endFooter">
+          &copy;<a href="/link" className="links">EventiveTravels</a>, all rights deserved.
+        </p>
       </footer>
     </>
   );

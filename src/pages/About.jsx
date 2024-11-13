@@ -38,156 +38,152 @@ export function About() {
       <Animation textIt={"Contatti"} textEng={"About us"} />
       <WoodBar />
       <div className="container">
-        <div className="footerCard">
+        <div className="bigCardFooter">
           <img
-            src="\img\image.png"
+            src="\img\andreaImg.png"
             alt=""
-            className="footerImg"
-            width={130}
-            height={120}
+            className="footerBigImg"
+            width={100}
+            height={100}
           />
-          <h4>Andrea Cosma Marchetti</h4>
+          <h3>Andrea Cosma Marchetti</h3>
           <h5>Fullstack Developer</h5>
-          <div>
-            <h6 className="contacts">
-              Contacts:
-              <p className="email">
-                email:
-                <a href="mailto:" className="email">
-                  cmcmcmc@gmail.com
-                </a>
-              </p>
-              <p className="numbers">
-                number:<a href="tel:+">359595944</a>
-              </p>
-            </h6>
-            <div className="logoLinkedin">
-              <img
-                src="\img\logoLinkedin.png"
-                alt=""
-                width={40}
-                height={40}
-                className="imgLogo"
-                onClick={handleLinkedinAndrea}
-              />
-            </div>
-          </div>
+          <h6 className="h6Title">
+            Contacts:
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
+                cmcmcmc@gmail.com
+              </a>
+            </p>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                +39 359595944
+              </a>
+            </p>
+          </h6>
+          <img
+            src="\img\logoLinkedin.png"
+            alt=""
+            width={40}
+            height={40}
+            className="bigImgLogo"
+            onClick={handleLinkedinAndrea}
+          />
         </div>
         <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={130} height={120} />
-          <h4>Noemi D'Asta</h4>
+          <img src="\img\noemiImg.jpeg" alt="" className="footerImg" width={100} height={100} />
+          <h3>Noemi D'Asta</h3>
           <h5>Fullstack Developer</h5>
-          <div>
-            <h6 className="contacts">
-              Contacts:
-              <p className="email">
-                email:
-                <a href="mailto:" className="email">
-                  cmcmcmc@gmail.com
-                </a>
-              </p>
-              <p className="numbers">
-                number:<a href="tel:+">359595944</a>
-              </p>
-            </h6>
-          </div>
-          <div className="logoLinkedin">
-            <img
-              src="\img\logoLinkedin.png"
-              alt=""
-              width={40}
-              height={40}
-              className="imgLogo"
-              onClick={handleLinkedinNoemi}
-            />
-          </div>
+          <h6 className="h6Title">
+            Contacts:
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
+                cmcmcmc@gmail.com
+              </a>
+            </p>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                +39 359595944
+              </a>
+            </p>
+          </h6>
+          <img
+            src="\img\logoLinkedin.png"
+            alt=""
+            width={40}
+            height={40}
+            className="imgLogo"
+            onClick={handleLinkedinNoemi}
+          />
+        </div>
+        <div className="bigCardFooter">
+          <img src="\img\GianCosimoImg.jpg" alt="" className="footerBigImg" width={90} height={110} />
+          <h3>Giancosimo Calabrese</h3>
+          <h5>Fullstack Developer</h5>
+          <h6 className="h6Title">
+            Contacts:
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
+                cmcmcmc@gmail.com
+              </a>
+            </p>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                +39 359595944
+              </a>
+            </p>
+          </h6>
+          <img
+            src="\img\logoLinkedin.png"
+            alt=""
+            width={40}
+            height={40}
+            className="bigImgLogo"
+            onClick={handleLinkedinGian}
+          />
         </div>
         <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={130} height={120} />
-          <h4>Giancosimo Calabrese</h4>
+          <img src="" alt="" className="footerImg" width={100} height={100} />
+          <h3>Fiamma Ferrone</h3>
           <h5>Fullstack Developer</h5>
-          <div>
-            <h6 className="contacts">
-              Contacts:
-              <p className="email">
-                email:
-                <a href="mailto:" className="email">
-                  cmcmcmc@gmail.com
-                </a>
-              </p>
-              <p className="numbers">
-                number:<a href="tel:+">359595944</a>
-              </p>
-            </h6>
-          </div>
-          <div className="logoLinkedin">
-            <img
-              src="\img\logoLinkedin.png"
-              alt=""
-              width={40}
-              height={40}
-              className="imgLogo"
-              onClick={handleLinkedinGian}
-            />
-          </div>
+          <h6 className="h6Title">
+            Contacts:
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
+                cmcmcmc@gmail.com
+              </a>
+            </p>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                +39 359595944
+              </a>
+            </p>
+          </h6>
+          <img
+            src="\img\logoLinkedin.png"
+            alt=""
+            width={40}
+            height={40}
+            className="imgLogo"
+            onClick={handleLinkedinFiamma}
+          />
         </div>
         <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={130} height={120} />
-          <h4>Fiamma Ferrone</h4>
+          <img src="" alt="" className="footerImg" width={100} height={100} />
+          <h3>Stanislao Tufo</h3>
           <h5>Fullstack Developer</h5>
-          <div>
-            <h6 className="contacts">
-              Contacts:
-              <p className="email">
-                email:
-                <a href="mailto:" className="email">
-                  cmcmcmc@gmail.com
-                </a>
-              </p>
-              <p className="numbers">
-                number:<a href="tel:+">359595944</a>
-              </p>
-            </h6>
-          </div>
-          <div className="logoLinkedin">
-            <img
-              src="\img\logoLinkedin.png"
-              alt=""
-              width={40}
-              height={40}
-              className="imgLogo"
-              onClick={handleLinkedinFiamma}
-            />
-          </div>
-        </div>
-        <div className="footerCard">
-          <img src="" alt="" className="footerImg" width={130} height={120} />
-          <h4>Stanislao Tufo</h4>
-          <h5>Fullstack Developer</h5>
-          <div>
-            <h6 className="contacts">
-              Contacts:
-              <p className="email">
-                email:
-                <a href="mailto:" className="email">
-                  cmcmcmc@gmail.com
-                </a>
-              </p>
-              <p className="numbers">
-                number:<a href="tel:+">359595944</a>
-              </p>
-            </h6>
-          </div>
-          <div className="logoLinkedin">
-            <img
-              src="\img\logoLinkedin.png"
-              alt=""
-              width={40}
-              height={40}
-              className="imgLogo"
-              onClick={handleLinkedinStani}
-            />
-          </div>
+          <h6 className="h6Title">
+            Contacts:
+            <p className="text">
+              - Email:
+              <a href="mailto:" className="text">
+                cmcmcmc@gmail.com
+              </a>
+            </p>
+            <p className="text">
+              - Number:
+              <a href="tel:+" className="number">
+                {" "}
+                +39 359595944
+              </a>
+            </p>
+          </h6>
+          <img
+            src="\img\logoLinkedin.png"
+            alt=""
+            width={40}
+            height={40}
+            className="imgLogo"
+            onClick={handleLinkedinStani}
+          />
         </div>
       </div>
       {/* <p>
