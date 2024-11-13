@@ -27,7 +27,7 @@ export function FirstCarousel() {
     },
     {
       image: romance,
-      descriptionIt: "un Viaggio romantico?",
+      descriptionIt: "un Viaggio Romantico?",
       descriptionEng: "a Romantic Trip?",
     },
   ];
