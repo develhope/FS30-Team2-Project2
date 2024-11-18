@@ -88,9 +88,6 @@ export function FirstCarousel() {
             {language === "it" ? second.descriptionIt : second.descriptionEng}
           </h2>
         </div>
-        <div className="woodbarbottom">
-          <WoodBar />
-        </div>
       </div>
     </>
   );

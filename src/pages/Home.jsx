@@ -9,6 +9,7 @@ export function Home() {
       <Animation textIt={"Eventive Travels"} textEng={"Eventive Travels"} />
       <WoodBar />
       <FirstCarousel />
+      <WoodBar />
       <Cards />
     </>
   );
