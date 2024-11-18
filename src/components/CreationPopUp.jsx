@@ -1,7 +1,7 @@
 import { useState } from "react";
 import scroll from "../assets/scroll.png";
 import { useLanguage } from "../context/LanguageContext";
-export function CreationPopUp({ textIt, TextEng }) {
+export function CreationPopUp({ textIt, textEng }) {
   const { language } = useLanguage();
   const [data, setData] = useState({
     title: "",

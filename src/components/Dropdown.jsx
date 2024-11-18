@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
-import { NuovoUser } from "./NuovoUser";
+import { UserList } from "../assets/UserList";
 
 import "./Navbar.css";
-
+const nameCheck = UserList.filter(check);
+function check(value) {
+  return value;
+}
 export function Dropdown() {
   const [open, setOpen] = useState(false);
   const [nuovo, setNuovo] = useState(false);
@@ -17,6 +20,11 @@ export function Dropdown() {
     password: "",
     session: false,
   });
+  const [data2, setData2] = useState({
+    username: "",
+    password: "",
+    email: "",
+  });
   function handleInput2(event) {
     const name = event.target.name;
     const value = event.target.value;
@@ -28,6 +36,50 @@ export function Dropdown() {
         [name]: type === "checkbox" ? checked : value,
       };
     });
+  }
+  function handleInput3(event) {
+    const name = event.target.name;
+    const value = event.target.value;
+    setData2((d) => {
+      return {
+        ...d,
+        [name]: value,
+      };
+    });
+  }
+  function reset2() {
+    setData2({
+      username: "",
+      password: "",
+      email: "",
+    });
+  }
+  function createNew() {
+    const isValidUser = () => {
+      const userExistsInList = UserList.some(
+        (user) => user.username === data2.username
+      );
+      return userExistsInList;
+    };
+    if (isValidUser()) {
+      alert(
+        language === "it"
+          ? "Username già esistente!"
+          : "Username already in use!"
+      );
+    } else {
+      sessionStorage.setItem("username", data2.username);
+      sessionStorage.setItem("password", data2.password);
+      localStorage.setItem("username", data2.username);
+      localStorage.setItem("password", data2.password);
+      alert(
+        language === "it"
+          ? "Profilo creato correttamente!"
+          : "Profile created successfully!"
+      );
+      reset2();
+      setNuovo(false);
+    }
   }
   function handleToggle() {
     {
@@ -58,20 +110,42 @@ export function Dropdown() {
     setUsername("");
     setPassword("");
   }
+
   function onLogin() {
-    if (data.session == false) {
-      sessionStorage.setItem("username", data.username);
-      sessionStorage.setItem("password", data.password);
+    const isValidUser = () => {
+      const userExistsInList = UserList.some(
+        (user) =>
+          user.username === data.username && user.password === data.password
+      );
+      const storedUsername =
+        localStorage.getItem("username") || sessionStorage.getItem("username");
+      const storedPassword =
+        localStorage.getItem("password") || sessionStorage.getItem("password");
+      const userExistsInStorage =
+        storedUsername === data.username && storedPassword === data.password;
+      return userExistsInList || userExistsInStorage;
+    };
+    if (isValidUser()) {
+      if (data.session === false) {
+        sessionStorage.setItem("username", data.username);
+        sessionStorage.setItem("password", data.password);
+      } else {
+        localStorage.setItem("username", data.username);
+        localStorage.setItem("password", data.password);
+      }
+      setUsername(data.username);
+      setPassword(data.password);
+      reset();
     } else {
-      localStorage.setItem("username", data.username);
-      localStorage.setItem("password", data.password);
+      alert(
+        language === "it"
+          ? "Username o password non validi!"
+          : "Invalid username or password!"
+      );
     }
-    setUsername(loggedUsername);
-    setPassword(loggedPassword);
-    reset();
   }
 
-  if (!loggedUsername) {
+  if (!username) {
     return (
       <>
         <div id="popUp">
@@ -105,11 +179,13 @@ export function Dropdown() {
           {open ? (
             <div className="loginDropdown">
               <input
+                placeholder="username"
                 name="username"
                 value={data.username}
                 onChange={handleInput2}
               />
               <input
+                placeholder="password"
                 type="password"
                 name="password"
                 value={data.password}
@@ -148,7 +224,60 @@ export function Dropdown() {
                   src="src\assets\close.png"
                   alt="close"
                 />
-                <NuovoUser />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "10px",
+                    position: "absolute",
+                    width: "40vw",
+                    height: "500px",
+                    right: "30vw",
+                    backgroundImage: `url(${scroll})`,
+                    backgroundSize: "100% 100%",
+                    padding: "8rem 4vw",
+                  }}
+                >
+                  <label style={{ fontSize: "15px" }}>
+                    {language === "it" ? "Nome Utente" : "Username"}
+                  </label>
+                  <input
+                    type="text"
+                    name="username"
+                    value={data2.username}
+                    onChange={handleInput3}
+                  />
+                  <label style={{ fontSize: "15px" }}>Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={data2.email}
+                    onChange={handleInput3}
+                  />
+                  <label style={{ fontSize: "15px" }}>Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    value={data2.password}
+                    onChange={handleInput3}
+                  />
+
+                  <button
+                    style={{ marginTop: "10px", fontSize: "15px" }}
+                    disabled={
+                      !data2.username || !data2.password || !data2.email
+                    }
+                    onClick={createNew}
+                  >
+                    {language === "it" ? "Registrati" : "Sign in"}
+                  </button>
+                  <button
+                    style={{ marginTop: "10px", fontSize: "15px" }}
+                    onClick={reset2}
+                  >
+                    Reset
+                  </button>
+                </div>
               </div>
             </>
           ) : null}
