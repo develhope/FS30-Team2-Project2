@@ -68,7 +68,7 @@ export function Footer() {
           />
           <p className="endFooter">
             &copy;
-            <Link to="/">EventiveTravels</Link>, all rights deserved.
+            <Link to="/">EventiveTravels</Link>{language === "it" ? ", tutti i diritti riservati." : ", all rights deserved."}
           </p>
         </div>
       </footer>
