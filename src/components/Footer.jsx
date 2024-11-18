@@ -14,7 +14,10 @@ export function Footer() {
       <footer className="footer">
         <div className="columnsContainer">
           <div className="footerColumns">
-            <h4> {language === "it" ? "Chi Siamo" : "Who we are"}</h4>
+            <h4 className="firstTitle">
+              {" "}
+              {language === "it" ? "Chi Siamo" : "Who we are"}
+            </h4>
             <ul>
               <li className="footerLi">Noemi D'asta</li>
               <li className="footerLi">Fiamma Ferrone</li>
@@ -48,24 +51,26 @@ export function Footer() {
 
           <div className="footerColumns">
             <h4>{language === "it" ? "Strumenti" : "Instruments"}</h4>
-            <ul>
+            <ul className="mediaUl">
               <li className="footerLi">React</li>
               <li className="footerLi">GitHub</li>
               <li className="footerLi">Discord</li>
             </ul>
           </div>
         </div>
-
-        <img
-          src="src\assets\eventive.png"
-          alt="logo"
-          className="footerLogo"
-          width={105}
-          height={80}
-        />
-        <p className="endFooter">
-          &copy;<a href="/link" className="links">EventiveTravels</a>, all rights deserved.
-        </p>
+        <div className="mediaLogo">
+          <img
+            src="src\assets\eventive.png"
+            alt="logo"
+            className="footerLogo"
+            width={100}
+            height={80}
+          />
+          <p className="endFooter">
+            &copy;
+            <Link to="/">EventiveTravels</Link>{language === "it" ? ", tutti i diritti riservati." : ", all rights deserved."}
+          </p>
+        </div>
       </footer>
     </>
   );

@@ -12,6 +12,7 @@
 
 .columnsContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 10px;
 }
@@ -52,15 +53,63 @@
 
 .footerLogo {
   position: absolute;
+  z-index: 1;
   bottom: 0;
   left: 0;
   padding: 17px;
-  margin-left: 36rem;
+  margin-left: 40vw;
   margin-bottom: 15px;
   opacity: 0.5;
 }
 .endFooter {
   color: #4b3b3b;
   position: relative;
-  margin-left: 40rem;
+  margin-left: 44vw;
 }
+
+@media only screen and (max-width: 700px) {
+  .columnsContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .firstTitle {
+    margin-top: 12vw;
+  }
+  h4 {
+    margin-top: 8px;
+    margin-bottom: 0 auto;
+  }
+  .mediaUl {
+    margin-bottom: 10px;
+  }
+
+  .footerLogo {
+    position: relative;
+    z-index: 0;
+    bottom: 3vw;
+    right: 40vw;
+    margin-left: 29vw;
+    margin-bottom: 19px;
+  }
+  .endFooter {
+    text-align: center;
+    color: #4b3b3b;
+    bottom: 16vw;
+    left: 0vw;
+    margin-top: 3vw;
+    margin-right: 20vw;
+    margin-left: 23vw;;
+
+    .links {
+      text-align: center;
+      right: 0;
+      margin-right: 5vw;
+      margin-bottom: 7vw;
+      text-align: right;
+      padding: 0%;
+    }
+  }
+}
+
+
