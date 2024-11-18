@@ -18,7 +18,7 @@ export function Footer() {
               {" "}
               {language === "it" ? "Chi Siamo" : "Who we are"}
             </h4>
-            <ul>
+            <ul id="footerUl">
               <li className="footerLi">Noemi D'asta</li>
               <li className="footerLi">Fiamma Ferrone</li>
               <li className="footerLi">Giancosimo Calabrese</li>
@@ -28,7 +28,7 @@ export function Footer() {
           </div>
           <div className="footerColumns">
             <h4>{language === "it" ? "Link inerenti" : "Inerhent link"}</h4>
-            <ul>
+            <ul id="footerUl">
               <Link to="/About" className="links">
                 <li className="footerLi">
                   {language === "it" ? "Contatti" : "Contacts"}
@@ -51,7 +51,7 @@ export function Footer() {
 
           <div className="footerColumns">
             <h4>{language === "it" ? "Strumenti" : "Instruments"}</h4>
-            <ul className="mediaUl">
+            <ul id="footerUl" className="mediaUl">
               <li className="footerLi">React</li>
               <li className="footerLi">GitHub</li>
               <li className="footerLi">Discord</li>
@@ -68,7 +68,10 @@ export function Footer() {
           />
           <p className="endFooter">
             &copy;
-            <Link to="/">EventiveTravels</Link>{language === "it" ? ", tutti i diritti riservati." : ", all rights deserved."}
+            <Link to="/">EventiveTravels</Link>
+            {language === "it"
+              ? ", tutti i diritti riservati."
+              : ", all rights deserved."}
           </p>
         </div>
       </footer>
