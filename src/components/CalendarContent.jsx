@@ -49,7 +49,7 @@ export default function CalendarContent() {
   };
 
   return (
-    <div className="calendar-wrapper" style={{ height: `500px` }}>
+    <div style={{ height: `500px` }}>
       <Calendar
         className="calendar-content"
         localizer={localizer}
@@ -59,7 +59,6 @@ export default function CalendarContent() {
         onView={handleOnChangeView}
         startAccessor="start"
         endAccessor="end"
-        style={{ margin: `50px` }}
         selectable
         onSelectSlot={handleSelectSlot}
       />
