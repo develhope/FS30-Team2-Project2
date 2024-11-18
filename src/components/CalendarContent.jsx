@@ -49,13 +49,13 @@ export default function CalendarContent() {
   };
 
   return (
-    <div style={{ height: `500px` }}>
+    <div className="calendar-wrapper" style={{ height: `500px` }}>
       <Calendar
         className="calendar-content"
         localizer={localizer}
         events={events}
         view={view}
-        views={["work_week", "day"]}
+        views={["work_week", "day", "month"]}
         onView={handleOnChangeView}
         startAccessor="start"
         endAccessor="end"
@@ -79,7 +79,7 @@ export default function CalendarContent() {
         </div>
       )}
 
-      <ul>
+      <ul id="list-event">
         {events.map((event, index) => (
           <li key={index}>
             {event.title} - {event.start.toLocaleString()}
