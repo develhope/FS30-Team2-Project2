@@ -141,10 +141,10 @@
   backdrop-filter: blur(5px);
 }
 .closeIcon {
-  width: 75px;
-  height: 75px;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
-  right: 50px;
+  right: 2rem;
 }
 .closeIcon:hover {
   cursor: pointer;
@@ -208,6 +208,9 @@
 }
 
 @media only screen and (max-width: 760px) {
+  #nuovoUser {
+    right: 10vw;
+  }
   .nav-links {
     gap: 5px;
     flex-direction: column;

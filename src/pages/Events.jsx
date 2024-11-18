@@ -16,7 +16,7 @@ export function Events() {
       <WoodBar />
 
       <MapandCalendar />
-      <Types
+      {/* <Types
         first={language === "it" ? "Musica" : "Music"}
         second={
           language === "it" ? "Feste e Sagre" : "Celebrations and Festivals"
@@ -28,7 +28,7 @@ export function Events() {
         image1={music}
         image2={celebrations}
         image3={live}
-      />
+      /> */}
     </>
   );
 }
