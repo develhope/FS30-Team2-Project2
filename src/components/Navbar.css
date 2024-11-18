@@ -68,6 +68,8 @@
 .navbar-right {
   display: flex;
   height: 108px;
+  position: relative;
+  right: 15px;
 }
 .navbar-right div {
   text-decoration: none;
@@ -93,15 +95,15 @@
 .dropdown {
   position: relative;
   top: 10px;
-  right: 0px;
 }
 .hiddenDropdown {
   height: 100px;
   background-image: url("../assets/scroll.png");
   background-position: center;
   background-size: 100% 100%;
+  width: 120px;
 }
-.hiddenDropdown h2 {
+.hiddenDropdown h3 {
   position: relative;
   top: 20px;
 }
@@ -124,6 +126,8 @@
   cursor: pointer;
 }
 #userLinks {
+  position: relative;
+  top: -10px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -133,8 +137,10 @@
   height: 100vh;
   position: absolute;
   top: 0px;
-  right: 0px;
-  z-index: 2;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
   margin-top: 140px;
   padding-top: 20px;
   background-color: rgba(222, 161, 85, 0.4);
@@ -149,17 +155,7 @@
 .closeIcon:hover {
   cursor: pointer;
 }
-#loggedParrot {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 30px;
-  right: 11rem;
-  z-index: 3;
-}
-.parrotDropdown {
-  display: flex;
-}
+
 .unloggedParrot {
   width: 150px;
   height: 150px;
@@ -198,10 +194,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  position: absolute;
   width: 25rem;
   height: 500px;
-  right: 40vw;
   background-image: url(../assets/scroll.png);
   background-size: 100% 100%;
   padding: 8rem 4vw;
@@ -210,6 +204,11 @@
 @media only screen and (max-width: 760px) {
   #nuovoUser {
     right: 10vw;
+  }
+  .closeIcon {
+    top: 5rem;
+    height: 3rem;
+    width: 3rem;
   }
   .nav-links {
     gap: 5px;
