@@ -224,20 +224,7 @@ export function Dropdown() {
                   src="src\assets\close.png"
                   alt="close"
                 />
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "10px",
-                    position: "absolute",
-                    width: "40vw",
-                    height: "500px",
-                    right: "30vw",
-                    backgroundImage: `url(${scroll})`,
-                    backgroundSize: "100% 100%",
-                    padding: "8rem 4vw",
-                  }}
-                >
+                <div id="nuovoUser">
                   <label style={{ fontSize: "15px" }}>
                     {language === "it" ? "Nome Utente" : "Username"}
                   </label>
