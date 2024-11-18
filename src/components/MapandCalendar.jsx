@@ -7,7 +7,7 @@ export function MapandCalendar() {
       <div
         style={{
           display: "flex",
-          backgroundColor: "#f1e2c6 ",
+          backgroundColor: "#d2b19c  ",
         }}
       >
         <CalendarContent />
