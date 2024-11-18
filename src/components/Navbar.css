@@ -165,7 +165,7 @@
   width: 150px;
   height: 150px;
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   left: 0px;
 }
 .unloggedParrot:hover {
@@ -178,15 +178,20 @@
 #popUpText {
   background-image: url("../assets/scroll.png");
   background-size: 100% 100%;
-  width: 10rem;
+  width: 12rem;
   padding: 2rem;
   position: fixed;
   bottom: 0px;
   left: 140px;
 }
+#popUpText h2 {
+  font-size: 15px;
+  margin-top: 0px;
+}
 #popUpLink {
   color: sienna;
 }
+
 #popUpLink:hover {
   cursor: pointer;
 }
