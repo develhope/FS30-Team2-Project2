@@ -51,9 +51,7 @@ export function Navbar() {
           </div>
         </div>
         <div className="navbar-right">
-          <div>
-            <Dropdown />
-          </div>
+          <Dropdown />
         </div>
       </nav>
       <div className="wood">
