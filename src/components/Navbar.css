@@ -10,16 +10,16 @@
   color: black;
   position: sticky;
   top: 30px;
-  z-index: 1;
+  z-index: 3;
   width: 100vw;
 }
 .navbar-left {
   display: flex;
 }
 .wood {
-  z-index: 1;
+  z-index: 3;
   position: sticky;
-  top: 140px;
+  top: 139px;
 }
 
 .navbar-left .logo {
@@ -85,16 +85,15 @@
   background-position: center;
   background-size: 100% 100%;
   padding: 1rem;
-  position: relative;
+  position: absolute;
   z-index: 2;
-  top: -107px;
+  top: -47px;
   right: 80px;
 }
 .dropdown {
   position: relative;
   top: 10px;
-  margin-right: 1rem;
-  width: 10.3rem;
+  right: 0px;
 }
 .hiddenDropdown {
   height: 100px;
@@ -112,7 +111,7 @@
 }
 #userAreaLogo {
   position: relative;
-  right: -30px;
+  right: 20px;
   bottom: -40px;
   height: 60px;
   width: 60px;
@@ -211,7 +210,6 @@
 @media only screen and (max-width: 760px) {
   .nav-links {
     gap: 5px;
-    padding-left: 20px;
     flex-direction: column;
     justify-content: space-around;
   }
@@ -231,7 +229,7 @@
   }
   #userAreaLogo {
     position: relative;
-    right: 40px;
+    right: 20px;
     bottom: -59px;
     height: 40px;
     width: 40px;
@@ -239,7 +237,6 @@
   .loginDropdown {
     padding: 10px;
     gap: 2px;
-    top: -88px;
     right: 90px;
     height: 150px;
     width: 120px;
@@ -248,7 +245,7 @@
 @media only screen and (min-width: 761px) and (max-width: 1024px) {
   #userAreaLogo {
     position: relative;
-    right: -40px;
+    right: 0px;
     bottom: -59px;
     height: 40px;
     width: 40px;
@@ -256,8 +253,7 @@
   .loginDropdown {
     padding: 10px;
     gap: 2px;
-    top: -88px;
-    right: 20px;
+    right: 40px;
     height: 150px;
     width: 120px;
   }

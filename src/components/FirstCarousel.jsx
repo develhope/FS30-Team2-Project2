@@ -40,7 +40,7 @@ export function FirstCarousel() {
   return (
     <>
       <div id="container">
-        <div className="description" id="description2">
+        <div className="description" id="descriptionUp">
           <h2>
             {language === "it" ? "Cos'hai in mente?" : "What's on your mind?"}
           </h2>
@@ -83,7 +83,7 @@ export function FirstCarousel() {
             />
           </div>
         </div>
-        <div className="description">
+        <div className="description" id="descriptionDown">
           <h2>
             {language === "it" ? second.descriptionIt : second.descriptionEng}
           </h2>

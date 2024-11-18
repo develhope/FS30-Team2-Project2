@@ -1,8 +1,7 @@
-import { createContext, useState } from "react";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import "./App.css";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Events } from "./pages/Events";
 import { Travels } from "./pages/Travels";
