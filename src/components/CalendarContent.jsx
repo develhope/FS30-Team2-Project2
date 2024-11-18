@@ -79,7 +79,7 @@ export default function CalendarContent() {
         </div>
       )}
 
-      <ul>
+      <ul id="list-event">
         {events.map((event, index) => (
           <li key={index}>
             {event.title} - {event.start.toLocaleString()}
