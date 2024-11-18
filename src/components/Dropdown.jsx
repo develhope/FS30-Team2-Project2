@@ -278,9 +278,7 @@ export function Dropdown() {
         <div className="dropdown">
           <div className="hiddenDropdown">
             <h2>
-              {language === "it"
-                ? `Ciao, ${loggedUsername}!`
-                : `Hi, ${loggedUsername}!`}
+              {language === "it" ? `Ciao, ${username}!` : `Hi, ${username}!`}
             </h2>
             <div id="userLinks">
               <button>{language === "it" ? "Area Utente" : `User Area`}</button>
