@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    h4 {
+    #footerH4 {
       margin-top: 1vw;
       margin-bottom: 13px;
       text-align: center;
@@ -61,26 +61,25 @@
   left: 0;
   padding: 17px;
   margin-left: 40vw;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
   opacity: 0.5;
 }
 .endFooter {
   color: #4b3b3b;
   position: relative;
   margin-left: 44vw;
-  margin-bottom: 1vw;
+  margin-bottom: 3px;
 }
 
 @media only screen and (max-width: 760px) {
   .columnsContainer {
+    margin-top: 15vw;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
   }
-  .firstTitle {
-    margin-top: 12vw;
-  }
-  h4 {
+
+  #footerH4 {
     margin-top: 8px;
     margin-bottom: 0 auto;
   }
@@ -93,7 +92,7 @@
     z-index: 0;
     bottom: 3vw;
     right: 40vw;
-    margin-left: 29vw;
+    margin-left: 25vw;
     margin-bottom: 19px;
   }
   .endFooter {
@@ -101,7 +100,7 @@
     color: #4b3b3b;
     bottom: 18vw;
     left: 0vw;
-    margin-top: 3vw;
+    margin-top: 5vw;
     margin-right: 20vw;
     margin-left: 23vw;
 
@@ -117,7 +116,21 @@
 }
 
 @media screen and (min-width: 761px) and (max-width: 1024px) {
-  .footerLogo{
+  .firstTitle {
+    margin-top: 8px;
+    margin-bottom: 0 auto;
+  }
 
+  .footerLogo {
+    position: relative;
+    top: 4vw;
+    z-index: 0;
+    bottom: 0;
+    margin-bottom: 7px;
+  }
+  .endFooter {
+    position: relative;
+    left: 9vw;
+    bottom: 2vw;
   }
 }
