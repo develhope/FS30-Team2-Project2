@@ -7,6 +7,7 @@ import React from "react";
 import { WoodBar } from "../components/WoodBar";
 
 export function Footer() {
+  
   const { language } = useLanguage();
   return (
     <>

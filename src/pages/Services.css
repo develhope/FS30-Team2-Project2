@@ -1,0 +1,31 @@
+/** @format */
+.totalServicesDiv {
+  background-color: burlywood;
+  height: 500px;
+}
+.containerServices {
+  margin-top: 2vw;
+  background-color: burlywood;
+  height: 400px;
+}
+.servicesFooter {
+  color: black;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+
+.servicesP {
+  color: black;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+.servicesEnd {
+  margin-top: 50px;
+  color: #4b3b3b;
+  position: relative;
+  text-align: center;
+}
