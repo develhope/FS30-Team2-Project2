@@ -9,6 +9,7 @@ const Cardsapi = [
     titleEng: "Music Festival",
     contentEng:
       "A weekend of live music with international and local artists, delicious food, and a festive atmosphere.",
+    date: "2024-12-10T10:00:00",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const Cardsapi = [
     titleEng: "Mountain Adventure",
     contentEng:
       "A hike through the highest peaks, with breathtaking landscapes and the chance to spot wildlife.",
+    date: "2024-12-12T08:00:00",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const Cardsapi = [
     titleEng: "Wine Fair",
     contentEng:
       "Tasting of fine wines, sommelier workshops, and the opportunity to meet the producers.",
+    date: "2024-12-15T17:00:00",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const Cardsapi = [
     titleEng: "Cultural City Tour",
     contentEng:
       "A journey through history and art, visiting museums, galleries, and iconic monuments.",
+    date: "2024-12-18T09:00:00",
   },
   {
     id: 5,
@@ -53,6 +57,8 @@ const Cardsapi = [
     titleEng: "Spring Marathon",
     contentEng:
       "A sporting event that brings together runners of all ages in a race through parks and city streets.",
+
+    date: "2024-04-05T08:00:00",
   },
   {
     id: 6,
@@ -64,6 +70,7 @@ const Cardsapi = [
     titleEng: "Mediterranean Cruises",
     contentEng:
       "Discover the wonders of the islands and coastlines with an unforgettable cruise trip.",
+    date: "2024-07-20T12:00:00",
   },
   {
     id: 7,
@@ -75,6 +82,7 @@ const Cardsapi = [
     titleEng: "Sustainability Conference",
     contentEng:
       "An international gathering to discuss best practices and innovations for a sustainable future.",
+    date: "2024-09-10T09:30:00",
   },
   {
     id: 8,
@@ -86,6 +94,7 @@ const Cardsapi = [
     titleEng: "Jungle Exploration",
     contentEng:
       "An adventure in a unique ecosystem, with excursions through extraordinary flora and fauna.",
+    date: "2024-06-25T08:00:00",
   },
   {
     id: 9,
@@ -97,6 +106,7 @@ const Cardsapi = [
     titleEng: "Christmas Market",
     contentEng:
       "A charming Christmas atmosphere with craft stalls, traditional food, and festive music.",
+    date: "2024-12-05T17:00:00",
   },
   {
     id: 10,
@@ -108,6 +118,7 @@ const Cardsapi = [
     titleEng: "Safari in Africa",
     contentEng:
       "An unforgettable experience among the great wild animals in their natural habitats.",
+    date: "2024-08-14T10:00:00",
   },
   {
     id: 11,
@@ -119,6 +130,7 @@ const Cardsapi = [
     titleEng: "Outdoor Concert",
     contentEng:
       "An evening of music under the stars, with local bands and street food.",
+    date: "2024-07-15T19:00:00",
   },
 ];
 

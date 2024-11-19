@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./CalendarContent.css";
+import useCardsApi from "./useCardsApi";
 
 import { Calendar, momentLocalizer, Views } from "react-big-calendar";
 import moment from "moment";
@@ -10,42 +11,37 @@ const localizer = momentLocalizer(moment);
 export default function CalendarContent() {
   const [view, setView] = useState(Views.WORK_WEEK);
   const [events, setEvents] = useState([]);
-  const [showForm, setShowForm] = useState(false);
-  const [eventDetails, setEventDetails] = useState({});
-  const [showModal, setShowModal] = useState(false);
-  const [newEvent, setNewEvent] = useState({
-    title: "",
-    start: new Date(),
-    end: new Date(),
-  });
+
+  const { cards } = useCardsApi();
+
+  useEffect(() => {
+    if (cards && cards.length > 0) {
+      const formattedEvents = cards.map((event) => {
+        console.log(new Date(event.date).getDate());
+        const date = new Date(event.date);
+        const year = date.getFullYear();
+        const month = date.getMonth();
+        const day = date.getDate();
+        const hours = date.getHours();
+        const minute = date.getMinutes();
+
+        const newDate = new Date(year, month, day, hours, minute);
+        return {
+          title: event.titleIt,
+          start: newDate,
+          end: new Date(new Date(event.date).getTime() + 60 * 60 * 1000),
+        };
+      });
+      setEvents(formattedEvents);
+    }
+  }, [cards]);
 
   const handleOnChangeView = (selectedView) => {
     setView(selectedView);
   };
-  const handleChange = (e) => {
-    setEventDetails({ ...eventDetails, [e.target.name]: e.target.value });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setEvents([...events, { ...eventDetails }]);
-    setEventDetails("");
-
-    setShowForm(false);
-  };
-
-  const handleDeleteEvent = (index) => {
-    const newEvents = events.filter((item, i) => i !== index);
-    setEvents(newEvents);
-  };
   const handleSelectSlot = ({ start, end }) => {
-    setNewEvent({ ...newEvent, start, end });
-    setShowModal(true);
-  };
-  const handleSaveEvent = () => {
-    console.log("event save");
-    setEvents([...events, { ...newEvent }]);
-    setShowModal(false);
+    console.log("evento selezionato: ", start, end);
   };
 
   return (
@@ -62,30 +58,6 @@ export default function CalendarContent() {
         selectable
         onSelectSlot={handleSelectSlot}
       />
-      {showModal && (
-        <div className="modal">
-          <h2>Create Event</h2>
-          <input
-            type="text"
-            placeholder="Event Title"
-            value={newEvent.title}
-            onChange={(e) =>
-              setNewEvent({ ...newEvent, title: e.target.value })
-            }
-          />
-          <button onClick={handleSaveEvent}>Save Event</button>
-          <button onClick={() => setShowModal(false)}>Cancel</button>
-        </div>
-      )}
-
-      <ul id="list-event">
-        {events.map((event, index) => (
-          <li key={index}>
-            {event.title} - {event.start.toLocaleString()}
-            <button onClick={() => handleDeleteEvent(index)}>Elimina</button>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
