@@ -75,7 +75,7 @@
   .columnsContainer {
     margin-top: 15vw;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -94,14 +94,13 @@
     right: 40vw;
     margin-left: 25vw;
     margin-bottom: 19px;
-    border: solid saddlebrown 2px;
   }
   .endFooter {
     text-align: center;
     color: #4b3b3b;
     bottom: 18vw;
     left: 0vw;
-    margin-top: 3vw;
+    margin-top: 5vw;
     margin-right: 20vw;
     margin-left: 23vw;
 

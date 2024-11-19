@@ -211,7 +211,7 @@ export function About() {
           />
         </div>
       </div>
-      <WoodBar/>
+      <WoodBar />
       <Animation textIt={"Contatti"} textEng={"About us"} />
     </>
   );
