@@ -75,3 +75,9 @@
 .card-wrapper {
   padding: 20px;
 }
+
+.cards-date {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+}
