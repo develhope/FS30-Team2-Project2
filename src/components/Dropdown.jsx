@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { UserList } from "../assets/UserList";
-
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 const nameCheck = UserList.filter(check);
 function check(value) {
@@ -273,19 +273,18 @@ export function Dropdown() {
     );
   } else {
     return (
-      <div className="parrotDropdown">
-        <img id="loggedParrot" src="src\assets\parrot.png" alt="parrot" />
-        <div className="dropdown">
-          <div className="hiddenDropdown">
-            <h2>
-              {language === "it" ? `Ciao, ${username}!` : `Hi, ${username}!`}
-            </h2>
-            <div id="userLinks">
+      <div className="dropdown">
+        <div className="hiddenDropdown">
+          <h3>
+            {language === "it" ? `Ciao, ${username}!` : `Hi, ${username}!`}
+          </h3>
+          <div id="userLinks">
+            <Link to="/dashboard">
               <button>{language === "it" ? "Area Utente" : `User Area`}</button>
-              <button onClick={cleanMemory}>
-                {language === "it" ? "Esci" : `Logout`}
-              </button>
-            </div>
+            </Link>
+            <button onClick={cleanMemory}>
+              {language === "it" ? "Esci" : `Logout`}
+            </button>
           </div>
         </div>
       </div>

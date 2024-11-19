@@ -68,6 +68,8 @@
 .navbar-right {
   display: flex;
   height: 108px;
+  position: relative;
+  right: 15px;
 }
 .navbar-right div {
   text-decoration: none;
@@ -93,15 +95,15 @@
 .dropdown {
   position: relative;
   top: 10px;
-  right: 0px;
 }
 .hiddenDropdown {
   height: 100px;
   background-image: url("../assets/scroll.png");
   background-position: center;
   background-size: 100% 100%;
+  width: 120px;
 }
-.hiddenDropdown h2 {
+.hiddenDropdown h3 {
   position: relative;
   top: 20px;
 }
@@ -124,6 +126,8 @@
   cursor: pointer;
 }
 #userLinks {
+  position: relative;
+  top: -10px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -131,35 +135,27 @@
 .opacityFilter {
   width: 100vw;
   height: 100vh;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: 2;
-  margin-top: 140px;
+  position: fixed;
+  top: 0;
+  right: -15px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  margin-top: 180px;
   padding-top: 20px;
   background-color: rgba(222, 161, 85, 0.4);
   backdrop-filter: blur(5px);
 }
 .closeIcon {
-  width: 75px;
-  height: 75px;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
-  right: 50px;
+  right: 2rem;
 }
 .closeIcon:hover {
   cursor: pointer;
 }
-#loggedParrot {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 30px;
-  right: 11rem;
-  z-index: 3;
-}
-.parrotDropdown {
-  display: flex;
-}
+
 .unloggedParrot {
   width: 150px;
   height: 150px;
@@ -198,16 +194,22 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  position: absolute;
   width: 25rem;
   height: 500px;
-  right: 40vw;
   background-image: url(../assets/scroll.png);
   background-size: 100% 100%;
   padding: 8rem 4vw;
 }
 
 @media only screen and (max-width: 760px) {
+  #nuovoUser {
+    right: 10vw;
+  }
+  .closeIcon {
+    top: 5rem;
+    height: 3rem;
+    width: 3rem;
+  }
   .nav-links {
     gap: 5px;
     flex-direction: column;
@@ -221,6 +223,19 @@
   }
   .nav-links div h4 {
     font-size: 0px;
+  }
+  .unloggedParrot {
+    width: 100px;
+    height: 100px;
+  }
+  #popUpText {
+    width: 8rem;
+    padding: 1rem;
+    left: 100px;
+    bottom: 10px;
+  }
+  #popUpText h2 {
+    font-size: 10px;
   }
   .icons {
     margin-top: 0px;

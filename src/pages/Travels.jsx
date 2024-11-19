@@ -15,7 +15,7 @@ export function Travels() {
       <Animation textIt={"Viaggi"} textEng={"Travels"} />
       <WoodBar />
       <MapandCalendar />
-      <Types
+      {/* <Types
         first={language === "it" ? "Avventura" : "Adventure"}
         second={language === "it" ? "Cultura" : "Cultural"}
         third={language === "it" ? "Romantico" : "Romantic"}
@@ -25,7 +25,7 @@ export function Travels() {
         image1={adventure}
         image2={culture}
         image3={romance}
-      />
+      /> */}
     </>
   );
 }

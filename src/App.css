@@ -17,7 +17,7 @@
   background-position: bottom;
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 3;
   padding-right: 1rem;
   width: 100vw;
 }
