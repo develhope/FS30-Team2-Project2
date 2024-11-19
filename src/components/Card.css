@@ -75,6 +75,11 @@
 .card-wrapper {
   padding: 20px;
 }
+
+.cards-date {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
 @media only screen and (max-width: 760px) {
   .card {
     width: 200px;

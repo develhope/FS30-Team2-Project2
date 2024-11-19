@@ -1,7 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function useCarousel2(props) {
-  const [list, setList] = useState(props);
+  const [list, setList] = useState([]);
+  console.log(list);
+  useEffect(() => {
+    if (props && props.length > 0) {
+      setList(props);
+    }
+  }, [props]);
   function left() {
     setList((prevList) => {
       const lastItems = prevList.slice(-3);

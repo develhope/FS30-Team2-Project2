@@ -1,11 +1,15 @@
-import Cardsapi from "../assets/cardsapi";
+import useCardsApi from "./useCardsApi";
 import Card from "./Card";
 import "./Card.css";
 import { useCarousel2 } from "./useCarousel2";
 import { useLanguage } from "../context/LanguageContext";
 const Cards = () => {
   const { language } = useLanguage();
-  const { list, goLeft, goRight } = useCarousel2(Cardsapi);
+  const { cards } = useCardsApi();
+  const { list, goLeft, goRight } = useCarousel2(cards);
+  console.log(cards);
+  console.log(list);
+
   return (
     <div>
       <div className="cards-container">
@@ -22,6 +26,7 @@ const Cards = () => {
                   content={event.contentIt}
                   image={event.image}
                   title={event.titleIt}
+                  data={event.date}
                 />
               </div>
             ))
@@ -31,6 +36,7 @@ const Cards = () => {
                   content={event.contentEng}
                   image={event.image}
                   title={event.titleEng}
+                  data={event.date}
                 />
               </div>
             ))}
