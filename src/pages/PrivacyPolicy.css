@@ -6,11 +6,12 @@
 .privacy-policy {
   .titlePrivacyPolicy{
     font-family: 'Times New Roman', Times, serif; 
+    color: rgb(137, 96, 50);
   }
   margin-top: 20px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .hr {
@@ -22,7 +23,7 @@
 }
 
 .privacyEnd {
-  margin-top: 40px;
+  margin-top: 45px;
   color: #4b3b3b;
   text-align: center;
 }

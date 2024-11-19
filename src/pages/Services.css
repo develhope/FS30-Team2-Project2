@@ -9,7 +9,7 @@
   height: 400px;
 }
 .servicesFooter {
-  color: black;
+  color: rgb(137, 96, 50);
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
@@ -24,7 +24,7 @@
 }
 
 .servicesEnd {
-  margin-top: 50px;
+  margin-top: 35px;
   color: #4b3b3b;
   position: relative;
   text-align: center;

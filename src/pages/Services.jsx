@@ -52,6 +52,8 @@ export function Services() {
           </p>
         </div>
       </div>
+      <WoodBar/>
+      <Animation textIt={"Servizi"} textEng={"Services"} />
     </>
   );
 }

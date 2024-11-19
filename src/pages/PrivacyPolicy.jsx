@@ -157,6 +157,11 @@ export function PrivacyPolicy() {
           </p>
         </ol>
       </div>
+      <WoodBar />
+      <Animation
+        textIt={"Politica della Privacy"}
+        textEng={"Privacy  Policy"}
+      />
     </>
   );
 }
