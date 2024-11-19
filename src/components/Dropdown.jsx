@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { UserList } from "../assets/UserList";
-
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 const nameCheck = UserList.filter(check);
 function check(value) {
@@ -279,7 +279,9 @@ export function Dropdown() {
             {language === "it" ? `Ciao, ${username}!` : `Hi, ${username}!`}
           </h3>
           <div id="userLinks">
-            <button>{language === "it" ? "Area Utente" : `User Area`}</button>
+            <Link to="/dashboard">
+              <button>{language === "it" ? "Area Utente" : `User Area`}</button>
+            </Link>
             <button onClick={cleanMemory}>
               {language === "it" ? "Esci" : `Logout`}
             </button>

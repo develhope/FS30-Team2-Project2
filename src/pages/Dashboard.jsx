@@ -146,7 +146,7 @@ export function Dashboard() {
             backgroundSize: "100% 100%",
             padding: "10px",
             position: "relative",
-            top: "-48px",
+            top: "-70px",
             color: "rgb(49, 48, 48)",
           }}
         >
@@ -155,7 +155,15 @@ export function Dashboard() {
             : "Yours Events and Travels"}
         </h2>
       </div>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          position: "relative",
+          top: "-70px",
+          left: "22vw",
+        }}
+      >
         <CalendarContent />
       </div>
     </div>
