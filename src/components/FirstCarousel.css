@@ -48,7 +48,7 @@
   height: 100px;
   position: absolute;
   top: 540px;
-  right: 8vw;
+  right: 5vw;
   z-index: 1;
 }
 #next:hover {
@@ -59,7 +59,7 @@
   height: 100px;
   position: absolute;
   top: 540px;
-  left: 10vw;
+  left: 7vw;
   rotate: y 180deg;
   z-index: 1;
 }
