@@ -161,7 +161,6 @@ export function Dashboard() {
           justifyContent: "center",
           position: "relative",
           top: "-70px",
-          left: "22vw",
         }}
       >
         <CalendarContent />

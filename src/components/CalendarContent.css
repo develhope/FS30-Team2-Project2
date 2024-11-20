@@ -9,6 +9,8 @@
   font-family: "Georgia", serif;
   padding: 20px;
   border: 1px solid #d1c7b7;
+  position: relative;
+  top: 50px;
 }
 
 .modal {
