@@ -1,4 +1,4 @@
-import CalendarContent from "../../CalendarContent";
+import CalendarContent from "../CalendarContent";
 import { Map } from "../Map";
 import "./MapandCalendar.scss"
 
