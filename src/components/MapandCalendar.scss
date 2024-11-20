@@ -1,5 +1,9 @@
+.unicoDiv{
+  display: flex;
+  background-image: linear-gradient(to right, cyan, wheat, cyan);
+}
 @media only screen and (max-width: 760px) {
-    div {
+    .UnicoDiv {
       display: flex;
       justify-content: center;
       flex-direction: column;

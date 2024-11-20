@@ -5,12 +5,7 @@ import "./MapandCalendar.scss";
 export function MapandCalendar() {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          backgroundImage: "linear-gradient(to right, cyan, wheat, cyan)",
-        }}
-      >
+      <div className="unicoDiv">
         <CalendarContent />
         <Map />
       </div>
