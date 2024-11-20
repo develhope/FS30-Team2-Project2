@@ -1,4 +1,4 @@
-import { MapandCalendar } from "../components/MapAndCalendar/MapandCalendar";
+import { MapandCalendar } from "../components/MapandCalendar";
 import { Types } from "../components/types/Types";
 import { useLanguage } from "../context/LanguageContext";
 import "../components/types/Types.css";
