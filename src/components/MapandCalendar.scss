@@ -1,0 +1,10 @@
+.unicoDiv{
+    display: flex;
+    background-image: linear-gradient(to right, cyan, wheat, cyan);
+  }
+@media only screen and (max-width: 760px) {
+    .unicoDiv {
+      display: flex;
+      flex-direction: column;
+    }
+  }
