@@ -16,7 +16,7 @@ const Cards = () => {
         <img
           onClick={goLeft}
           className="previous"
-          src="src\assets\signpost.png"
+          src="src\assets\arrow.png"
           alt="previous"
         />
         {language == "it"
@@ -43,7 +43,7 @@ const Cards = () => {
         <img
           onClick={goRight}
           className="next"
-          src="src\assets\signpost.png"
+          src="src/assets/arrow.png"
           alt="next"
         />
       </div>

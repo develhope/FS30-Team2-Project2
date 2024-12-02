@@ -6,7 +6,9 @@
   height: 300px;
   text-align: center;
   /* background-image: linear-gradient(to bottom, white, burlywood); */
-  background-image: url("../assets/scroll.png");
+  /* background-image: url("../assets/scroll.png"); */
+  border: 2px solid #b5e48c;
+  background-image: linear-gradient(to right, #b5e48c, #52b69a);
   background-position: center;
   background-size: 100% 100%;
   transition: 0.3s ease;
@@ -68,7 +70,7 @@
   gap: 1rem;
   padding-top: 30px;
   height: 330px;
-  background-color: #f1e2c6;
+  background-color: #f0ffff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
