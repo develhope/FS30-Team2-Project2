@@ -28,6 +28,14 @@ const Cards = () => {
                   title={event.titleIt}
                   data={event.date}
                 />
+                <div className="event-details">
+                  <p>
+                    Prezzo: {event.price} {event.currency}
+                  </p>
+                  <button className="payment-button">
+                    Paga {event.price} {event.currency}
+                  </button>
+                </div>
               </div>
             ))
           : list.slice(0, 3).map((event) => (
@@ -38,6 +46,14 @@ const Cards = () => {
                   title={event.titleEng}
                   data={event.date}
                 />
+                <div className="event-details">
+                  <p>
+                    Price: {event.price} {event.currency}
+                  </p>
+                  <button className="payment-button">
+                    Pay {event.price} {event.currency}
+                  </button>
+                </div>
               </div>
             ))}
         <img
