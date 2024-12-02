@@ -1,21 +1,21 @@
 .card {
-  /* border: 2px solid burlywood; */
   border-radius: 8px;
   padding: 16px;
-  width: 400px;
+  width: 450px;
   height: 300px;
   text-align: center;
-  /* background-image: linear-gradient(to bottom, white, burlywood); */
-  /* background-image: url("../assets/scroll.png"); */
   border: 2px solid #b5e48c;
   background-image: linear-gradient(to left, #b5e48c, #52b69a);
   background-position: center;
   background-size: 100% 100%;
   transition: 0.3s ease;
   margin: 2px 0;
-
-  /* box-shadow: 10px 10px 5px burlywood; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
 }
+
 .previous {
   height: 50px;
   width: 50px;
@@ -23,30 +23,35 @@
   position: relative;
   top: 125px;
 }
+
 .previous:hover {
   cursor: pointer;
 }
+
 .next:hover {
   cursor: pointer;
 }
+
 .next {
   height: 50px;
   width: 50px;
   position: relative;
   top: 125px;
 }
+
 .card:hover {
   cursor: pointer;
-  /* box-shadow: 20px 10px 5px burlywood; */
   margin: 0;
 }
+
 .card-image {
   position: relative;
   top: 20px;
   max-width: 100%;
   border-radius: 8px;
-  height: 100px;
-  width: 150px;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .card-title {
@@ -76,6 +81,8 @@
 
 .card-wrapper {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards-date {
@@ -83,25 +90,43 @@
   justify-content: end;
   font-size: 12px;
 }
-.event-details {
-  margin-top: 10px;
+
+.event-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.price-container {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  margin-bottom: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
 }
 
 .payment-button {
-  background-color: #4caf50; /* Verde */
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   font-size: 16px;
-  margin-top: 10px;
+  margin-left: 10px;
+  height: 50px;
 }
 
 .payment-button:hover {
-  background-color: #45a049; /* Verde scuro */
+  background-color: #45a049;
 }
+
+/* Media queries per responsività */
 @media only screen and (max-width: 760px) {
   .card {
     width: 200px;
@@ -129,17 +154,18 @@
     left: 20px;
   }
 }
+
 @media only screen and (min-width: 761px) and (max-width: 1300px) {
   .card {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 350px;
   }
   .card-title {
-    font-size: 1em;
+    font-size: 1.1em;
     top: 5px;
   }
   .card-content {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-top: 10px;
   }
   .next {

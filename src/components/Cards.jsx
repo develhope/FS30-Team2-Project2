@@ -27,11 +27,14 @@ const Cards = () => {
                   image={event.image}
                   title={event.titleIt}
                   data={event.date}
+                  price={event.price}
                 />
-                <div className="event-details">
-                  <p>
-                    Prezzo: {event.price} {event.currency}
-                  </p>
+                <div className="event-footer">
+                  <div className="price-container">
+                    <p>
+                      Prezzo: {event.price} {event.currency}
+                    </p>
+                  </div>
                   <button className="payment-button">
                     Paga {event.price} {event.currency}
                   </button>
@@ -45,11 +48,14 @@ const Cards = () => {
                   image={event.image}
                   title={event.titleEng}
                   data={event.date}
+                  price={event.price}
                 />
-                <div className="event-details">
-                  <p>
-                    Price: {event.price} {event.currency}
-                  </p>
+                <div className="event-footer">
+                  <div className="price-container">
+                    <p>
+                      Price: {event.price} {event.currency}
+                    </p>
+                  </div>
                   <button className="payment-button">
                     Pay {event.price} {event.currency}
                   </button>
