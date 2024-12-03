@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
-export function useCarousel2(props, intervalTime = 4000) {
+export function useCarousel2(props, intervalTime, buttons) {
   const [list, setList] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
-  const [buttonNumber, setButtonNumber] = useState(1);
+  const totalItems = buttons.length;
 
   useEffect(() => {
     if (props && props.length > 0) {
@@ -17,24 +18,14 @@ export function useCarousel2(props, intervalTime = 4000) {
       const lastItems = prevList.slice(-3);
       return [...lastItems, ...prevList.slice(0, -3)];
     });
-    if (buttonNumber == 1) {
-      setButtonNumber(4);
-    } else {
-      setButtonNumber(buttonNumber - 1);
-    }
-    console.log(buttonNumber);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalItems) % totalItems);
   }
   function right() {
     setList((prevList) => {
       const lastItems = prevList.slice(0, 3);
       return [...prevList.slice(3), ...lastItems];
     });
-    if (buttonNumber < 4) {
-      setButtonNumber(buttonNumber + 1);
-    } else {
-      setButtonNumber(1);
-    }
-    console.log(buttonNumber);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
   }
   useEffect(() => {
     if (!isHovered) {
@@ -60,5 +51,6 @@ export function useCarousel2(props, intervalTime = 4000) {
     goLeft: left,
     handleMouseEnter,
     handleMouseLeave,
+    currentItem: button[currentIndex],
   };
 }
