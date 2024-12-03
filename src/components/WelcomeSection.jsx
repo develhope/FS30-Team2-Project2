@@ -12,7 +12,7 @@ const WelcomeSection = () => {
         <div className="step">
           <img
             className="img-welcome"
-            src="https://cdn-icons-png.flaticon.com/128/14941/14941334.png"
+            src="https://cdn-icons-gif.flaticon.com/11321/11321466.gif"
             height={"100px"}
             width={"100px"}
           />
@@ -34,7 +34,7 @@ const WelcomeSection = () => {
         <div className="step">
           <img
             className="img-welcome"
-            src="https://cdn-icons-png.flaticon.com/128/17093/17093521.png"
+            src="	https://cdn-icons-gif.flaticon.com/17093/17093521.gif"
             height={"100px"}
             width={"100px"}
           />
