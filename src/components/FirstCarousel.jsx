@@ -12,23 +12,23 @@ export function FirstCarousel() {
   const trips = [
     {
       image: adventures,
-      descriptionIt: "un Viaggio Avventuroso?",
-      descriptionEng: "an Adventurous Trip?",
+      descriptionIt: "UN VIAGGIO AVVENTUROSO?",
+      descriptionEng: "AH ADVENTUROUS TRIP?",
     },
     {
       image: culture,
-      descriptionIt: "un Viaggio nella Cultura?",
-      descriptionEng: "a Cultural Trip?",
+      descriptionIt: "UN VIAGGIO CULTURALE?",
+      descriptionEng: "A CULTURAL TRIP?",
     },
     {
       image: roadtrip,
-      descriptionIt: "un Viaggio On the Road?",
-      descriptionEng: "an On the Road Trip?",
+      descriptionIt: "UN VIAGGIO ON THE ROAD?",
+      descriptionEng: "AN ON THE ROAD TRIP?",
     },
     {
       image: romance,
-      descriptionIt: "un Viaggio Romantico?",
-      descriptionEng: "a Romantic Trip?",
+      descriptionIt: "UN VIAGGIO ROMANTICO?",
+      descriptionEng: "A ROMANTIC TRIP?",
     },
   ];
 
@@ -41,16 +41,20 @@ export function FirstCarousel() {
     <>
       <div id="container">
         <div className="description" id="descriptionUp">
-          <h2>
-            {language === "it" ? "Cos'hai in mente?" : "What's on your mind?"}
-          </h2>
+          <h1>
+            {language === "it" ? (
+              <span className="text-description">COS'HAI IN MENTE?</span>
+            ) : (
+              <span>WHAT'S ON YOUR MIND?</span>
+            )}
+          </h1>
         </div>
         <div id="carousel">
           <div className="arrowBg">
             <img
               onClick={goLeft}
               id="previous"
-              src="src\assets\signpost.png"
+              src="src\assets\arrowtop.png"
               alt="previous"
             />
           </div>
@@ -78,7 +82,7 @@ export function FirstCarousel() {
             <img
               onClick={goRight}
               id="next"
-              src="src\assets\signpost.png"
+              src="src\assets\arrowtop.png"
               alt="next"
             />
           </div>

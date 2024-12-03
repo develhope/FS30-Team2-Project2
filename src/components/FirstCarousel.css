@@ -1,8 +1,8 @@
 #container {
-  background-image: url("src/assets/map.jpg");
   background-position: bottom;
   text-align: center;
   height: 480px;
+  margin-bottom: 16px;
 }
 #carousel {
   margin-right: 38px;
@@ -89,16 +89,21 @@
   padding: 20px;
 }
 .description h2 {
-  background-image: url("../assets/wood.png");
   background-position: center;
   border-top-left-radius: 7px;
   border-bottom-right-radius: 7px;
   width: 350px;
   height: 30px;
-  box-shadow: 10px 15px 5px rgb(49, 48, 48);
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(49, 48, 48);
-  text-shadow: 2px 2px sienna;
+  /* box-shadow: 10px 15px 5px rgb(49, 48, 48); */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* color: rgb(49, 48, 48);
+  text-shadow: 2px 2px sienna; */
+}
+.text-description {
+  background-image: linear-gradient(to left, #1e6091, #52b69a);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
 }
 .description {
   display: flex;
