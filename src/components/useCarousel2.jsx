@@ -51,6 +51,6 @@ export function useCarousel2(props, intervalTime, buttons) {
     goLeft: left,
     handleMouseEnter,
     handleMouseLeave,
-    currentItem: button[currentIndex],
+    currentItem: buttons[currentIndex],
   };
 }
