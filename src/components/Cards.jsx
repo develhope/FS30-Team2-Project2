@@ -3,12 +3,18 @@ import Card from "./Card";
 import "./Card.css";
 import { useCarousel2 } from "./useCarousel2";
 import { useLanguage } from "../context/LanguageContext";
+import { useEffect } from "react";
 const Cards = () => {
   const { language } = useLanguage();
   const { cards } = useCardsApi();
-  const { list, goLeft, goRight } = useCarousel2(cards);
+  const { list, goLeft, goRight, handleMouseEnter, handleMouseLeave } =
+    useCarousel2(cards, 4000);
   console.log(cards);
   console.log(list);
+
+  useEffect(() => {
+    console.log("Carosello aggiornato", list);
+  }, [list]);
 
   return (
     <div>
@@ -16,12 +22,16 @@ const Cards = () => {
         <img
           onClick={goLeft}
           className="previous"
-          src="src\assets\arrow.png"
+          src="src\assets\arrowtop.png"
           alt="previous"
         />
         {language == "it"
           ? list.slice(0, 3).map((event) => (
-              <div key={event.id}>
+              <div
+                key={event.id}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <Card
                   content={event.contentIt}
                   image={event.image}
@@ -42,7 +52,11 @@ const Cards = () => {
               </div>
             ))
           : list.slice(0, 3).map((event) => (
-              <div key={event.id}>
+              <div
+                key={event.id}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <Card
                   content={event.contentEng}
                   image={event.image}
@@ -65,7 +79,7 @@ const Cards = () => {
         <img
           onClick={goRight}
           className="next"
-          src="src/assets/arrow.png"
+          src="src/assets/arrowtop.png"
           alt="next"
         />
       </div>

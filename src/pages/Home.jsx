@@ -2,6 +2,7 @@ import Cards from "../components/Cards";
 import { FirstCarousel } from "../components/FirstCarousel";
 import { Animation } from "../components/Animation";
 import { WoodBar } from "../components/WoodBar";
+import WelcomeSection from "../components/WelcomeSection";
 
 export function Home() {
   return (
@@ -10,6 +11,7 @@ export function Home() {
       <WoodBar />
       <FirstCarousel />
       <WoodBar />
+      <WelcomeSection />
       <Cards />
     </>
   );
