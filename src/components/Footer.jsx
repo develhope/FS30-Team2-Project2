@@ -10,7 +10,6 @@ export function Footer() {
   const { language } = useLanguage();
   return (
     <>
-      <WoodBar />
       <footer className="footer">
         <div className="columnsContainer">
           <div className="footerColumns">
