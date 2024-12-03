@@ -10,24 +10,24 @@
 .ship {
   height: 70px;
   width: 70px;
-  position: absolute;
-  top: 220px;
+  position: relative;
+  top: 20px;
   left: 11vw;
   z-index: 1;
 }
 .rock1 {
   height: 40px;
   width: 40px;
-  position: absolute;
-  top: 270px;
-  left: 3vw;
+  position: relative;
+  top: 50px;
+  left: -3vw;
   z-index: 2;
 }
 .rock2 {
   height: 40px;
   width: 40px;
-  position: absolute;
-  top: 200px;
+  position: relative;
+  top: 0px;
   left: 20vw;
   z-index: 0;
 }
@@ -39,9 +39,9 @@
 .island {
   height: 80px;
   width: 80px;
-  position: absolute;
-  top: 200px;
-  right: 1vw;
+  position: relative;
+  top: 20px;
+  right: -20vw;
   z-index: 0;
 }
 #animationCenter {

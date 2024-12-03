@@ -4,11 +4,13 @@ import { Dropdown } from "./Dropdown";
 import { Link } from "react-router-dom";
 import { WoodBar } from "./WoodBar";
 import { useLanguage } from "../context/LanguageContext";
+import { Animation } from "./Animation";
 
 export function Navbar() {
   const { language } = useLanguage();
   return (
     <>
+      <Animation textIt={"Eventive Travels"} textEng={"Eventive Travels"} />
       <nav className="navbar">
         <div className="navbar-left">
           <Link to="/">
@@ -54,9 +56,6 @@ export function Navbar() {
           <Dropdown />
         </div>
       </nav>
-      <div className="wood">
-        <WoodBar style={{ zIndex: "1" }} />
-      </div>
     </>
   );
 }
