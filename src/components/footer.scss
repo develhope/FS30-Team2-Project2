@@ -3,10 +3,8 @@
 .footer {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 30px;
-  background-image: url("../assets/scroll.png");
-  background-position: absolute;
-  background-size: 100% 100%;
-  color: #4b3b3b;
+  background: linear-gradient(#b5e48c, #52b69a);
+  color: black;
   position: relative;
 }
 
@@ -23,8 +21,8 @@
       margin-top: 1vw;
       margin-bottom: 13px;
       text-align: center;
-      text-shadow: 1px 1px sienna;
-    }
+      text-shadow: 1px 1px #168AAD
+       }
 
     #footerUl {
       padding: 4px;
@@ -39,7 +37,7 @@
 
     .footerLi:hover {
       text-shadow: #333;
-      color: sienna;
+      color: #168AAD;
       text-shadow: 1px 1px grey;
       outline: none;
       border: none;
@@ -51,7 +49,7 @@
   }
 }
 .links {
-  color: #4b3b3b;
+  color: #184e77;
 }
 
 .footerLogo {
@@ -65,7 +63,7 @@
   opacity: 0.5;
 }
 .endFooter {
-  color: #4b3b3b;
+  color: #184e77;
   position: relative;
   margin-left: 44vw;
   margin-bottom: 3px;
@@ -97,7 +95,7 @@
   }
   .endFooter {
     text-align: center;
-    color: #4b3b3b;
+    color: #184e77;
     bottom: 18vw;
     left: 0vw;
     margin-top: 5vw;
