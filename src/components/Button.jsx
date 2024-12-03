@@ -1,3 +1,4 @@
+import "./Button.css";
 export const Button = [
   <div className="buttonContainer">
     <button className="currentButton"></button>
