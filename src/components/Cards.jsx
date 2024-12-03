@@ -21,7 +21,7 @@ const Cards = () => {
   useEffect(() => {}, [list]);
 
   return (
-    <div>
+    <div className="container-carousel-cards">
       <div className="title-cards">
         <h1>
           Le nostre <span className="style-text-top">top destination</span>
