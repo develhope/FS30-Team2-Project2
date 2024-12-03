@@ -1,24 +1,77 @@
 /** @format */
 
-.container {
+.aboutCard {
+  width: 16rem;
+  height: 25rem;
+  border: 2px solid #184e77;
+  border-radius: 5px;
+  background-image: linear-gradient(#b5e48c, #52b69a);
+  text-align: center;
+}
+.profileCard {
+  width: 30px;
+  height: 30px;
+}
+
+.nameAndTitle{
+  margin-top: 10px;
+}
+.profileName {
+  /* margin-top: 1rem; */
+  color: black;
+}
+
+.profileImage{
+  /* width: 11rem;
+  height: 11rem; */
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  margin-top: 1rem;
+  border: 3px solid #184e77;
+  border-radius: 5px;
+}
+
+.textProfile {
+  /* margin-top: 10rem; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.fullstackDev {
+  margin-top: none;
+  
+}
+.linkedinLogo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.containerCardsAbout {
   display: flex;
+  background: white;
   box-sizing: border-box;
   padding: 1rem;
   gap: 2rem 5rem;
   flex-wrap: wrap;
 }
 
+.blbl{
+  margin-top: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .footerCard {
-  background-image: url("../assets/scroll.png");
-  background-size: 100% 100%;
-  width: 17rem;
-  height: 30rem;
+  /* background-image: url("../assets/scroll.png");
+  background-size: 100% 100%; */
+  background-image: linear-gradient(#b5e48c, #52b69a);
+  width: 15rem;
+  height: 25rem;
   text-align: center;
 }
 
 .footerImg {
-  width: 150px;
-  height: 150px;
+ 
   object-fit: cover;
   margin-left: 20px;
   margin-top: 40px;
@@ -34,11 +87,11 @@ h3 {
   padding-top: 10px;
 }
 
-h5 {
+/* h5 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   color: black;
-}
+} */
 .h6Title {
   text-align: left;
   margin-top: 3px;
@@ -66,10 +119,11 @@ h5 {
 }
 
 .bigCardFooter {
-  background-image: url("../assets/scroll.png");
-  background-size: 100% 100%;
-  width: 17rem;
-  height: 30rem;
+  /* background-image: url("../assets/scroll.png"); */
+  background-image: linear-gradient(hsl(92, 62%, 72%), #52b69a);
+  /* background-size: 100% 100%; */
+  width: 15rem;
+  height: 25rem;
   text-align: center;
   .footerBigImg {
     object-fit: cover;
