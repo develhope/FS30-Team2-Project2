@@ -4,11 +4,19 @@ import "./Card.css";
 import { useCarousel2 } from "./useCarousel2";
 import { useLanguage } from "../context/LanguageContext";
 import { useEffect } from "react";
+import { Button } from "./Button";
+const buttonList = Button;
 const Cards = () => {
   const { language } = useLanguage();
   const { cards } = useCardsApi();
-  const { list, goLeft, goRight, handleMouseEnter, handleMouseLeave } =
-    useCarousel2(cards, 4000);
+  const {
+    list,
+    goLeft,
+    goRight,
+    handleMouseEnter,
+    handleMouseLeave,
+    currentItem,
+  } = useCarousel2(cards, 4000, buttonList);
 
   useEffect(() => {}, [list]);
 
@@ -84,6 +92,7 @@ const Cards = () => {
           alt="next"
         />
       </div>
+      <div>{currentItem}</div>
     </div>
   );
 };

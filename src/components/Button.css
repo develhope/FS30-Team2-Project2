@@ -1,0 +1,19 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.notCurrentButton {
+  height: 10px;
+  width: 10px;
+  background-color: grey;
+  margin: 20px;
+  border-radius: 5px;
+}
+.currentButton {
+  height: 14px;
+  width: 14px;
+  background-color: black;
+  border-radius: 8px;
+  margin: 18px;
+}
