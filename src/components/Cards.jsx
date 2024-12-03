@@ -9,12 +9,8 @@ const Cards = () => {
   const { cards } = useCardsApi();
   const { list, goLeft, goRight, handleMouseEnter, handleMouseLeave } =
     useCarousel2(cards, 4000);
-  console.log(cards);
-  console.log(list);
 
-  useEffect(() => {
-    console.log("Carosello aggiornato", list);
-  }, [list]);
+  useEffect(() => {}, [list]);
 
   return (
     <div>

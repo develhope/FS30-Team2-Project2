@@ -4,7 +4,8 @@ export function useCarousel2(props, intervalTime = 4000) {
   const [list, setList] = useState([]);
   const [intervalId, setIntervalId] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
-  console.log(list);
+  const [buttonNumber, setButtonNumber] = useState(1);
+
   useEffect(() => {
     if (props && props.length > 0) {
       setList(props);
@@ -16,12 +17,24 @@ export function useCarousel2(props, intervalTime = 4000) {
       const lastItems = prevList.slice(-3);
       return [...lastItems, ...prevList.slice(0, -3)];
     });
+    if (buttonNumber == 1) {
+      setButtonNumber(4);
+    } else {
+      setButtonNumber(buttonNumber - 1);
+    }
+    console.log(buttonNumber);
   }
   function right() {
     setList((prevList) => {
       const lastItems = prevList.slice(0, 3);
       return [...prevList.slice(3), ...lastItems];
     });
+    if (buttonNumber < 4) {
+      setButtonNumber(buttonNumber + 1);
+    } else {
+      setButtonNumber(1);
+    }
+    console.log(buttonNumber);
   }
   useEffect(() => {
     if (!isHovered) {

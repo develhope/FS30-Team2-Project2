@@ -153,6 +153,19 @@ const Cardsapi = [
     price: 20,
     currency: "EUR",
   },
+  {
+    id: 12,
+    image: "",
+    titleIt: "FIERA",
+    contentIt:
+      "Una serata di musica sotto le stelle, con band locali e cibo da street food.",
+    titleEng: "Outdoor Concert",
+    contentEng:
+      "An evening of music under the stars, with local bands and street food.",
+    date: "2024-07-15T19:00:00",
+    price: 20,
+    currency: "EUR",
+  },
 ];
 
 export default Cardsapi;

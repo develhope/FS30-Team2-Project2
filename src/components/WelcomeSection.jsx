@@ -12,24 +12,12 @@ const WelcomeSection = () => {
         <div className="step">
           <img
             className="img-welcome"
-            src="https://cdn-icons-gif.flaticon.com/16121/16121586.gif"
+            src="https://cdn-icons-png.flaticon.com/128/14941/14941334.png"
             height={"100px"}
             width={"100px"}
           />
           <h2>Inizia</h2>
-          <p>Scegli l'evento o la destinazione e le date.</p>
-        </div>
-
-        <div className="step">
-          <img
-            className="img-welcome"
-            src="https://images-ext-1.discordapp.net/external/ziw5t-8SQJleJYVlqHbi4QzJC-lQD5-QiiJpfAaKE2E/https/cdn-icons-gif.flaticon.com/14659/14659787.gif?width=662&height=66"
-            height={"100px"}
-            width={"100px"}
-          />
-
-          <h2>Personalizza</h2>
-          <p>Personalizza il tuo viaggio secondo le tue preferenze.</p>
+          <p>Scegli tra le nostre opzioni.</p>
         </div>
 
         <div className="step">
@@ -41,6 +29,18 @@ const WelcomeSection = () => {
           />
           <h2>Prenota e viaggia</h2>
           <p>Prenota il tuo viaggio in pochi clic.</p>
+        </div>
+
+        <div className="step">
+          <img
+            className="img-welcome"
+            src="https://cdn-icons-png.flaticon.com/128/17093/17093521.png"
+            height={"100px"}
+            width={"100px"}
+          />
+
+          <h2>Recensisci</h2>
+          <p>Lascia una recensione del tuo viaggio.</p>
         </div>
       </div>
     </div>
