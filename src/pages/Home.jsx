@@ -11,6 +11,7 @@ export function Home() {
       <WoodBar />
       <FirstCarousel />
       <WoodBar />
+
       <WelcomeSection />
       <Cards />
     </>

@@ -18,6 +18,11 @@ const Cards = () => {
 
   return (
     <div>
+      <div className="title-cards">
+        <h1>
+          Le nostre <span className="style-text-top">top destination</span>
+        </h1>
+      </div>
       <div className="cards-container">
         <img
           onClick={goLeft}

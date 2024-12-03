@@ -10,20 +10,22 @@ export default function Card({ title, content, image, data }) {
     }
   }
   return (
-    <div
-      className="card"
-      style={hidden ? { height: "250px" } : { height: "300px" }}
-      onClick={handleToggle}
-    >
-      <div className="card-wrapper">
-        {image && <img src={image} alt={title} className="card-image" />}
-        <h2 className="card-title">{title}</h2>
-        {!hidden && <p className="card-content">{content}</p>}
-        {!hidden && (
-          <span className="cards-date">
-            {new Date(data).toLocaleDateString()}
-          </span>
-        )}
+    <div>
+      <div
+        className="card"
+        style={hidden ? { height: "250px" } : { height: "300px" }}
+        onClick={handleToggle}
+      >
+        <div className="card-wrapper">
+          {image && <img src={image} alt={title} className="card-image" />}
+          <h2 className="card-title">{title}</h2>
+          {!hidden && <p className="card-content">{content}</p>}
+          {!hidden && (
+            <span className="cards-date">
+              {new Date(data).toLocaleDateString()}
+            </span>
+          )}
+        </div>
       </div>
     </div>
   );
