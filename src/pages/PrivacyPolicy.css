@@ -1,12 +1,11 @@
 /** @format */
 .privacyContainer {
-  background-color: burlywood;
   padding: 20px 30px;
 }
 .privacy-policy {
   .titlePrivacyPolicy{
     font-family: 'Times New Roman', Times, serif; 
-    color: rgb(137, 96, 50);
+    color: #184e77;
   }
   margin-top: 20px;
   text-align: center;
@@ -16,7 +15,7 @@
 
 .hr {
   margin: 10px auto;
-  background-color: black;
+  background-color: #184e77;
   border: none;
   width: 70%;
   height: 2px;

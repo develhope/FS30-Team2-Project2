@@ -13,7 +13,6 @@ export function Services() {
     <>
       <div className="totalServicesDiv">
         <Animation textIt={"Servizi"} textEng={"Services"} />
-        <WoodBar />
         <div className="containerServices">
           <h3 className="servicesFooter">
             {language === "it" ? "Assistenza clienti" : "Customer support"}
@@ -43,6 +42,7 @@ export function Services() {
               ? "Servizi di aggiornamento e monitoraggio continuo."
               : ""}
           </p>
+          {/* <hr className="servHr"/> */}
           <p className="servicesEnd">
             &copy;
             <Link to="/">EventiveTravels</Link>
@@ -52,8 +52,6 @@ export function Services() {
           </p>
         </div>
       </div>
-      <WoodBar/>
-      <Animation textIt={"Servizi"} textEng={"Services"} />
     </>
   );
 }

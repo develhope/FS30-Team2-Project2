@@ -1,24 +1,24 @@
 /** @format */ import { About } from "../pages/About";
-import "../pages/About.css";
 import { Link } from "react-router-dom";
+import "../assets/users.css";
 
 const Users = ({ user }) => {
   return (
     <div className="aboutCard">
       <img src={user.photo} alt="" srcset="" className="profileImage" />
       <div className="nameAndTitle">
-        <h3 className="profileName">{user.name}</h3>
-        <h4 className="fullstackDev">Fullstack Developer</h4>
+        <h3 className="text">{user.name}</h3>
+        <h4 className=" text-fullstackDev">Fullstack Developer</h4>
       </div>
-      <div className="textProfile">
-        <h5 className="blbl">Contacts:</h5>
-        <p>
+      <div className=" text">
+        <h5 className="text">Contacts:</h5>
+        <p  className="textContact" >
           email:{" "}
-          <a href="mailto:" className="profileEmail">
+          <a href="mailto:">
             {user.email}
           </a>
         </p>
-        <p>
+        <p className="textContact">
           number:<a href="tel:+39">{user.number}</a>
         </p>
       </div>

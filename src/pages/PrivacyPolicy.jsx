@@ -13,7 +13,6 @@ export function PrivacyPolicy() {
         textIt={"Politica della Privacy"}
         textEng={"Privacy  Policy"}
       />
-      <WoodBar />
       <div className="privacyContainer">
         <ol className="privacy-policy">
           <p>
@@ -102,16 +101,17 @@ export function PrivacyPolicy() {
             </li>
             <hr className="hr" />
             <li>
-              <h3>DIRITTI DELL’UTENTE </h3>Gli utenti possono esercitare i
-              seguenti diritti: Accesso: richiedere informazioni sui propri dati
-              personali trattati. Rettifica: richiedere la correzione di dati
-              inesatti o incompleti. Cancellazione: richiedere la cancellazione
-              dei propri dati (in determinate circostanze). Limitazione:
-              richiedere la limitazione del trattamento dei propri dati.
-              Portabilità: ottenere una copia dei propri dati in formato
-              strutturato e leggibile. Opposizione: opporsi al trattamento dei
-              dati per finalità di marketing. Per esercitare i propri diritti,
-              l'utente può contattarci a [example@gmail.com].
+              <h3 className="titlePrivacyPolicy">DIRITTI DELL’UTENTE </h3>Gli
+              utenti possono esercitare i seguenti diritti: Accesso: richiedere
+              informazioni sui propri dati personali trattati. Rettifica:
+              richiedere la correzione di dati inesatti o incompleti.
+              Cancellazione: richiedere la cancellazione dei propri dati (in
+              determinate circostanze). Limitazione: richiedere la limitazione
+              del trattamento dei propri dati. Portabilità: ottenere una copia
+              dei propri dati in formato strutturato e leggibile. Opposizione:
+              opporsi al trattamento dei dati per finalità di marketing. Per
+              esercitare i propri diritti, l'utente può contattarci a
+              [example@gmail.com].
             </li>
             <hr className="hr" />
             <li>
@@ -157,11 +157,6 @@ export function PrivacyPolicy() {
           </p>
         </ol>
       </div>
-      <WoodBar />
-      <Animation
-        textIt={"Politica della Privacy"}
-        textEng={"Privacy  Policy"}
-      />
     </>
   );
 }
