@@ -162,7 +162,7 @@ const Cardsapi = [
       "La Fiera del Levante: cultura, esposizioni, concerti e street food a Bari.",
     titleEng: "Outdoor Concert - Fiera del Levante",
     contentEng:
-      "The Fiera del Levante is one of the most important events in Southern Italy, held annually in Bari. This event features cultural exhibits, commercial exhibitions, concerts, and activities for all ages. An evening of music under the stars, with local bands and street food. Don't miss out on this unique experience!",
+      "The Fiera del Levante: culture, exhibitions, concerts, and street food in Bari.",
     date: "2024-07-15T19:00:00",
     price: 20,
     currency: "EUR",
