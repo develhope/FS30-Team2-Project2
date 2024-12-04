@@ -62,7 +62,7 @@ export function Footer() {
         </div>
         <div className="mediaLogo">
           <img
-            src="src\assets\eventive.png"
+            src="src\assets\1.5.png"
             alt="logo"
             className="footerLogo"
             width={100}
