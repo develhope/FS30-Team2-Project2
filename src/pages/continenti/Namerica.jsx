@@ -1,14 +1,14 @@
 /** @format */
 
 import { Animation } from "../../components/Animation";
-import { eventi, EventsArray } from "./eventsArray";
+import { EventsArray, eventi } from "./eventsArray";
+import "./Namerica.css";
 
 export function Namerica() {
   return (
     <>
       <Animation textEng={"North America"} textIt={"Nord America"} />
-
-      <div>
+      <div className="eventsNamerica" id="events-north-america">
         {eventi
           .filter((evento) => evento.continente === "Nord America")
           .map((evento, index) => (

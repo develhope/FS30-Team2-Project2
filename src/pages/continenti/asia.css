@@ -1,0 +1,12 @@
+/** @format */
+
+.eventsAsia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#eventsAsia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -1,0 +1,13 @@
+/** @format */
+
+.eventsAfrica {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#events-Africa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -65,7 +65,7 @@ export function Footer() {
             src="src\assets\1.5.png"
             alt="logo"
             className="footerLogo"
-            width={100}
+            width={140}
             height={80}
           />
           <p className="endFooter">

@@ -1,0 +1,11 @@
+.eventsSamerica{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+#events-south-america{
+    flex-direction: row;
+    display:flex;
+    justify-content: center;
+}

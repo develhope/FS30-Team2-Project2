@@ -1,16 +1,19 @@
-import { Animation } from "../../components/Animation";
-import { WoodBar } from "../../components/WoodBar";
+/** @format */
 
+import { Animation } from "../../components/Animation";
+import { EventsArray, eventi } from "./eventsArray";
+import "./africa.css"
 export function Africa() {
   return (
     <>
       <Animation textEng={"Africa"} textIt={"Africa"} />
-      <WoodBar />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui a
-        animi eius rerum odit quo iure nam sint tempore ullam suscipit porro
-        neque quidem, officiis tenetur nulla libero repellat?
-      </p>
+      <div className="eventsAfrica" id="events-Africa">
+        {eventi
+          .filter((evento) => evento.continente === "Africa")
+          .map((evento, index) => (
+            <EventsArray evento={evento} key={index} />
+          ))}
+      </div>{" "}
     </>
   );
 }

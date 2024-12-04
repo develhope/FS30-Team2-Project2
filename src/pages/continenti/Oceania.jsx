@@ -1,16 +1,19 @@
+/** @format */
+import { EventsArray, eventi } from "./eventsArray";
 import { Animation } from "../../components/Animation";
-import { WoodBar } from "../../components/WoodBar";
+import "./oceania.css";
 
 export function Oceania() {
   return (
     <>
       <Animation textEng={"Oceania"} textIt={"Oceania"} />
-      <WoodBar />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui a
-        animi eius rerum odit quo iure nam sint tempore ullam suscipit porro
-        neque quidem, officiis tenetur nulla libero repellat?
-      </p>
+      <div className="eventsOceania" id="events-Oceania">
+        {eventi
+          .filter((evento) => evento.continente === "Oceania")
+          .map((evento, index) => (
+            <EventsArray evento={evento} key={index} />
+          ))}
+      </div>
     </>
   );
 }
