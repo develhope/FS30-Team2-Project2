@@ -54,6 +54,16 @@
     font-size: 13px;
   }
   .rock1 {
-    left: 9vw;
+    left: -14vw;
+  }
+  .rock2 {
+    left: 27vw;
+    top: -50px;
+  }
+  .ship {
+    left: 12vw;
+  }
+  .island {
+    left: 7vw;
   }
 }

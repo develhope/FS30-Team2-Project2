@@ -4,13 +4,11 @@ import "./footer.scss";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import React from "react";
-import { WoodBar } from "../components/WoodBar";
 
 export function Footer() {
   const { language } = useLanguage();
   return (
     <>
-      <WoodBar />
       <footer className="footer">
         <div className="columnsContainer">
           <div className="footerColumns">
