@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function useCarousel(props) {
   const [list, setList] = useState(props);
@@ -8,9 +8,13 @@ export function useCarousel(props) {
   function right() {
     setList([...list.slice(1, list.length), list[0]]);
   }
+  useEffect(() => {
+    setTimeout(() => {
+      right();
+    }, 3000);
+  });
+
   return {
     list: list,
-    goRight: right,
-    goLeft: left,
   };
 }

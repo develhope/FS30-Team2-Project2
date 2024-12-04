@@ -3,7 +3,6 @@ import { Types } from "../components/types/Types";
 import { useLanguage } from "../context/LanguageContext";
 import "../components/types/Types.css";
 import { Animation } from "../components/Animation";
-import { WoodBar } from "../components/WoodBar";
 import music from "../assets/guitar.png";
 import celebrations from "../assets/garland.png";
 import live from "../assets/live-show.png";
@@ -13,7 +12,6 @@ export function Events() {
   return (
     <>
       <Animation textIt={"Eventi"} textEng={"Events"} />
-      <WoodBar />
 
       <MapandCalendar />
       {/* <Types

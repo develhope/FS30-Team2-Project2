@@ -7,8 +7,7 @@ import WelcomeSection from "../components/WelcomeSection";
 export function Home() {
   return (
     <>
-      <Animation textIt={"Eventive Travels"} textEng={"Eventive Travels"} />
-
+      <Animation textIt={"Home"} textEng={"Home"} />
       <FirstCarousel />
 
       <WelcomeSection />

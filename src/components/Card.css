@@ -171,6 +171,13 @@
     top: 900px;
     left: 20px;
   }
+  .card-image {
+    width: 198px;
+    height: 160px;
+  }
+  .payment-button {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 761px) and (max-width: 1300px) {
@@ -181,6 +188,10 @@
   .card-title {
     font-size: 1.1em;
     top: 5px;
+  }
+  .card-image {
+    width: 246px;
+    height: 160px;
   }
   .card-content {
     font-size: 0.8em;
@@ -195,5 +206,12 @@
     position: absolute;
     top: 1050px;
     left: 20px;
+  }
+  .price-container {
+    width: 170px;
+  }
+  .payment-button {
+    width: 80px;
+    font-size: 10px;
   }
 }

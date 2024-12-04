@@ -3,7 +3,6 @@ import { useLanguage } from "../context/LanguageContext";
 import "../components/types/Types.css";
 import { Types } from "../components/types/Types";
 import { Animation } from "../components/Animation";
-import { WoodBar } from "../components/WoodBar";
 import adventure from "../assets/explorer.png";
 import culture from "../assets/sculpture.png";
 import romance from "../assets/balloons.png";
@@ -13,7 +12,6 @@ export function Travels() {
   return (
     <>
       <Animation textIt={"Viaggi"} textEng={"Travels"} />
-      <WoodBar />
       <MapandCalendar />
       {/* <Types
         first={language === "it" ? "Avventura" : "Adventure"}

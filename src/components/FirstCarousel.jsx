@@ -32,7 +32,7 @@ export function FirstCarousel() {
     },
   ];
 
-  const { list, goLeft, goRight } = useCarousel(trips);
+  const { list } = useCarousel(trips);
 
   const first = list[0];
   const second = list[1];
@@ -50,46 +50,24 @@ export function FirstCarousel() {
           </h1>
         </div>
         <div id="carousel">
-          <div className="arrowBg">
-            <img
-              onClick={goLeft}
-              id="previous"
-              src="src\assets\arrowtop.png"
-              alt="previous"
-            />
-          </div>
           <div className="lateral">
-            <img
-              onClick={goLeft}
-              className="firstImage"
-              src={first.image}
-              alt="firstImage"
-            />
+            <img className="firstImage" src={first.image} alt="firstImage" />
           </div>
           <div className="central">
             <img className="secondImage" src={second.image} alt="secondImage" />
           </div>
 
           <div className="lateral">
-            <img
-              onClick={goRight}
-              className="thirdImage"
-              src={third.image}
-              alt="thirdImage"
-            />
-          </div>
-          <div className="arrowBg">
-            <img
-              onClick={goRight}
-              id="next"
-              src="src\assets\arrowtop.png"
-              alt="next"
-            />
+            <img className="thirdImage" src={third.image} alt="thirdImage" />
           </div>
         </div>
         <div className="description" id="descriptionDown">
           <h2>
-            {language === "it" ? second.descriptionIt : second.descriptionEng}
+            {language === "it" ? (
+              <span className="text-description">{second.descriptionIt}</span>
+            ) : (
+              <span>{second.descriptionEng}</span>
+            )}
           </h2>
         </div>
       </div>
