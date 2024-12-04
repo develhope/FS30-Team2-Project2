@@ -1,5 +1,4 @@
 import { ReviewsList } from "../assets/ReviewsList";
-import { WoodBar } from "../components/WoodBar";
 import Review from "../components/Review";
 import { useLanguage } from "../context/LanguageContext";
 import "../components/Reviews.css";
@@ -11,7 +10,6 @@ export function Reviews() {
   return (
     <div>
       <Animation textIt={"Recensioni"} textEng={"Reviews"} />
-      <WoodBar />
       <div className="reviewCardsContainer">
         {list.map((event) => (
           <div className="reviewCards" key={event.id}>
@@ -24,7 +22,6 @@ export function Reviews() {
           </div>
         ))}
       </div>
-      <WoodBar />
     </div>
   );
 }

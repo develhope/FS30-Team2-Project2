@@ -3,6 +3,10 @@
   text-align: center;
   height: 480px;
   margin-bottom: 16px;
+  background-image: url("../assets/worldmap.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 #carousel {
   margin-right: 38px;
@@ -43,41 +47,12 @@
   box-shadow: 10px 15px 5px rgb(49, 48, 48);
 }
 
-#next {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 540px;
-  right: 5vw;
-  z-index: 1;
-}
-#next:hover {
-  cursor: pointer;
-}
-#previous {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 540px;
-  left: 7vw;
-  rotate: y 180deg;
-  z-index: 1;
-}
-#previous:hover {
-  cursor: pointer;
-}
 #carousel {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-.lateral img:hover {
-  cursor: pointer;
-}
 
-.central img:hover {
-  cursor: pointer;
-}
 .lateral {
   width: 300px;
   height: 300px;
@@ -109,6 +84,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  color: #52b69a;
 }
 #descriptionUp {
   bottom: -5px;
@@ -119,9 +95,7 @@
 #descriptionDown {
   margin-top: 40px;
 }
-.description:hover {
-  cursor: pointer;
-}
+
 @media only screen and (min-width: 761px) and (max-width: 1024px) {
   .lateral {
     width: 0px;
