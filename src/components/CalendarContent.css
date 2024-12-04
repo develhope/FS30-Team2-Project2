@@ -127,7 +127,9 @@ h2 {
   cursor: pointer;
   background-color: #f4e1c1;
 }
-
+.rbc-row-content {
+  z-index: 0 !important;
+}
 .rbc-day-bg:hover {
   background-color: #e0c8a1;
 }
