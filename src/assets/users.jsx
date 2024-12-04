@@ -12,18 +12,15 @@ const Users = ({ user }) => {
       </div>
       <div className=" text">
         <h5 className="text">Contacts:</h5>
-        <p  className="textContact" >
-          email:{" "}
-          <a href="mailto:">
-            {user.email}
-          </a>
+        <p className="textContact">
+          email: <a href="mailto:">{user.email}</a>
         </p>
         <p className="textContact">
           number:<a href="tel:+39">{user.number}</a>
         </p>
       </div>
 
-      <Link to={user.linkedin}>
+      <Link to={user.linkedin} target="_blank">
         <img
           src="\img\logoLinkedin.png"
           alt="linkedinLogo"
