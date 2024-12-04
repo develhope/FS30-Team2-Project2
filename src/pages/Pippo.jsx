@@ -9,7 +9,6 @@ export function Pippo() {
   return (
     <>
       <Animation textIt={"404"} textEng={"404"} />
-      <WoodBar />
       <div style={{ display: "flex", justifyContent: "center", gap: "3rem" }}>
         <img src="src\assets\pippo.png" alt="pippo" />
         <div
@@ -17,8 +16,8 @@ export function Pippo() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            backgroundImage: `url(${scroll})`,
-            backgroundSize: "100% 100%",
+            backgroundImage: "linear-gradient(to left, #b5e48c, #52b69a)",
+            borderRadius: "40px",
             width: "400px",
             height: "300px",
             padding: "2rem",
