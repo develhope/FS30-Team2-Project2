@@ -22,7 +22,8 @@ export const eventi = [
     contentEng:
       "The Sapporo Snow Festival in Japan is famous for its spectacular snow and ice sculptures. Every year, millions of visitors come to admire the artworks and participate in various winter activities.",
     continente: "Asia",
-    imageUrl: "https://example.com/images/sapporo-snow-festival.jpg",
+    imageUrl:
+      "https://cdn1.ntv.com.tr/gorsel/e-TmITcrlUiBGDQ8DCrJdQ.jpg?width=1000&mode=both&scale=both&v=1263479100000",
   },
   {
     titleIta: "Oktoberfest",
@@ -197,7 +198,8 @@ export const eventi = [
     contentEng:
       "Spectacular ice sculptures in China make Harbin a global winter attraction.",
     continente: "Asia",
-    imageUrl: "https://example.com/images/harbin-ice-festival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.ZFyQg8mSJTlsHcAcWTAEFQHaEt?w=305&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
 
   {
@@ -207,7 +209,8 @@ export const eventi = [
       "Un festival annuale che celebra il teatro classico greco e romano in uno dei teatri antichi più suggestivi del mondo.",
     contentEng:
       "An annual festival celebrating classical Greek and Roman theatre in one of the most evocative ancient theatres in the world.",
-    imageUrl: "https://example.com/syracuse_theatre_festival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.WoCz9vvPeBEgKTR_UcqAOgHaHa?w=118&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     continente: "Europa",
   },
   {
@@ -217,7 +220,8 @@ export const eventi = [
       "Un'esperienza musicale straordinaria in una delle strutture più iconiche dell'Australia.",
     contentEng:
       "An extraordinary musical experience in one of Australia's most iconic landmarks.",
-    imageUrl: "https://example.com/sydney_opera_house.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.KpaoFjLvC-ITOdbIThUqFQHaJ4?pid=ImgDet&w=206&h=274&c=7&dpr=1,5",
     continente: "Oceania",
   },
   {
@@ -227,7 +231,8 @@ export const eventi = [
       "Un classico intramontabile del teatro musicale che incanta il pubblico a New York.",
     contentEng:
       "A timeless classic of musical theatre that enchants audiences in New York.",
-    imageUrl: "https://example.com/phantom_of_the_opera.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.eozHSa2FgwhwtaIfXP-gjQHaE9?w=277&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     continente: "Nord America",
   },
   {
@@ -237,7 +242,8 @@ export const eventi = [
       "Uno dei festival di teatro più importanti d'Europa, che ospita artisti di fama mondiale.",
     contentEng:
       "One of Europe's most important theatre festivals, hosting world-renowned artists.",
-    imageUrl: "https://example.com/avignon_festival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.DeDi4p40WruEwMZ5HE1vzQHaE8?pid=ImgDet&w=206&h=137&c=7&dpr=1,5",
     continente: "Europa",
   },
   {
@@ -247,19 +253,11 @@ export const eventi = [
       "Un festival musicale a Essaouira, Marocco, che celebra la musica tradizionale africana e le sue contaminazioni globali.",
     contentEng:
       "A music festival in Essaouira, Morocco, celebrating traditional African music and its global influences.",
-    imageUrl: "https://example.com/gnaoua_festival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.Fj_4YD5EuR6dwI2Ye6GZjgHaEC?w=286&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     continente: "Africa",
   },
-  {
-    titleIta: "Carnaval del Teatro a Rio de Janeiro",
-    titleEng: "Rio de Janeiro Theatre Carnival",
-    contentIta:
-      "Un evento vivace che unisce teatro, danza e spettacoli durante il famoso Carnevale di Rio.",
-    contentEng:
-      "A vibrant event combining theatre, dance, and performances during Rio's famous Carnival.",
-    imageUrl: "https://example.com/rio_theatre_carnival.jpg",
-    continente: "Sud America",
-  },
+
   {
     titleIta: "Teatro Nō al Teatro Nazionale di Tokyo",
     titleEng: "Noh Theatre at the National Theatre of Tokyo",
@@ -267,7 +265,8 @@ export const eventi = [
       "Spettacoli di teatro tradizionale giapponese che uniscono danza, musica e poesia.",
     contentEng:
       "Performances of traditional Japanese theatre combining dance, music, and poetry.",
-    imageUrl: "https://example.com/noh_theatre_tokyo.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.192gntwoQEwNK5wJ8IFO6gHaFN?pid=ImgDet&w=206&h=145&c=7&dpr=1,5",
     continente: "Asia",
   },
   {
@@ -277,7 +276,8 @@ export const eventi = [
       "Un viaggio attraverso le colline della Toscana, visitando città storiche, degustando vini locali e scoprendo il patrimonio culturale della regione.",
     contentEng:
       "A journey through the hills of Tuscany, visiting historic cities, tasting local wines, and discovering the region's cultural heritage.",
-    ImageUrl: "https://example.com/tuscany_cultural_tour.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.cXXPp16gvWjyNcB2ddjqbQHaE8?w=269&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     continente: "Europa",
   },
   {
@@ -287,7 +287,7 @@ export const eventi = [
       "Un'escursione tra le maestose Dolomiti, con panorami mozzafiato, sentieri immersi nella natura e racconti di storia locale.",
     contentEng:
       "A hike through the majestic Dolomites, featuring breathtaking views, trails surrounded by nature, and local history tales.",
-    ImageUrl: "https://example.com/dolomites_hiking_trip.jpg",
+    imageUrl: "https://example.com/dolomites_hiking_trip.jpg",
     continent: "Europa",
   },
   {
@@ -297,7 +297,7 @@ export const eventi = [
       "Un soggiorno romantico nella città dei canali, con gite in gondola, cene a lume di candela e visite a luoghi iconici come Piazza San Marco.",
     contentEng:
       "A romantic getaway in the city of canals, with gondola rides, candlelit dinners, and visits to iconic landmarks like St. Mark's Square.",
-    ImageUrl: "https://example.com/romantic_venice.jpg",
+    imageUrl: "https://example.com/romantic_venice.jpg",
     continent: "Europa",
   },
   {
@@ -307,7 +307,7 @@ export const eventi = [
       "Un tour per scoprire la città eterna, con tappe al Colosseo, ai Fori Imperiali, alla Basilica di San Pietro e alla Fontana di Trevi.",
     contentEng:
       "A tour to discover the Eternal City, with stops at the Colosseum, Imperial Forums, St. Peter's Basilica, and Trevi Fountain.",
-    ImageUrl: "https://example.com/guided_tour_rome.jpg",
+    imageUrl: "https://example.com/guided_tour_rome.jpg",
     continent: "Europa",
   },
   {
@@ -317,7 +317,7 @@ export const eventi = [
       "Uno dei festival cinematografici più prestigiosi al mondo, con proiezioni di film di registi internazionali e red carpet glamour.",
     contentEng:
       "One of the most prestigious film festivals in the world, featuring screenings of international directors' films and glamorous red carpets.",
-    ImageUrl: "https://example.com/venice_film_festival.jpg",
+    imageUrl: "https://example.com/venice_film_festival.jpg",
     continent: "Europa",
   },
   {
@@ -327,8 +327,114 @@ export const eventi = [
       "Una giornata esplorando l'isola di Capraia, con acque cristalline, baie nascoste e soste per immersioni e snorkeling.",
     contentEng:
       "A day exploring the island of Capraia, with crystal-clear waters, hidden coves, and stops for diving and snorkeling.",
-    ImageUrl: "https://example.com/capraia_boat_trip.jpg",
-    continent: "Europa",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.7qH26lj4preR28spj6Oe5wHaEK?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+    continente: "Europa",
+  },
+  {
+    titleIta: "Festival di Sanremo",
+    titleEng: "Sanremo Music Festival",
+    contentIta:
+      "Il festival della canzone italiana più famoso, che si tiene ogni anno nella città ligure di Sanremo.",
+    contentEng:
+      "The most famous Italian song festival, held annually in the Ligurian city of Sanremo.",
+    continente: "Europa",
+    imageUrl: "https://example.com/sanremo_festival.jpg",
+  },
+  {
+    titleIta: "Coachella",
+    titleEng: "Coachella Valley Music and Arts Festival",
+    contentIta:
+      "Uno dei festival di musica e arte più famosi al mondo, che si svolge nel deserto della California.",
+    contentEng:
+      "One of the world's most famous music and arts festivals, held in the California desert.",
+    continente: "Nord America",
+    imageUrl: "https://example.com/coachella.jpg",
+  },
+  {
+    titleIta: "Festival Rock in Rio",
+    titleEng: "Rock in Rio Festival",
+    contentIta:
+      "Un enorme festival musicale a Rio de Janeiro che ospita artisti internazionali di grande fama.",
+    contentEng:
+      "A massive music festival in Rio de Janeiro hosting world-famous international artists.",
+    continente: "Sud America",
+    imageUrl: "https://example.com/rock_in_rio.jpg",
+  },
+  {
+    titleIta: "Festival Mawazine",
+    titleEng: "Mawazine Festival",
+    contentIta:
+      "Un festival musicale che celebra artisti marocchini e internazionali, tenuto a Rabat, Marocco.",
+    contentEng:
+      "A music festival celebrating Moroccan and international artists, held in Rabat, Morocco.",
+    continente: "Africa",
+    imageUrl:
+      "https://th.bing.com/th/id/R.a043710c257ed52c053f1a5dd51d513b?rik=%2fdRypGD5iYRWWw&pid=ImgRaw&r=0",
+  },
+  {
+    titleIta: "Festival di Glastonbury",
+    titleEng: "Glastonbury Festival",
+    contentIta:
+      "Uno dei più grandi festival di musica e arte in Europa, famoso per i suoi concerti leggendari.",
+    contentEng:
+      "One of the largest music and arts festivals in Europe, known for its legendary performances.",
+    continente: "Europa",
+    imageUrl: "https://example.com/glastonbury_festival.jpg",
+  },
+  {
+    titleIta: "Tomorrowland",
+    titleEng: "Tomorrowland",
+    contentIta:
+      "Un festival di musica elettronica che si tiene in Belgio, noto per le sue produzioni spettacolari.",
+    contentEng:
+      "An electronic music festival held in Belgium, known for its spectacular productions.",
+    continente: "Europa",
+    imageUrl: "https://example.com/tomorrowland.jpg",
+  },
+  {
+    titleIta: "Fuji Rock Festival",
+    titleEng: "Fuji Rock Festival",
+    contentIta:
+      "Un festival musicale che si tiene ai piedi del Monte Fuji, in Giappone, con artisti locali e internazionali.",
+    contentEng:
+      "A music festival held at the base of Mount Fuji, Japan, featuring local and international artists.",
+    continente: "Asia",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.tbp-fUGfx9xQHMB1YvtdAwHaE8?w=272&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+  },
+  {
+    titleIta: "Big Day Out",
+    titleEng: "Big Day Out",
+    contentIta:
+      "Un festival itinerante in Australia che celebra la musica rock, pop e indie.",
+    contentEng:
+      "A traveling festival in Australia celebrating rock, pop, and indie music.",
+    continente: "Oceania",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.7PaoK3rSOpDUO11t5_aIiAHaE6?w=274&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+  },
+  {
+    titleIta: "Festival di Musica del Deserto",
+    titleEng: "Desert Music Festival",
+    contentIta:
+      "Un festival musicale unico nel deserto del Rajasthan, India, che celebra la musica tradizionale.",
+    contentEng:
+      "A unique music festival in the Rajasthan desert, India, celebrating traditional music.",
+    continente: "Asia",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.N84Y5SzEZnnY74XXbCtrMgHaE6?pid=ImgDet&w=206&h=136&c=7&dpr=1,5",
+  },
+  {
+    titleIta: "Cape Town International Jazz Festival",
+    titleEng: "Cape Town International Jazz Festival",
+    contentIta:
+      "Uno dei più grandi festival di jazz in Africa, che si tiene a Città del Capo, Sudafrica.",
+    contentEng:
+      "One of Africa's largest jazz festivals, held in Cape Town, South Africa.",
+    continente: "Africa",
+    imageUrl:
+      "https://images.rove.me/w_1920,q_85/qw28hiuvmdo5r605rjh1/cape-town-cape-town-international-jazz-festival.jpg",
   },
 ];
 
