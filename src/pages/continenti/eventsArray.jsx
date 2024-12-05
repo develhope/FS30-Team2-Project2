@@ -11,7 +11,8 @@ export const eventi = [
     contentEng:
       "The Rio Carnival is one of the most famous festivals in the world, with spectacular samba parades, colorful costumes, and a celebration that involves millions of people in the streets of Rio de Janeiro, Brazil.",
     continente: "Sud America",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRk_qHC8NU1nZmsPkMzwqpOY7M89RsqTGKQ&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRk_qHC8NU1nZmsPkMzwqpOY7M89RsqTGKQ&s",
   },
   {
     titleIta: "Festa della Neve in Giappone",
@@ -31,7 +32,8 @@ export const eventi = [
     contentEng:
       "The Oktoberfest in Munich, Germany, is the world's largest beer festival. Every year, millions of people gather to enjoy traditional beer and food in a festive atmosphere.",
     continente: "Europa",
-    imageUrl: "https://example.com/images/oktoberfest.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.faf7njDs6AEfRewXIV9JcAHaE8?w=267&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     titleIta: "Capodanno Cinese",
@@ -41,7 +43,8 @@ export const eventi = [
     contentEng:
       "Chinese New Year is one of the most important holidays in Asia, with celebrations lasting several days. The streets come alive with parades, dragon dances, fireworks, and traditional foods.",
     continente: "Asia",
-    imageUrl: "https://example.com/images/chinese-new-year.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.Qm1VbFoPPUtLOaj_41ydwAHaEO?w=293&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     titleIta: "Festival dell'Acqua Songkran",
@@ -51,17 +54,19 @@ export const eventi = [
     contentEng:
       "Songkran is the Thai New Year festival, celebrated with water fights throughout the country. People splash water on each other as a symbol of purification and blessing.",
     continente: "Asia",
-    imageUrl: "https://example.com/images/songkran-festival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.k8v2iOjOb6s_OlKs8S6-mwHaE8?pid=ImgDet&w=206&h=137&c=7&dpr=1,5",
   },
   {
-    titleIta: "Day of the Dead",
+    titleIta: "Giorno dei Morti",
     titleEng: "Day of the Dead",
     contentIta:
       "La festività messicana del Día de los Muertos celebra la vita dei defunti con altari decorati, cibo tradizionale, e danze. È un'occasione per onorare gli antenati e celebrare la morte come parte della vita.",
     contentEng:
       "The Mexican holiday Día de los Muertos celebrates the lives of the deceased with decorated altars, traditional food, and dances. It is an occasion to honor ancestors and celebrate death as part of life.",
     continente: "Nord America",
-    imageUrl: "https://example.com/images/day-of-the-dead.jpg",
+    imageUrl:
+      "https://s3.amazonaws.com/3.cdn.soymamablog.com/wp-content/uploads/2008/11/Dia-de-Muertos.png",
   },
   {
     titleIta: "Festival di Diwali",
@@ -71,7 +76,8 @@ export const eventi = [
     contentEng:
       "Diwali, also known as the Festival of Lights, is one of the most important holidays in India. During Diwali, homes are illuminated with lights, gifts are exchanged, and prayers are offered for prosperity.",
     continente: "Asia",
-    imageUrl: "https://example.com/images/diwali-festival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.SNhBQS-EdXnhcLiLhyMtdgHaE8?pid=ImgDet&w=206&h=137&c=7&dpr=1,5",
   },
   {
     titleIta: "Mardi Gras",
@@ -81,7 +87,8 @@ export const eventi = [
     contentEng:
       "Mardi Gras in New Orleans is one of the most famous celebrations in the United States, with colorful parades, elaborate costumes, music, and parties celebrating Creole and African American culture.",
     continente: "Nord America",
-    imageUrl: "https://example.com/images/mardi-gras.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.h5UdpPL6cpZ9c07WK6SuAQHaEO?w=297&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     titleIta: "Vivid Sydney",
@@ -91,7 +98,8 @@ export const eventi = [
     contentEng:
       "Vivid Sydney is a festival of lights, music, and ideas held annually in Sydney, Australia, transforming the city into a visual artwork with light installations and live performances.",
     continente: "Oceania",
-    imageUrl: "https://example.com/images/vivid-sydney.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.4BTvMDg__zXiErcX0x-_VQHaHM?pid=ImgDet&w=206&h=199&c=7&dpr=1,5",
   },
   {
     titleIta: "San Fermín",
@@ -101,7 +109,8 @@ export const eventi = [
     contentEng:
       "The San Fermín Festival in Pamplona, Spain, is famous for the Running of the Bulls, a tradition that attracts thousands of tourists every year, along with religious events, parades, and folk dances.",
     continente: "Europa",
-    imageUrl: "https://example.com/images/san-fermin.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.T8bNo0HradnnlnooWbmNlQHaEf?w=283&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     titleIta: "Festival di Glastonbury",
@@ -111,27 +120,30 @@ export const eventi = [
     contentEng:
       "The Glastonbury Festival in the UK is one of the largest and most famous music festivals in the world, where world-renowned artists perform and visual arts and theater shows are also celebrated.",
     continente: "Europa",
-    imageUrl: "https://example.com/images/glastonbury-festival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.WZUqTLpRiyDiFo74mwUZDgHaE7?w=274&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
-    titleIta: "Carnaval de Barranquilla",
+    titleIta: "Carnevale di Barranquilla",
     titleEng: "Barranquilla Carnival",
     contentIta:
       "Il Carnevale di Barranquilla in Colombia è uno dei più grandi e importanti carnevali del paese, con parate, danze e tradizioni culturali che celebrano la diversità e la ricchezza della cultura colombiana.",
     contentEng:
       "The Barranquilla Carnival in Colombia is one of the largest and most important carnivals in the country, with parades, dances, and cultural traditions that celebrate the diversity and richness of Colombian culture.",
     continente: "Sud America",
-    imageUrl: "https://example.com/images/barranquilla-carnival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.1eeffR-i30SrTnBmz1GKIgHaE6?w=215&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
-    titleIta: "Carnival di Salvador",
+    titleIta: "Carnevale di Salvador",
     titleEng: "Salvador Carnival",
     contentIta:
       "Il Carnevale di Salvador, in Brasile, è uno dei più grandi del mondo, con parate, blocchi di strada, danze di samba e molta musica che rispecchia la cultura afro-brasiliana.",
     contentEng:
       "The Salvador Carnival in Brazil is one of the largest in the world, with parades, street blocks, samba dances, and lots of music reflecting Afro-Brazilian culture.",
     continente: "Sud America",
-    imageUrl: "https://example.com/images/salvador-carnival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.huyeGiKX6Evv6A7v0MJEKwHaE7?pid=ImgDet&w=206&h=137&c=7&dpr=1,5",
   },
   {
     titleIta: "Holika Dahan",
@@ -141,7 +153,8 @@ export const eventi = [
     contentEng:
       "Celebrated the night before Holi in India, Holika Dahan represents the victory of good over evil with bonfires symbolizing the triumph of truth.",
     continente: "Asia",
-    imageUrl: "https://example.com/images/holika-dahan.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.09cYkgiF8N76g06NwzYAfAHaE7?pid=ImgDet&w=206&h=137&c=7&dpr=1,5",
   },
   {
     titleIta: "Festival delle lanterne",
@@ -151,17 +164,19 @@ export const eventi = [
     contentEng:
       "The Lantern Festival in China concludes the Lunar New Year with illuminated lantern displays, dances, and cultural celebrations.",
     continente: "Asia",
-    imageUrl: "https://example.com/images/lantern-festival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.GneTIj8j5hf224ypAD0IKQHaE8?pid=ImgDet&w=206&h=137&c=7&dpr=1,5",
   },
   {
-    titleIta: "Yam Carnival",
+    titleIta: "Carnevale diYam ",
     titleEng: "Yam Carnival",
     contentIta:
       "Il festival culturale delle regioni africane celebra il raccolto con canti, balli e riti tradizionali.",
     contentEng:
       "The cultural festival of African regions celebrates the harvest with singing, dancing, and traditional rituals.",
     continente: "Africa",
-    imageUrl: "https://example.com/images/yam-carnival.jpg",
+    imageUrl:
+      "https://pm1.narvii.com/7014/86da8b702f27257edc6f5e06db6aa0c80d16536fr1-540-351v2_hq.jpg",
   },
   {
     titleIta: "Ultra Music Festival",
@@ -171,7 +186,8 @@ export const eventi = [
     contentEng:
       "Electronic music festival in Miami gathering the world's biggest DJs and thousands of fans.",
     continente: "Nord America",
-    imageUrl: "https://example.com/images/ultra-music-festival.jpg",
+    imageUrl:
+      "https://th.bing.com/th/id/OIP.NTn0EmPfE7G2get01vxxrwHaEK?w=279&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     titleIta: "Harbin Ice Festival",
@@ -183,6 +199,137 @@ export const eventi = [
     continente: "Asia",
     imageUrl: "https://example.com/images/harbin-ice-festival.jpg",
   },
+
+  {
+    titleIta: "Festival di Teatro Antico di Siracusa",
+    titleEng: "Ancient Theatre Festival of Syracuse",
+    contentIta:
+      "Un festival annuale che celebra il teatro classico greco e romano in uno dei teatri antichi più suggestivi del mondo.",
+    contentEng:
+      "An annual festival celebrating classical Greek and Roman theatre in one of the most evocative ancient theatres in the world.",
+    imageUrl: "https://example.com/syracuse_theatre_festival.jpg",
+    continente: "Europa",
+  },
+  {
+    titleIta: "Opera alla Sydney Opera House",
+    titleEng: "Opera at the Sydney Opera House",
+    contentIta:
+      "Un'esperienza musicale straordinaria in una delle strutture più iconiche dell'Australia.",
+    contentEng:
+      "An extraordinary musical experience in one of Australia's most iconic landmarks.",
+    imageUrl: "https://example.com/sydney_opera_house.jpg",
+    continente: "Oceania",
+  },
+  {
+    titleIta: "Broadway: Il Fantasma dell'Opera",
+    titleEng: "Broadway: The Phantom of the Opera",
+    contentIta:
+      "Un classico intramontabile del teatro musicale che incanta il pubblico a New York.",
+    contentEng:
+      "A timeless classic of musical theatre that enchants audiences in New York.",
+    imageUrl: "https://example.com/phantom_of_the_opera.jpg",
+    continente: "Nord America",
+  },
+  {
+    titleIta: "Festival di Teatro di Avignone",
+    titleEng: "Avignon Theatre Festival",
+    contentIta:
+      "Uno dei festival di teatro più importanti d'Europa, che ospita artisti di fama mondiale.",
+    contentEng:
+      "One of Europe's most important theatre festivals, hosting world-renowned artists.",
+    imageUrl: "https://example.com/avignon_festival.jpg",
+    continente: "Europa",
+  },
+  {
+    titleIta: "Festival di Gnaoua e Musiche del Mondo",
+    titleEng: "Gnaoua and World Music Festival",
+    contentIta:
+      "Un festival musicale a Essaouira, Marocco, che celebra la musica tradizionale africana e le sue contaminazioni globali.",
+    contentEng:
+      "A music festival in Essaouira, Morocco, celebrating traditional African music and its global influences.",
+    imageUrl: "https://example.com/gnaoua_festival.jpg",
+    continente: "Africa",
+  },
+  {
+    titleIta: "Carnaval del Teatro a Rio de Janeiro",
+    titleEng: "Rio de Janeiro Theatre Carnival",
+    contentIta:
+      "Un evento vivace che unisce teatro, danza e spettacoli durante il famoso Carnevale di Rio.",
+    contentEng:
+      "A vibrant event combining theatre, dance, and performances during Rio's famous Carnival.",
+    imageUrl: "https://example.com/rio_theatre_carnival.jpg",
+    continente: "Sud America",
+  },
+  {
+    titleIta: "Teatro Nō al Teatro Nazionale di Tokyo",
+    titleEng: "Noh Theatre at the National Theatre of Tokyo",
+    contentIta:
+      "Spettacoli di teatro tradizionale giapponese che uniscono danza, musica e poesia.",
+    contentEng:
+      "Performances of traditional Japanese theatre combining dance, music, and poetry.",
+    imageUrl: "https://example.com/noh_theatre_tokyo.jpg",
+    continente: "Asia",
+  },
+  {
+    titleIta: "Tour culturale in Toscana",
+    titleEng: "Cultural tour in Tuscany",
+    contentIta:
+      "Un viaggio attraverso le colline della Toscana, visitando città storiche, degustando vini locali e scoprendo il patrimonio culturale della regione.",
+    contentEng:
+      "A journey through the hills of Tuscany, visiting historic cities, tasting local wines, and discovering the region's cultural heritage.",
+    ImageUrl: "https://example.com/tuscany_cultural_tour.jpg",
+    continente: "Europa",
+  },
+  {
+    titleIta: "Escursione nelle Dolomiti",
+    titleEng: "Dolomites hiking trip",
+    contentIta:
+      "Un'escursione tra le maestose Dolomiti, con panorami mozzafiato, sentieri immersi nella natura e racconti di storia locale.",
+    contentEng:
+      "A hike through the majestic Dolomites, featuring breathtaking views, trails surrounded by nature, and local history tales.",
+    ImageUrl: "https://example.com/dolomites_hiking_trip.jpg",
+    continent: "Europa",
+  },
+  {
+    titleIta: "Vacanza romantica a Venezia",
+    titleEng: "Romantic vacation in Venice",
+    contentIta:
+      "Un soggiorno romantico nella città dei canali, con gite in gondola, cene a lume di candela e visite a luoghi iconici come Piazza San Marco.",
+    contentEng:
+      "A romantic getaway in the city of canals, with gondola rides, candlelit dinners, and visits to iconic landmarks like St. Mark's Square.",
+    ImageUrl: "https://example.com/romantic_venice.jpg",
+    continent: "Europa",
+  },
+  {
+    titleIta: "Visita guidata a Roma",
+    titleEng: "Guided tour of Rome",
+    contentIta:
+      "Un tour per scoprire la città eterna, con tappe al Colosseo, ai Fori Imperiali, alla Basilica di San Pietro e alla Fontana di Trevi.",
+    contentEng:
+      "A tour to discover the Eternal City, with stops at the Colosseum, Imperial Forums, St. Peter's Basilica, and Trevi Fountain.",
+    ImageUrl: "https://example.com/guided_tour_rome.jpg",
+    continent: "Europa",
+  },
+  {
+    titleIta: "Festival del Cinema di Venezia",
+    titleEng: "Venice Film Festival",
+    contentIta:
+      "Uno dei festival cinematografici più prestigiosi al mondo, con proiezioni di film di registi internazionali e red carpet glamour.",
+    contentEng:
+      "One of the most prestigious film festivals in the world, featuring screenings of international directors' films and glamorous red carpets.",
+    ImageUrl: "https://example.com/venice_film_festival.jpg",
+    continent: "Europa",
+  },
+  {
+    titleIta: "Viaggio in barca a Capraia",
+    titleEng: "Boat trip to Capraia",
+    contentIta:
+      "Una giornata esplorando l'isola di Capraia, con acque cristalline, baie nascoste e soste per immersioni e snorkeling.",
+    contentEng:
+      "A day exploring the island of Capraia, with crystal-clear waters, hidden coves, and stops for diving and snorkeling.",
+    ImageUrl: "https://example.com/capraia_boat_trip.jpg",
+    continent: "Europa",
+  },
 ];
 
 export const EventsArray = ({ evento }) => {
@@ -190,12 +337,16 @@ export const EventsArray = ({ evento }) => {
 
   return (
     <div id="continentsCard">
-      <div id="style-cards-Namerica">
+      <div id="style-cards">
         <h3 className="titleEventsCard">
           {language === "it" ? evento.titleIta : evento.titleEng}
         </h3>
         <div className="imageEventsCard">
-          <img src={evento.imageUrl} alt="event's Image" className="iamgesEvent"/>
+          <img
+            src={evento.imageUrl}
+            alt="event's Image"
+            className="imagesEvent"
+          />
         </div>
         <div className="contentEventsCard">
           <p>{language === "it" ? evento.contentIta : evento.contentEng}</p>

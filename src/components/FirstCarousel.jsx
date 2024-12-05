@@ -4,7 +4,6 @@ import roadtrip from "../assets/roadtrip.jpg";
 import culture from "../assets/culture.jpg";
 import romance from "../assets/romance.jpg";
 import { useCarousel } from "./useCarousel";
-import { WoodBar } from "./WoodBar";
 import { useLanguage } from "../context/LanguageContext";
 export function FirstCarousel() {
   const { language } = useLanguage();

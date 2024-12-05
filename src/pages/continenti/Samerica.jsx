@@ -14,11 +14,6 @@ export function Samerica() {
             <EventsArray evento={evento} key={index} />
           ))}
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui a
-        animi eius rerum odit quo iure nam sint tempore ullam suscipit porro
-        neque quidem, officiis tenetur nulla libero repellat?
-      </p>
     </>
   );
 }

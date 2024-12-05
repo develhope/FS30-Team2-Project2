@@ -2,10 +2,12 @@
 
 #continentsCards {
   display: flex;
+  flex-wrap: wrap;
 }
-#style-cards-Namerica {
-  border: 3px solid black;
+#style-cards {
+  border: 3px solid #184e77;
   border-radius: 20px;
+  background-image: linear-gradient(#b5e48c, #52b69a);
   margin: 20px;
   width: 350px;
   height: 350px;
@@ -15,13 +17,20 @@
 .titleEventsCard {
   text-align: center;
   margin-top: 8px;
-  text-shadow: 1px 1px #184e77;
+  text-shadow: 1px 1px cornflowerblue;
+  color: #184e77;
 }
 .imageEventsCard {
-  margin-left: 2.2rem;
+  margin-left: 1.3rem;
   margin-top: 5px;
   width: 50px;
   height: 50px;
+}
+
+.imagesEvent {
+  width: 19rem;
+  height: 13rem;
+  position: relative;
 }
 .contentEventsCard {
   text-align: center;

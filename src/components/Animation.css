@@ -1,6 +1,7 @@
 #animationContainer {
   background-image: linear-gradient(to right, cyan, wheat, cyan);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
   height: 130px;
   display: flex;
   justify-content: space-between;
