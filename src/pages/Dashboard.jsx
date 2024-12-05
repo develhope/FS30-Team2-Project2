@@ -1,7 +1,6 @@
 import CalendarContent from "../components/CalendarContent";
 import { useLanguage } from "../context/LanguageContext";
 import scroll from "../assets/scroll.png";
-import { WoodBar } from "../components/WoodBar";
 import { useState } from "react";
 import { CreationPopUp } from "../components/CreationPopUp";
 import { Animation } from "../components/Animation";
@@ -26,7 +25,6 @@ export function Dashboard() {
   return (
     <div style={hover ? { cursor: "pointer" } : null}>
       <Animation textIt={"Area Utente"} textEng={"User Area"} />
-      <WoodBar />
       {openE && (
         <div
           style={{
@@ -138,7 +136,6 @@ export function Dashboard() {
           </p>
         </div>
       </div>
-      <WoodBar />
       <div style={{ display: "flex", justifyContent: "center" }}>
         <h2
           style={{
