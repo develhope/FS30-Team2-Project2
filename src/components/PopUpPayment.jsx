@@ -42,6 +42,7 @@ export default function PopUpPayment({ onClick }) {
           X
         </button>
         <h2 className="h2PopUp">Registrazione</h2>
+
         <form onSubmit={handleSubmit} className="registration-form">
           <div className="form-group">
             <label className="labelPopUp" htmlFor="email">
@@ -58,7 +59,7 @@ export default function PopUpPayment({ onClick }) {
             />
           </div>
 
-          <h3 className="h2PopUp">Indirizzo di fatturazione</h3>
+          <h3 className="hrPopUp">Indirizzo di fatturazione</h3>
 
           <div className="form-group">
             <label className="labelPopUp" htmlFor="name">
