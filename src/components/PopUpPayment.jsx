@@ -41,11 +41,14 @@ export default function PopUpPayment({ onClick }) {
         <button onClick={handlePaymentClosed} className="button-pop-up-payment">
           X
         </button>
-        <h2>Registrazione</h2>
+        <h2 classname="h2PopUp">Registrazione</h2>
         <form onSubmit={handleSubmit} className="registration-form">
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label classname="labelPopUp" htmlFor="email">
+              Email
+            </label>
             <input
+              classname="inputPopUp"
               type="email"
               id="email"
               name="email"
@@ -55,11 +58,14 @@ export default function PopUpPayment({ onClick }) {
             />
           </div>
 
-          <h3>Indirizzo di fatturazione</h3>
+          <h3 classname="h2PopUp">Indirizzo di fatturazione</h3>
 
           <div className="form-group">
-            <label htmlFor="name">Nome</label>
+            <label classname="labelPopUp" htmlFor="name">
+              Nome
+            </label>
             <input
+              classname="inputPopUp"
               type="text"
               id="name"
               name="name"
@@ -70,8 +76,11 @@ export default function PopUpPayment({ onClick }) {
           </div>
 
           <div className="form-group">
-            <label htmlFor="surname">Cognome</label>
+            <label classname="labelPopUp" htmlFor="surname">
+              Cognome
+            </label>
             <input
+              classname="inputPopUp"
               type="text"
               id="surname"
               name="surname"
@@ -82,8 +91,11 @@ export default function PopUpPayment({ onClick }) {
           </div>
 
           <div className="form-group">
-            <label htmlFor="phoneNumber">Numero di Telefono</label>
+            <label classname="labelPopUp" htmlFor="phoneNumber">
+              Numero di Telefono
+            </label>
             <input
+              classname="inputPopUp"
               type="text"
               id="phoneNumber"
               name="phoneNumber"
@@ -94,8 +106,11 @@ export default function PopUpPayment({ onClick }) {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label classname="labelPopUp" htmlFor="password">
+              Password
+            </label>
             <input
+              classname="inputPopUp"
               type="password"
               id="password"
               name="password"
@@ -106,8 +121,11 @@ export default function PopUpPayment({ onClick }) {
           </div>
 
           <div className="form-group">
-            <label htmlFor="confirmPassword">Conferma Password</label>
+            <label classname="labelPopUp" htmlFor="confirmPassword">
+              Conferma Password
+            </label>
             <input
+              classname="inputPopUp"
               type="password"
               id="confirmPassword"
               name="confirmPassword"
