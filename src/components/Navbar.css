@@ -164,6 +164,7 @@
 .PopUpClose {
   position: relative;
   right: -75px;
+  color: white;
 }
 .PopUpClose:hover {
   cursor: pointer;
