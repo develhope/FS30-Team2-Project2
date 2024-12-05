@@ -89,22 +89,19 @@ export function Dashboard() {
       )}
       <div
         style={{
-          backgroundImage:
-            "linear-gradient(to right, lightgreen, sienna, lightgreen)",
+          backgroundImage: "linear-gradient(to left, #b5e48c, #52b69a)",
+          border: "2px solid #52b69a",
           display: "flex",
           justifyContent: "center",
           padding: "1rem",
         }}
       >
-        <div
-          onMouseEnter={handleHoverOn}
-          onMouseLeave={handleHoverOff}
-          onClick={handleOpenE}
-        >
+        <div>
           <p
+            onMouseEnter={handleHoverOn}
+            onMouseLeave={handleHoverOff}
+            onClick={handleOpenE}
             style={{
-              backgroundImage: `url(${scroll})`,
-              backgroundSize: "100% 100%",
               padding: "4rem 1rem",
             }}
           >
@@ -118,15 +115,12 @@ export function Dashboard() {
           alt="parrot"
           style={{ width: "150px", height: "150px" }}
         />
-        <div
-          onClick={handleOpenT}
-          onMouseEnter={handleHoverOn}
-          onMouseLeave={handleHoverOff}
-        >
+        <div>
           <p
+            onMouseEnter={handleHoverOn}
+            onMouseLeave={handleHoverOff}
+            onClick={handleOpenE}
             style={{
-              backgroundImage: `url(${scroll})`,
-              backgroundSize: "100% 100%",
               padding: "4rem 1rem",
             }}
           >
@@ -139,11 +133,11 @@ export function Dashboard() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <h2
           style={{
-            backgroundImage: `url(${scroll})`,
-            backgroundSize: "100% 100%",
+            backgroundImage: "linear-gradient(to left, #b5e48c, #52b69a)",
+            borderRadius: "20px",
             padding: "10px",
             position: "relative",
-            top: "-70px",
+            top: "-10px",
             color: "rgb(49, 48, 48)",
           }}
         >
