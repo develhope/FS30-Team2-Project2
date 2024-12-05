@@ -3,8 +3,9 @@ import Card from "./Card";
 import "./Card.css";
 import { useCarousel2 } from "./useCarousel2";
 import { useLanguage } from "../context/LanguageContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "./Button";
+import PopUpPayment from "./PopUpPayment";
 const buttonList = Button;
 const Cards = () => {
   const { language } = useLanguage();
@@ -17,6 +18,11 @@ const Cards = () => {
     handleMouseLeave,
     currentItem,
   } = useCarousel2(cards, 4000, buttonList);
+  const [displayPayment, setDisplayPayment] = useState(false);
+
+  function handlePayment() {
+    setDisplayPayment(true);
+  }
 
   useEffect(() => {}, [list]);
 
@@ -54,9 +60,11 @@ const Cards = () => {
                       Prezzo: {event.price} {event.currency}
                     </p>
                   </div>
-                  <button className="payment-button">
-                    Paga {event.price} {event.currency}
-                  </button>
+                  <div>
+                    <button className="payment-button" onClick={handlePayment}>
+                      Paga {event.price} {event.currency}
+                    </button>
+                  </div>
                 </div>
               </div>
             ))
@@ -79,9 +87,11 @@ const Cards = () => {
                       Price: {event.price} {event.currency}
                     </p>
                   </div>
-                  <button className="payment-button">
-                    Pay {event.price} {event.currency}
-                  </button>
+                  <div>
+                    <button className="payment-button" onClick={handlePayment}>
+                      Pay {event.price} {event.currency}
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -93,6 +103,9 @@ const Cards = () => {
         />
       </div>
       <div>{currentItem}</div>
+      {displayPayment && (
+        <PopUpPayment onClick={() => setDisplayPayment(false)} />
+      )}
     </div>
   );
 };

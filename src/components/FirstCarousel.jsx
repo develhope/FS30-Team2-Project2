@@ -1,8 +1,8 @@
 import "./FirstCarousel.css";
-import adventures from "../assets/adventures.jpg";
-import roadtrip from "../assets/roadtrip.jpg";
+import adventures from "../assets/adventure.jpeg";
+import roadtrip from "../assets/ontheroad.jpg";
 import culture from "../assets/culture.jpg";
-import romance from "../assets/romance.jpg";
+import romance from "../assets/romance.webp";
 import { useCarousel } from "./useCarousel";
 import { useLanguage } from "../context/LanguageContext";
 export function FirstCarousel() {
