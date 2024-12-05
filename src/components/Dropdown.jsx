@@ -148,15 +148,18 @@ export function Dropdown() {
   if (!username) {
     return (
       <>
-        <div id="popUp">
-          <img
-            className="unloggedParrot"
-            src="src\assets\parrot.png"
-            alt="parrot"
-            onClick={handleToggle}
-          />
-          {!hidden && (
+        {!hidden && (
+          <div id="popUp">
+            <img
+              className="unloggedParrot"
+              src="src\assets\parrot.png"
+              alt="parrot"
+            />
+
             <div id="popUpText">
+              <h2 className="PopUpClose" onClick={handleToggle}>
+                X
+              </h2>
               <h2 id="popUpLink" onClick={handleNuovo}>
                 {language === "it" ? "Iscriviti" : "Sign in"}
               </h2>
@@ -166,8 +169,8 @@ export function Dropdown() {
                   : "to add events and travels to your calendar or to create new ones!"}
               </h2>
             </div>
-          )}
-        </div>
+          </div>
+        )}
 
         <div className="dropdown">
           <img

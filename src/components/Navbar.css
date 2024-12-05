@@ -113,12 +113,11 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  right: -15px;
+  right: 0;
   display: flex;
   justify-content: center;
   z-index: 10;
   padding-top: 220px;
-  background-color: rgba(85, 222, 124, 0.4);
   backdrop-filter: blur(5px);
 }
 .closeIcon {
@@ -149,9 +148,9 @@
   background-image: linear-gradient(to left, #b5e48c, #52b69a);
   border-radius: 40px;
   width: 12rem;
-  padding: 2rem;
+  padding: 1rem;
   position: fixed;
-  bottom: 0px;
+  bottom: 20px;
   left: 140px;
 }
 #popUpText h2 {
@@ -160,6 +159,15 @@
 }
 #popUpLink {
   color: sienna;
+}
+
+.PopUpClose {
+  position: relative;
+  right: -75px;
+  color: white;
+}
+.PopUpClose:hover {
+  cursor: pointer;
 }
 
 #popUpLink:hover {
