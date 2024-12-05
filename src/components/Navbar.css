@@ -5,8 +5,7 @@
   gap: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
-  background-image: url("src/assets/map.jpg");
-  background-position: center;
+  background-color: white;
   color: black;
   position: sticky;
   top: 30px;
@@ -16,18 +15,12 @@
 .navbar-left {
   display: flex;
 }
-.wood {
-  z-index: 3;
-  position: sticky;
-  top: 139px;
-}
 
 .navbar-left .logo {
-  height: 108px;
-  width: 192px;
+  height: 54px;
+  width: 96px;
   position: relative;
   top: 1px;
-  border: solid saddlebrown 2px;
 }
 .navbar-left .logo:hover {
   cursor: pointer;
@@ -36,9 +29,8 @@
   display: flex;
 }
 .icons {
-  height: 40px;
-  width: 40px;
-  margin-top: 19px;
+  height: 20px;
+  width: 20px;
 }
 .nav-links {
   margin-left: 1rem;
@@ -51,13 +43,10 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  background-image: url("../assets/scroll.png");
-  background-position: center;
   background-size: 100% 100%;
   width: 100px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
-  height: 100px;
 }
 .navbar-center {
   display: flex;
@@ -67,7 +56,6 @@
 }
 .navbar-right {
   display: flex;
-  height: 108px;
   position: relative;
   right: 15px;
 }
@@ -83,40 +71,28 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
-  background-image: url("../assets/scroll.png");
-  background-position: center;
-  background-size: 100% 100%;
+  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  border-radius: 20px;
   padding: 1rem;
   position: absolute;
   z-index: 2;
   top: -47px;
   right: 80px;
 }
-.dropdown {
-  position: relative;
-  top: 10px;
-}
 .hiddenDropdown {
-  height: 100px;
-  background-image: url("../assets/scroll.png");
-  background-position: center;
-  background-size: 100% 100%;
-  width: 120px;
-}
-.hiddenDropdown h3 {
+  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  border-radius: 20px;
+  width: 180px;
   position: relative;
-  top: 20px;
-}
-.hiddenDropdown div {
-  position: relative;
-  top: 30px;
+  bottom: 3px;
+  right: 3px;
 }
 #userAreaLogo {
   position: relative;
   right: 20px;
-  bottom: -40px;
-  height: 60px;
-  width: 60px;
+  bottom: 5px;
+  height: 40px;
+  width: 40px;
 }
 #userLinks button {
   border: none;
@@ -137,13 +113,11 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  right: -15px;
+  right: 0;
   display: flex;
   justify-content: center;
   z-index: 10;
-  margin-top: 180px;
-  padding-top: 20px;
-  background-color: rgba(222, 161, 85, 0.4);
+  padding-top: 220px;
   backdrop-filter: blur(5px);
 }
 .closeIcon {
@@ -171,12 +145,12 @@
   display: flex;
 }
 #popUpText {
-  background-image: url("../assets/scroll.png");
-  background-size: 100% 100%;
+  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  border-radius: 40px;
   width: 12rem;
-  padding: 2rem;
+  padding: 1rem;
   position: fixed;
-  bottom: 0px;
+  bottom: 20px;
   left: 140px;
 }
 #popUpText h2 {
@@ -187,6 +161,15 @@
   color: sienna;
 }
 
+.PopUpClose {
+  position: relative;
+  right: -75px;
+  color: white;
+}
+.PopUpClose:hover {
+  cursor: pointer;
+}
+
 #popUpLink:hover {
   cursor: pointer;
 }
@@ -195,10 +178,10 @@
   flex-direction: column;
   gap: 10px;
   width: 25rem;
-  height: 500px;
-  background-image: url(../assets/scroll.png);
-  background-size: 100% 100%;
-  padding: 8rem 4vw;
+  height: 400px;
+  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  border-radius: 30px;
+  padding: 4rem 4vw;
 }
 
 @media only screen and (max-width: 760px) {
@@ -210,11 +193,7 @@
     height: 3rem;
     width: 3rem;
   }
-  .nav-links {
-    gap: 5px;
-    flex-direction: column;
-    justify-content: space-around;
-  }
+
   .nav-links div {
     flex-direction: row;
     height: 30px;
@@ -244,8 +223,7 @@
   }
   #userAreaLogo {
     position: relative;
-    right: 20px;
-    bottom: -59px;
+    right: 0px;
     height: 40px;
     width: 40px;
   }
@@ -255,6 +233,8 @@
     right: 90px;
     height: 150px;
     width: 120px;
+    top: -10px;
+    right: 45px;
   }
 }
 @media only screen and (min-width: 761px) and (max-width: 1024px) {

@@ -4,13 +4,11 @@ import "./footer.scss";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import React from "react";
-import { WoodBar } from "../components/WoodBar";
 
 export function Footer() {
   const { language } = useLanguage();
   return (
     <>
-      <WoodBar />
       <footer className="footer">
         <div className="columnsContainer">
           <div className="footerColumns">
@@ -64,10 +62,10 @@ export function Footer() {
         </div>
         <div className="mediaLogo">
           <img
-            src="src\assets\eventive.png"
+            src="src\assets\1.5.png"
             alt="logo"
             className="footerLogo"
-            width={100}
+            width={140}
             height={80}
           />
           <p className="endFooter">

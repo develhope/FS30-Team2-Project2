@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "card": "^2.5.4",
     "react": "^18.3.1",
     "react-big-calendar": "^1.15.0",
     "react-dom": "^18.3.1",

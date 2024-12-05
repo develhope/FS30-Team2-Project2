@@ -10,6 +10,8 @@ const Cardsapi = [
     contentEng:
       "A weekend of live music with international and local artists, delicious food, and a festive atmosphere.",
     date: "2024-12-10T10:00:00",
+    price: 50, // Prezzo in Euro
+    currency: "EUR", // Valuta
   },
   {
     id: 2,
@@ -22,6 +24,8 @@ const Cardsapi = [
     contentEng:
       "A hike through the highest peaks, with breathtaking landscapes and the chance to spot wildlife.",
     date: "2024-12-12T08:00:00",
+    price: 30,
+    currency: "EUR",
   },
   {
     id: 3,
@@ -34,6 +38,8 @@ const Cardsapi = [
     contentEng:
       "Tasting of fine wines, sommelier workshops, and the opportunity to meet the producers.",
     date: "2024-12-15T17:00:00",
+    price: 40,
+    currency: "EUR",
   },
   {
     id: 4,
@@ -46,6 +52,8 @@ const Cardsapi = [
     contentEng:
       "A journey through history and art, visiting museums, galleries, and iconic monuments.",
     date: "2024-12-18T09:00:00",
+    price: 60,
+    currency: "EUR",
   },
   {
     id: 5,
@@ -57,8 +65,9 @@ const Cardsapi = [
     titleEng: "Spring Marathon",
     contentEng:
       "A sporting event that brings together runners of all ages in a race through parks and city streets.",
-
     date: "2024-04-05T08:00:00",
+    price: 25,
+    currency: "EUR",
   },
   {
     id: 6,
@@ -71,6 +80,8 @@ const Cardsapi = [
     contentEng:
       "Discover the wonders of the islands and coastlines with an unforgettable cruise trip.",
     date: "2024-07-20T12:00:00",
+    price: 500,
+    currency: "EUR",
   },
   {
     id: 7,
@@ -83,6 +94,8 @@ const Cardsapi = [
     contentEng:
       "An international gathering to discuss best practices and innovations for a sustainable future.",
     date: "2024-09-10T09:30:00",
+    price: 150,
+    currency: "EUR",
   },
   {
     id: 8,
@@ -95,6 +108,8 @@ const Cardsapi = [
     contentEng:
       "An adventure in a unique ecosystem, with excursions through extraordinary flora and fauna.",
     date: "2024-06-25T08:00:00",
+    price: 200,
+    currency: "EUR",
   },
   {
     id: 9,
@@ -107,6 +122,8 @@ const Cardsapi = [
     contentEng:
       "A charming Christmas atmosphere with craft stalls, traditional food, and festive music.",
     date: "2024-12-05T17:00:00",
+    price: 10,
+    currency: "EUR",
   },
   {
     id: 10,
@@ -119,6 +136,8 @@ const Cardsapi = [
     contentEng:
       "An unforgettable experience among the great wild animals in their natural habitats.",
     date: "2024-08-14T10:00:00",
+    price: 800,
+    currency: "EUR",
   },
   {
     id: 11,
@@ -131,6 +150,22 @@ const Cardsapi = [
     contentEng:
       "An evening of music under the stars, with local bands and street food.",
     date: "2024-07-15T19:00:00",
+    price: 20,
+    currency: "EUR",
+  },
+  {
+    id: 12,
+    image:
+      "https://notizie.comuni-italiani.it/wp-content/uploads/2015/09/1-Bari-Fiera-del-Levante-2015-galleria-delle-nazioni.jpg",
+    titleIt: "La Fiera del Levante",
+    contentIt:
+      "La Fiera del Levante: cultura, esposizioni, concerti e street food a Bari.",
+    titleEng: "Outdoor Concert - Fiera del Levante",
+    contentEng:
+      "The Fiera del Levante: culture, exhibitions, concerts, and street food in Bari.",
+    date: "2024-07-15T19:00:00",
+    price: 20,
+    currency: "EUR",
   },
 ];
 

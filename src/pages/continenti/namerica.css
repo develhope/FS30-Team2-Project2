@@ -1,0 +1,10 @@
+.eventsNamerica{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+#events-north-america{
+    display:flex;
+    justify-content: center;
+}

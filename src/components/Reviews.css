@@ -4,7 +4,6 @@
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  background-image: url("../assets/map.jpg");
   color: rgb(49, 48, 48);
 }
 .reviewCards {
@@ -20,6 +19,7 @@
 
 .reviewCard {
   padding: 3rem;
-  background-image: url("../assets/scroll.png");
+  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  border-radius: 10px;
   background-size: 100% 100%;
 }

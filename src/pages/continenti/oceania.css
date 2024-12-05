@@ -1,0 +1,13 @@
+/** @format */
+
+.eventsOceania {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#events-Oceania {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

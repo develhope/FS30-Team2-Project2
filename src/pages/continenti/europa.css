@@ -1,0 +1,12 @@
+/** @format */
+.eventsEuropa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#events-Europa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
