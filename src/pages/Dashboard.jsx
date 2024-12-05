@@ -1,6 +1,5 @@
 import CalendarContent from "../components/CalendarContent";
 import { useLanguage } from "../context/LanguageContext";
-import scroll from "../assets/scroll.png";
 import { useState } from "react";
 import { CreationPopUp } from "../components/CreationPopUp";
 import { Animation } from "../components/Animation";
