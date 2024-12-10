@@ -72,12 +72,13 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) and (min-width: 750px) {
   #map {
     width: 45rem;
     position: relative;
     display: flex;
     justify-content: space-between;
+    left: 4%;
 
     p {
       font-family: "Trebuchet MS", sans-serif;
@@ -146,12 +147,13 @@
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1250px) {
+@media screen and (min-width: 901px) and (max-width: 1250px) {
   #map {
     width: 45rem;
     position: relative;
     display: flex;
     justify-content: space-between;
+    left: 17%;
 
     p {
       font-family: "Trebuchet MS", sans-serif;
