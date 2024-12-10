@@ -1,131 +1,221 @@
 #map {
-  height: 40rem;
-  width: 80rem;
+  height: 25rem;
+  width: 50rem;
   position: relative;
-  left: 60px;
+
   p {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 21px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
     text-align: center;
-    color: rgb(184, 99, 68);
+    color: mediumblue;
   }
 
   img {
-    height: 40rem;
-    width: 80rem;
+    top: 5rem;
+    height: 25rem;
+    width: 50rem;
     position: relative;
+    opacity: 0.6;
   }
   .continenti div {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
+    // border: solid;
   }
   .europa {
-    left: 32rem;
-    bottom: 26rem;
-    height: 10rem;
-    width: 15rem;
+    left: 21rem;
+    bottom: 11rem;
+    height: 6rem;
+    width: 10rem;
   }
   .asia {
-    left: 47rem;
-    bottom: 21rem;
-    height: 16rem;
-    width: 26rem;
+    left: 31rem;
+    bottom: 7rem;
+    height: 12rem;
+    width: 15rem;
     border-top-right-radius: 13rem;
   }
   .africa {
-    left: 32rem;
-    bottom: 6rem;
-    height: 20rem;
-    width: 15rem;
+    left: 20rem;
+    bottom: -1rem;
+    height: 12rem;
+    width: 11rem;
     border-bottom-left-radius: 12rem;
   }
   .oceania {
-    left: 57rem;
-    bottom: 5rem;
-    height: 16rem;
-    width: 18rem;
+    left: 38rem;
+    bottom: -3rem;
+    height: 10rem;
+    width: 8rem;
     border-bottom-right-radius: 12rem;
   }
   .america-nord {
-    left: 5rem;
-    bottom: 23rem;
-    height: 14rem;
-    width: 27rem;
+    left: 2rem;
+    bottom: 8rem;
+    height: 11rem;
+    width: 18rem;
     border-top-left-radius: 12rem;
   }
   .america-sud {
-    left: 13rem;
-    bottom: 3rem;
-    height: 20rem;
-    width: 15rem;
+    left: 9rem;
+    bottom: -3rem;
+    height: 11rem;
+    width: 8rem;
     border-bottom-left-radius: 10rem;
   }
-  div :hover {
-    text-shadow: 2px 2px gold;
+  .continenti div :hover {
+    text-shadow: 1px 1px green;
+    transition: transform 250ms;
+    transform: translateY(-10px);
   }
+}
 
-  @media only screen and (max-width: 760px) {
-    flex-direction: column;
-  }
+@media screen and (max-width: 900px) and (min-width: 750px) {
+  #map {
+    width: 45rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 4%;
 
-  @media screen and (min-width: 761px) and (max-width: 1024px) {
     p {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 20px;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 15px;
       text-align: center;
-      color: rgb(184, 99, 68);
+      color: mediumblue;
     }
     img {
-      height: 29rem;
-      width: 35rem;
-      position: relative;
+      top: 0;
+      height: 25rem;
+      width: 45rem;
     }
     .continenti div {
       display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
+      // border: solid;
+    }
+    .continenti div :hover {
+      text-shadow: 1px 1px green;
+      transition: transform 250ms;
+      transform: translateY(-10px);
     }
     .europa {
-      left: 14rem;
-      bottom: 30rem;
+      left: 20rem;
+      bottom: 16rem;
       height: 5rem;
-      width: 6rem;
+      width: 10rem;
     }
     .asia {
-      left: 21rem;
-      bottom: 25rem;
-      height: 14rem;
-      width: 13rem;
+      left: 30rem;
+      bottom: 9rem;
+      height: 15rem;
+      width: 10rem;
       border-top-right-radius: 13rem;
     }
     .africa {
-      left: 14rem;
-      bottom: 15rem;
-      height: 15rem;
-      width: 7rem;
+      left: 18rem;
+      bottom: 5rem;
+      height: 11rem;
+      width: 9rem;
       border-bottom-left-radius: 12rem;
     }
     .oceania {
-      left: 25rem;
-      bottom: 14rem;
-      height: 10rem;
-      width: 8rem;
+      left: 34rem;
+      bottom: 4rem;
+      height: 5rem;
+      width: 6rem;
       border-bottom-right-radius: 12rem;
     }
     .america-nord {
       left: 1rem;
-      bottom: 27rem;
-      height: 12rem;
-      width: 13rem;
+      bottom: 13rem;
+      height: 10rem;
+      width: 17rem;
       border-top-left-radius: 12rem;
     }
     .america-sud {
-      left: 4rem;
+      left: 8rem;
+      bottom: 2rem;
+      height: 11rem;
+      width: 8rem;
+      border-bottom-left-radius: 10rem;
+    }
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1250px) {
+  #map {
+    width: 45rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 17%;
+
+    p {
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 15px;
+      text-align: center;
+      color: mediumblue;
+    }
+    img {
+      top: 0;
+      height: 25rem;
+      width: 45rem;
+    }
+    .continenti div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      // border: solid;
+    }
+    .continenti div :hover {
+      text-shadow: 1px 1px green;
+      transition: transform 250ms;
+      transform: translateY(-10px);
+    }
+    .europa {
+      left: 20rem;
+      bottom: 16rem;
+      height: 5rem;
+      width: 10rem;
+    }
+    .asia {
+      left: 30rem;
+      bottom: 9rem;
+      height: 15rem;
+      width: 10rem;
+      border-top-right-radius: 13rem;
+    }
+    .africa {
+      left: 18rem;
+      bottom: 5rem;
+      height: 11rem;
+      width: 9rem;
+      border-bottom-left-radius: 12rem;
+    }
+    .oceania {
+      left: 34rem;
+      bottom: 4rem;
+      height: 5rem;
+      width: 6rem;
+      border-bottom-right-radius: 12rem;
+    }
+    .america-nord {
+      left: 1rem;
       bottom: 13rem;
-      height: 14rem;
+      height: 10rem;
+      width: 17rem;
+      border-top-left-radius: 12rem;
+    }
+    .america-sud {
+      left: 8rem;
+      bottom: 2rem;
+      height: 11rem;
       width: 8rem;
       border-bottom-left-radius: 10rem;
     }

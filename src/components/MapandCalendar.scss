@@ -1,11 +1,13 @@
-.unicoDiv{
+.unicoDiv {
+  height: 600px;
   display: flex;
+  justify-content: space-around;
   background-image: linear-gradient(to right, cyan, wheat, cyan);
 }
-@media only screen and (max-width: 760px) {
-    .UnicoDiv {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
+@media only screen and (max-width: 1250px) {
+  .unicoDiv {
+    height: 1000px;
+    justify-content: space-between;
+    flex-direction: column;
   }
+}
