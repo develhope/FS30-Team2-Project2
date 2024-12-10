@@ -2,13 +2,12 @@
   height: 25rem;
   width: 50rem;
   position: relative;
-  // left: 1rem;
+
   p {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 18px;
     text-align: center;
     color: mediumblue;
-    
   }
 
   img {
@@ -71,69 +70,150 @@
     transition: transform 250ms;
     transform: translateY(-10px);
   }
+}
 
-  @media only screen and (max-width: 768px) {
-    #map {
-      flex-direction: column;
-    }
-  }
+@media screen and (max-width: 1024px) {
+  #map {
+    width: 45rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 
-  @media screen and (max-width: 761px) and (max-width: 1024px) {
     p {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 20px;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 15px;
       text-align: center;
-      color: rgb(184, 99, 68);
+      color: mediumblue;
     }
     img {
-      height: 18rem;
-      width: 32rem;
-      position: relative;
+      top: 0;
+      height: 25rem;
+      width: 45rem;
     }
     .continenti div {
       display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
+      // border: solid;
+    }
+    .continenti div :hover {
+      text-shadow: 1px 1px green;
+      transition: transform 250ms;
+      transform: translateY(-10px);
     }
     .europa {
-      left: 14rem;
-      bottom: 30rem;
+      left: 20rem;
+      bottom: 16rem;
       height: 5rem;
-      width: 6rem;
+      width: 10rem;
     }
     .asia {
-      left: 21rem;
-      bottom: 25rem;
-      height: 14rem;
-      width: 13rem;
+      left: 30rem;
+      bottom: 9rem;
+      height: 15rem;
+      width: 10rem;
       border-top-right-radius: 13rem;
     }
     .africa {
-      left: 14rem;
-      bottom: 15rem;
-      height: 15rem;
-      width: 7rem;
+      left: 18rem;
+      bottom: 5rem;
+      height: 11rem;
+      width: 9rem;
       border-bottom-left-radius: 12rem;
     }
     .oceania {
-      left: 25rem;
-      bottom: 14rem;
-      height: 10rem;
-      width: 8rem;
+      left: 34rem;
+      bottom: 4rem;
+      height: 5rem;
+      width: 6rem;
       border-bottom-right-radius: 12rem;
     }
     .america-nord {
       left: 1rem;
-      bottom: 27rem;
-      height: 12rem;
-      width: 13rem;
+      bottom: 13rem;
+      height: 10rem;
+      width: 17rem;
       border-top-left-radius: 12rem;
     }
     .america-sud {
-      left: 4rem;
+      left: 8rem;
+      bottom: 2rem;
+      height: 11rem;
+      width: 8rem;
+      border-bottom-left-radius: 10rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+  #map {
+    width: 45rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 15px;
+      text-align: center;
+      color: mediumblue;
+    }
+    img {
+      top: 0;
+      height: 25rem;
+      width: 45rem;
+    }
+    .continenti div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      // border: solid;
+    }
+    .continenti div :hover {
+      text-shadow: 1px 1px green;
+      transition: transform 250ms;
+      transform: translateY(-10px);
+    }
+    .europa {
+      left: 20rem;
+      bottom: 16rem;
+      height: 5rem;
+      width: 10rem;
+    }
+    .asia {
+      left: 30rem;
+      bottom: 9rem;
+      height: 15rem;
+      width: 10rem;
+      border-top-right-radius: 13rem;
+    }
+    .africa {
+      left: 18rem;
+      bottom: 5rem;
+      height: 11rem;
+      width: 9rem;
+      border-bottom-left-radius: 12rem;
+    }
+    .oceania {
+      left: 34rem;
+      bottom: 4rem;
+      height: 5rem;
+      width: 6rem;
+      border-bottom-right-radius: 12rem;
+    }
+    .america-nord {
+      left: 1rem;
       bottom: 13rem;
-      height: 14rem;
+      height: 10rem;
+      width: 17rem;
+      border-top-left-radius: 12rem;
+    }
+    .america-sud {
+      left: 8rem;
+      bottom: 2rem;
+      height: 11rem;
       width: 8rem;
       border-bottom-left-radius: 10rem;
     }
