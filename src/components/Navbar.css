@@ -11,6 +11,9 @@
   top: 30px;
   z-index: 3;
   width: 100vw;
+  background-image: url("https://www.ifolor.ch/content/dam/ifolor/inspire-gallery/FFL/photoshop-ein-panorama-aus-einzelaufnahmen-erstellen/Panorama-580.jpg.transform/q60/image.jpg?Panorama-580.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .navbar-left {
   display: flex;
