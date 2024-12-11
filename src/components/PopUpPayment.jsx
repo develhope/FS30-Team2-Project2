@@ -2,6 +2,10 @@ import React from "react";
 import "./PopUpPayment.css";
 import { useState } from "react";
 
+import { Elements } from "@stripe/react-stripe-js";
+import CheckoutForm from "./CheckoutForm";
+import { stripePromise } from "./CheckoutForm";
+
 export default function PopUpPayment({ onClick }) {
   const [formData, setFormData] = useState({
     email: "",
@@ -139,6 +143,18 @@ export default function PopUpPayment({ onClick }) {
           <button type="submit" className="submit-button">
             Registrati
           </button>
+          <Elements stripe={stripePromise}>
+            <div
+              style={{
+                backgroundColor: "blue",
+                maxWidth: "400px",
+                maring: "auto",
+                padding: "20px",
+              }}
+            >
+              <CheckoutForm />
+            </div>
+          </Elements>
         </form>
       </div>
     </div>
