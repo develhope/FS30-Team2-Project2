@@ -2,21 +2,16 @@ import Card from "./Card";
 import "./Card.css";
 import { useCarousel2 } from "./useCarousel2";
 import { useLanguage } from "../context/LanguageContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import PopUpPayment from "./PopUpPayment";
 
 const Cards = () => {
   const { language } = useLanguage();
-  const { cards, handleMouseEnter, handleMouseLeave, currentItem, handlePage } =
+  const { cards, handleMouseEnter, handleMouseLeave, buttons } =
     useCarousel2(4000);
-
   const [displayPayment, setDisplayPayment] = useState(false);
 
-  function handlePayment() {
-    setDisplayPayment(true);
-  }
-
-  useEffect(() => {}, [cards]);
+  const handlePayment = () => setDisplayPayment(true);
 
   return (
     <div className="container-carousel-cards">
@@ -29,8 +24,8 @@ const Cards = () => {
         {cards.map((event) => (
           <div
             key={event.id}
-            onMouseEnter={() => handleMouseEnter(event.id)}
-            onMouseLeave={() => handleMouseLeave(event.id)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             <Card
               content={language === "it" ? event.contentIt : event.contentEng}
@@ -56,7 +51,10 @@ const Cards = () => {
           </div>
         ))}
       </div>
-      {currentItem}
+      <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        {buttons}
+      </div>
+
       {displayPayment && (
         <PopUpPayment onClick={() => setDisplayPayment(false)} />
       )}
