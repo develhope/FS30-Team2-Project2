@@ -51,9 +51,8 @@ const Cards = () => {
           </div>
         ))}
       </div>
-      <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        {buttons}
-      </div>
+
+      {buttons}
 
       {displayPayment && (
         <PopUpPayment onClick={() => setDisplayPayment(false)} />

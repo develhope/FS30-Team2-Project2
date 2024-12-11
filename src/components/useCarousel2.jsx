@@ -5,6 +5,7 @@ import {
   Cardsapi3,
   Cardsapi4,
 } from "../assets/cardsapi1";
+import "./Button.css";
 
 export function useCarousel2(intervalTime) {
   const [cards, setCards] = useState([]);
@@ -17,20 +18,6 @@ export function useCarousel2(intervalTime) {
   useEffect(() => {
     setCards(cardsArray[currentIndex]);
   }, [currentIndex]);
-
-  const buttons = (
-    <div className="buttonContainer">
-      {cardsArray.map((_, index) => (
-        <button
-          key={index}
-          onClick={() => handlePage(index)}
-          className={
-            index === currentIndex ? "currentButton" : "notCurrentButton"
-          }
-        ></button>
-      ))}
-    </div>
-  );
 
   function handlePage(number) {
     setCurrentIndex(number);
@@ -56,6 +43,21 @@ export function useCarousel2(intervalTime) {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+  const buttons = (
+    <div className="buttonContainer">
+      {cardsArray.map((_, index) => (
+        <button
+          key={index}
+          onClick={() => handlePage(index)}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className={
+            index === currentIndex ? "currentButton" : "notCurrentButton"
+          }
+        ></button>
+      ))}
+    </div>
+  );
 
   return {
     handleMouseEnter,
