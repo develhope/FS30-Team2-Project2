@@ -1,30 +1,17 @@
-import useCardsApi from "./useCardsApi";
 import Card from "./Card";
 import "./Card.css";
 import { useCarousel2 } from "./useCarousel2";
 import { useLanguage } from "../context/LanguageContext";
-import { useEffect, useState } from "react";
-import { Button } from "./Button";
+import { useState } from "react";
 import PopUpPayment from "./PopUpPayment";
-const buttonList = Button;
+
 const Cards = () => {
   const { language } = useLanguage();
-  const { cards } = useCardsApi();
-  const {
-    list,
-    goLeft,
-    goRight,
-    handleMouseEnter,
-    handleMouseLeave,
-    currentItem,
-  } = useCarousel2(cards, 4000, buttonList);
+  const { cards, handleMouseEnter, handleMouseLeave, buttons } =
+    useCarousel2(4000);
   const [displayPayment, setDisplayPayment] = useState(false);
 
-  function handlePayment() {
-    setDisplayPayment(true);
-  }
-
-  useEffect(() => {}, [list]);
+  const handlePayment = () => setDisplayPayment(true);
 
   return (
     <div className="container-carousel-cards">
@@ -34,75 +21,40 @@ const Cards = () => {
         </h1>
       </div>
       <div className="cards-container">
-        <img
-          onClick={goLeft}
-          className="previous"
-          src="src\assets\arrowtop.png"
-          alt="previous"
-        />
-        {language == "it"
-          ? list.slice(0, 3).map((event) => (
-              <div
-                key={event.id}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Card
-                  content={event.contentIt}
-                  image={event.image}
-                  title={event.titleIt}
-                  data={event.date}
-                  price={event.price}
-                />
-                <div className="event-footer">
-                  <div className="price-container">
-                    <p>
-                      Prezzo: {event.price} {event.currency}
-                    </p>
-                  </div>
-                  <div>
-                    <button className="payment-button" onClick={handlePayment}>
-                      Paga {event.price} {event.currency}
-                    </button>
-                  </div>
-                </div>
+        {cards.map((event) => (
+          <div
+            key={event.id}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Card
+              content={language === "it" ? event.contentIt : event.contentEng}
+              image={event.image}
+              title={language === "it" ? event.titleIt : event.titleEng}
+              data={event.date}
+              price={event.price}
+            />
+            <div className="event-footer">
+              <div className="price-container">
+                <p>
+                  {language === "it" ? "Prezzo:" : "Price:"} {event.price}{" "}
+                  {event.currency}
+                </p>
               </div>
-            ))
-          : list.slice(0, 3).map((event) => (
-              <div
-                key={event.id}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Card
-                  content={event.contentEng}
-                  image={event.image}
-                  title={event.titleEng}
-                  data={event.date}
-                  price={event.price}
-                />
-                <div className="event-footer">
-                  <div className="price-container">
-                    <p>
-                      Price: {event.price} {event.currency}
-                    </p>
-                  </div>
-                  <div>
-                    <button className="payment-button" onClick={handlePayment}>
-                      Pay {event.price} {event.currency}
-                    </button>
-                  </div>
-                </div>
+              <div>
+                <button className="payment-button" onClick={handlePayment}>
+                  {language === "it" ? "Paga" : "Pay"} {event.price}{" "}
+                  {event.currency}
+                </button>
               </div>
-            ))}
-        <img
-          onClick={goRight}
-          className="next"
-          src="src/assets/arrowtop.png"
-          alt="next"
-        />
+            </div>
+          </div>
+        ))}
       </div>
-      <div>{currentItem}</div>
+      <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        {buttons}
+      </div>
+
       {displayPayment && (
         <PopUpPayment onClick={() => setDisplayPayment(false)} />
       )}

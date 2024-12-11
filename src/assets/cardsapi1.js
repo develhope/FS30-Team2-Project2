@@ -1,4 +1,4 @@
-const Cardsapi = [
+export const Cardsapi1 = [
   {
     id: 1,
     image:
@@ -41,8 +41,10 @@ const Cardsapi = [
     price: 40,
     currency: "EUR",
   },
+];
+export const Cardsapi2 = [
   {
-    id: 4,
+    id: 1,
     image:
       "https://www.starbene.it/content/uploads/2022/10/firenze-turista.jpg",
     titleIt: "Tour Culturale in Città",
@@ -56,7 +58,7 @@ const Cardsapi = [
     currency: "EUR",
   },
   {
-    id: 5,
+    id: 2,
     image:
       "https://www.ilpuntoamezzogiorno.it/wp-content/uploads/2024/04/5-maratona-2024-1140x641.jpg",
     titleIt: "Maratona di Primavera",
@@ -70,7 +72,7 @@ const Cardsapi = [
     currency: "EUR",
   },
   {
-    id: 6,
+    id: 3,
     image:
       "https://www.crocierissime.it/uploads/cruiseline/184579/original_99kkkyjzkzkzzxw.jpg",
     titleIt: "Crociere nel Mediterraneo",
@@ -83,8 +85,10 @@ const Cardsapi = [
     price: 500,
     currency: "EUR",
   },
+];
+export const Cardsapi3 = [
   {
-    id: 7,
+    id: 1,
     image:
       "https://d1mnxluw9mpf9w.cloudfront.net/media/18648/Sustainability-Conference-Image.jpg",
     titleIt: "Conferenza sulla Sostenibilità",
@@ -98,7 +102,7 @@ const Cardsapi = [
     currency: "EUR",
   },
   {
-    id: 8,
+    id: 2,
     image:
       "https://img.freepik.com/foto-premium/escursioni-per-l-esplorazione-della-giungla_955834-8023.jpg",
     titleIt: "Esplorazione della Giungla",
@@ -112,7 +116,7 @@ const Cardsapi = [
     currency: "EUR",
   },
   {
-    id: 9,
+    id: 3,
     image:
       "https://www.caldana.it/files/blog/image/mercatini_natale_europa.jpg",
     titleIt: "Mercato di Natale",
@@ -125,8 +129,10 @@ const Cardsapi = [
     price: 10,
     currency: "EUR",
   },
+];
+export const Cardsapi4 = [
   {
-    id: 10,
+    id: 1,
     image:
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/08/6b/d2/caption.jpg?w=1200&h=-1&s=1",
     titleIt: "Safari in Africa",
@@ -140,7 +146,7 @@ const Cardsapi = [
     currency: "EUR",
   },
   {
-    id: 11,
+    id: 2,
     image:
       "https://www.romatoday.it/~media/horizontal-hi/60607421885720/casa-del-jazz-3.jpg",
     titleIt: "Concerto all'Aperto",
@@ -154,7 +160,7 @@ const Cardsapi = [
     currency: "EUR",
   },
   {
-    id: 12,
+    id: 3,
     image:
       "https://notizie.comuni-italiani.it/wp-content/uploads/2015/09/1-Bari-Fiera-del-Levante-2015-galleria-delle-nazioni.jpg",
     titleIt: "La Fiera del Levante",
@@ -168,4 +174,3 @@ const Cardsapi = [
     currency: "EUR",
   },
 ];
-export default Cardsapi;

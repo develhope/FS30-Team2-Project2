@@ -1,56 +1,66 @@
 import { useEffect, useState } from "react";
+import {
+  Cardsapi1,
+  Cardsapi2,
+  Cardsapi3,
+  Cardsapi4,
+} from "../assets/cardsapi1";
 
-export function useCarousel2(props, intervalTime, buttons) {
-  const [list, setList] = useState([]);
+export function useCarousel2(intervalTime) {
+  const [cards, setCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
-  const totalItems = buttons.length;
+  const totalItems = 4;
+
+  const cardsArray = [Cardsapi1, Cardsapi2, Cardsapi3, Cardsapi4];
 
   useEffect(() => {
-    if (props && props.length > 0) {
-      setList(props);
-    }
-  }, [props]);
+    setCards(cardsArray[currentIndex]);
+  }, [currentIndex]);
 
-  function left() {
-    setList((prevList) => {
-      const lastItems = prevList.slice(-3);
-      return [...lastItems, ...prevList.slice(0, -3)];
-    });
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalItems) % totalItems);
+  const buttons = (
+    <div className="buttonContainer">
+      {cardsArray.map((_, index) => (
+        <button
+          key={index}
+          onClick={() => handlePage(index)}
+          className={
+            index === currentIndex ? "currentButton" : "notCurrentButton"
+          }
+        ></button>
+      ))}
+    </div>
+  );
+
+  function handlePage(number) {
+    setCurrentIndex(number);
   }
-  function right() {
-    setList((prevList) => {
-      const lastItems = prevList.slice(0, 3);
-      return [...prevList.slice(3), ...lastItems];
-    });
+
+  function nextSlide() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
   }
+
   useEffect(() => {
     if (!isHovered) {
       const interval = setInterval(() => {
-        right();
+        nextSlide();
       }, intervalTime);
-      setIntervalId(interval);
       return () => clearInterval(interval);
     }
   }, [isHovered, intervalTime]);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-    clearInterval(intervalId);
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
   return {
-    list: list,
-    goRight: right,
-    goLeft: left,
     handleMouseEnter,
     handleMouseLeave,
-    currentItem: buttons[currentIndex],
+    buttons,
+    cards,
   };
 }
