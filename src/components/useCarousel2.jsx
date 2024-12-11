@@ -1,30 +1,68 @@
 import { useEffect, useState } from "react";
+import {
+  Cardsapi1,
+  Cardsapi2,
+  Cardsapi3,
+  Cardsapi4,
+} from "../assets/cardsapi1";
 
-export function useCarousel2(props, intervalTime, buttons) {
-  const [list, setList] = useState([]);
+export function useCarousel2(intervalTime) {
+  const [cards, setCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
-  const totalItems = buttons.length;
+  const [buttons, setButtons] = useState([]);
+  const totalItems = 4;
 
   useEffect(() => {
-    if (props && props.length > 0) {
-      setList(props);
+    if (currentIndex == 0) {
+      setCards(Cardsapi1);
+      setButtons(
+        <div className="buttonContainer">
+          <button onClick={handlePage(0)} className="currentButton"></button>
+          <button onClick={handlePage(1)} className="notCurrentButton"></button>
+          <button onClick={handlePage(2)} className="notCurrentButton"></button>
+          <button onClick={handlePage(3)} className="notCurrentButton"></button>
+        </div>
+      );
+    } else if (currentIndex == 1) {
+      setCards(Cardsapi2);
+      setButtons(
+        <div className="buttonContainer">
+          <button onClick={handlePage(0)} className="notCurrentButton"></button>
+          <button onClick={handlePage(1)} className="currentButton"></button>
+          <button onClick={handlePage(2)} className="notCurrentButton"></button>
+          <button onClick={handlePage(3)} className="notCurrentButton"></button>
+        </div>
+      );
+    } else if (currentIndex == 2) {
+      setCards(Cardsapi3);
+      setButtons(
+        <div className="buttonContainer">
+          <button onClick={handlePage(0)} className="notCurrentButton"></button>
+          <button onClick={handlePage(1)} className="notCurrentButton"></button>
+          <button onClick={handlePage(2)} className="currentButton"></button>
+          <button onClick={handlePage(3)} className="notCurrentButton"></button>
+        </div>
+      );
+    } else if (currentIndex == 3) {
+      setCards(Cardsapi4);
+      setButtons(
+        <div className="buttonContainer">
+          <button onClick={handlePage(0)} className="notCurrentButton"></button>
+          <button onClick={handlePage(1)} className="notCurrentButton"></button>
+          <button onClick={handlePage(2)} className="notCurrentButton"></button>
+          <button onClick={handlePage(3)} className="currentButton"></button>
+        </div>
+      );
     }
-  }, [props]);
+  }, [currentIndex]);
 
-  function left() {
-    setList((prevList) => {
-      const lastItems = prevList.slice(-3);
-      return [...lastItems, ...prevList.slice(0, -3)];
-    });
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalItems) % totalItems);
+  function handlePage(number) {
+    setCurrentIndex(number);
   }
+
   function right() {
-    setList((prevList) => {
-      const lastItems = prevList.slice(0, 3);
-      return [...prevList.slice(3), ...lastItems];
-    });
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
   }
   useEffect(() => {
@@ -46,11 +84,10 @@ export function useCarousel2(props, intervalTime, buttons) {
     setIsHovered(false);
   };
   return {
-    list: list,
-    goRight: right,
-    goLeft: left,
     handleMouseEnter,
     handleMouseLeave,
-    currentItem: buttons[currentIndex],
+    currentItem: buttons,
+    cards,
+    handlePage,
   };
 }
