@@ -6,6 +6,7 @@
   height: 300px;
   text-align: center;
   border: 2px solid #b5e48c;
+  border-bottom: none;
   background-image: linear-gradient(to left, #b5e48c, #52b69a);
   background-position: center;
   background-size: 100% 100%;
@@ -119,6 +120,7 @@
   width: 100%;
   padding: 10px;
   border: 2px solid #4caf50;
+  border-top: none;
   border-bottom-left-radius: 8px;
   margin-bottom: 10px;
   text-align: center;

@@ -8,14 +8,17 @@
 .notCurrentButton {
   height: 10px;
   width: 10px;
-  background-color: grey;
+  background-color: #b5e48c;
   margin: 20px;
   border-radius: 5px;
+  border: none;
+  border: 1px solid #52b69a;
 }
 .currentButton {
-  height: 14px;
-  width: 14px;
-  background-color: black;
+  height: 16px;
+  width: 16px;
+  background-color: #52b69a;
   border-radius: 8px;
-  margin: 18px;
+  margin: 16px;
+  border: 1px solid #b5e48c;
 }
