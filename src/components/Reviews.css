@@ -1,10 +1,11 @@
 .reviewCardsContainer {
   padding-top: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
   color: rgb(49, 48, 48);
+  height: 470px;
 }
 .reviewCards {
   width: 300px;
@@ -22,4 +23,27 @@
   background-image: linear-gradient(to left, #b5e48c, #52b69a);
   border-radius: 10px;
   background-size: 100% 100%;
+  width: 300px;
+}
+
+.arrowLeft {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 100px;
+  left: 1rem;
+  rotate: 180deg;
+}
+.arrowLeft:hover {
+  cursor: pointer;
+}
+.arrowRight:hover {
+  cursor: pointer;
+}
+.arrowRight {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 100px;
+  right: 1rem;
 }
