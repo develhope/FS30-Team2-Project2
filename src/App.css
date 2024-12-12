@@ -9,7 +9,7 @@ body {
 }
 #totalContainer {
   width: 100vw;
-
+  background-color: #fff;
   overflow: hidden;
 }
 
@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 5px;
-  background-color: white;
+  background-color: #fff;
   position: sticky;
   top: 0px;
   z-index: 3;
