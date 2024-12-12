@@ -285,7 +285,7 @@ export function Dropdown() {
             <Link to="/dashboard">
               <button>{language === "it" ? "Area Utente" : `User Area`}</button>
             </Link>
-            <button onClick={cleanMemory}>
+            <button className="esci" onClick={cleanMemory}>
               {language === "it" ? "Esci" : `Logout`}
             </button>
           </div>

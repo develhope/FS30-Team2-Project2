@@ -129,14 +129,19 @@ export function Dashboard() {
           </p>
         </div>
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          backgroundImage: "linear-gradient(to right, cyan, wheat, cyan)",
+        }}
+      >
         <h2
           style={{
             backgroundImage: "linear-gradient(to left, #b5e48c, #52b69a)",
             borderRadius: "20px",
             padding: "10px",
             position: "relative",
-            top: "-10px",
             color: "rgb(49, 48, 48)",
           }}
         >
@@ -150,7 +155,8 @@ export function Dashboard() {
           display: "flex",
           justifyContent: "center",
           position: "relative",
-          top: "-70px",
+          height: "600px",
+          backgroundImage: "linear-gradient(to right, cyan, wheat, cyan)",
         }}
       >
         <CalendarContent />

@@ -3,24 +3,44 @@ import Review from "../components/Review";
 import { useLanguage } from "../context/LanguageContext";
 import "../components/Reviews.css";
 import { Animation } from "../components/Animation";
+import { useState } from "react";
 
 export function Reviews() {
   const { language } = useLanguage();
-  const list = ReviewsList;
+  const [event, setEvent] = useState(ReviewsList);
+  function left() {
+    setEvent((prev) => [...prev.slice(-3), ...prev.slice(0, -3)]);
+  }
+
+  function right() {
+    setEvent((prev) => [...prev.slice(3), ...prev.slice(0, 3)]);
+  }
+
   return (
     <div>
       <Animation textIt={"Recensioni"} textEng={"Reviews"} />
       <div className="reviewCardsContainer">
-        {list.map((event) => (
-          <div className="reviewCards" key={event.id}>
-            <Review
-              stars={event.starNumber}
-              review={language === "it" ? event.reviewIt : event.reviewEng}
-              title={language === "it" ? event.titleIt : event.titleEng}
-              date={event.date}
-            />
-          </div>
+        <img
+          src="src\assets\arrowtop.png"
+          alt="arrowleft"
+          className="arrowLeft"
+          onClick={left}
+        />
+        {event.slice(0, 3).map((review) => (
+          <Review
+            key={review.id}
+            stars={review.starNumber}
+            review={language === "it" ? review.reviewIt : review.reviewEng}
+            title={language === "it" ? review.titleIt : review.titleEng}
+            date={review.date}
+          />
         ))}
+        <img
+          src="src\assets\arrowtop.png"
+          alt="arrowright"
+          className="arrowRight"
+          onClick={right}
+        />
       </div>
     </div>
   );

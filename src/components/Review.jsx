@@ -33,7 +33,7 @@ export default function Review({ title, stars, review, date }) {
       style={
         hidden
           ? { height: "250px", marginBottom: "220px" }
-          : { height: "470px", marginBottom: "0px" }
+          : { height: "450px", marginBottom: "0px" }
       }
       onClick={handleToggle}
     >

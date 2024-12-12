@@ -11,6 +11,9 @@
   top: 30px;
   z-index: 3;
   width: 100vw;
+  background-image: url("https://www.ifolor.ch/content/dam/ifolor/inspire-gallery/FFL/photoshop-ein-panorama-aus-einzelaufnahmen-erstellen/Panorama-580.jpg.transform/q60/image.jpg?Panorama-580.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .navbar-left {
   display: flex;
@@ -33,9 +36,9 @@
   width: 20px;
 }
 .nav-links {
-  margin-left: 1rem;
   display: flex;
   gap: 1rem;
+  margin-right: 3rem;
 }
 
 .nav-links div {
@@ -82,10 +85,15 @@
 .hiddenDropdown {
   background-image: linear-gradient(to left, #b5e48c, #52b69a);
   border-radius: 20px;
-  width: 180px;
+  width: 200px;
+  height: 30px;
+  padding: 5px;
   position: relative;
   bottom: 3px;
   right: 3px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
 }
 #userAreaLogo {
   position: relative;
@@ -103,10 +111,14 @@
 }
 #userLinks {
   position: relative;
-  top: -10px;
   display: flex;
   gap: 10px;
   justify-content: center;
+  bottom: 1px;
+}
+.esci {
+  position: relative;
+  bottom: 3px;
 }
 .opacityFilter {
   width: 100vw;
@@ -192,6 +204,16 @@
     top: 5rem;
     height: 3rem;
     width: 3rem;
+  }
+  .hiddenDropdown {
+    font-size: 8px;
+    flex-direction: column;
+    width: 100px;
+    height: 60px;
+    right: -10px;
+  }
+  #userLinks {
+    flex-direction: column;
   }
 
   .nav-links div {
