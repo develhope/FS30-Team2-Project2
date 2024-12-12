@@ -339,7 +339,7 @@ export const eventi = [
     contentEng:
       "The most famous Italian song festival, held annually in the Ligurian city of Sanremo.",
     continente: "Europa",
-    imageUrl: "https://example.com/sanremo_festival.jpg",
+    imageUrl: "https://www.linkiesta.it/wp-content/uploads/2023/02/20631422-medium.jpg",
   },
   {
     titleIta: "Coachella",
@@ -349,7 +349,7 @@ export const eventi = [
     contentEng:
       "One of the world's most famous music and arts festivals, held in the California desert.",
     continente: "Nord America",
-    imageUrl: "https://example.com/coachella.jpg",
+    imageUrl: "https://th.bing.com/th/id/OIP.Fa_038GMUW0o32TW7lxlwgHaDt?w=274&h=175&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     titleIta: "Festival Rock in Rio",
@@ -359,7 +359,7 @@ export const eventi = [
     contentEng:
       "A massive music festival in Rio de Janeiro hosting world-famous international artists.",
     continente: "Sud America",
-    imageUrl: "https://example.com/rock_in_rio.jpg",
+    imageUrl: "https://th.bing.com/th/id/OIP.2Ezmu2YtRoJHPyJ-LCeauAHaDt?w=315&h=174&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     titleIta: "Festival Mawazine",
@@ -380,7 +380,7 @@ export const eventi = [
     contentEng:
       "One of the largest music and arts festivals in Europe, known for its legendary performances.",
     continente: "Europa",
-    imageUrl: "https://example.com/glastonbury_festival.jpg",
+    imageUrl: "https://th.bing.com/th/id/OIP.i9zsd1f4al2e2ibrRAFRKgHaEs?w=295&h=188&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     titleIta: "Tomorrowland",
@@ -390,7 +390,7 @@ export const eventi = [
     contentEng:
       "An electronic music festival held in Belgium, known for its spectacular productions.",
     continente: "Europa",
-    imageUrl: "https://example.com/tomorrowland.jpg",
+    imageUrl: "https://th.bing.com/th/id/OIP.Dh1QPlgzaE8dr9GvoRWFvgHaEK?w=333&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     titleIta: "Fuji Rock Festival",
