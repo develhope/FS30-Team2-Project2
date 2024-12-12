@@ -61,13 +61,6 @@ export function Footer() {
           </div>
         </div>
         <div className="mediaLogo">
-          <img
-            src="src\assets\1.5.png"
-            alt="logo"
-            className="footerLogo"
-            width={140}
-            height={80}
-          />
           <p className="endFooter">
             &copy;
             <Link to="/">EventiveTravels</Link>

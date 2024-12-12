@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@ html,
 body {
   overflow-x: hidden;
 }
+
 #totalContainer {
   width: 100vw;
   background-color: #fff;
