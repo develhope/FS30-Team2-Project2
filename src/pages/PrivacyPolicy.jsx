@@ -9,10 +9,10 @@ export function PrivacyPolicy() {
   const { language } = useLanguage();
   return (
     <>
-      <Animation
+      {/* <Animation
         textIt={"Politica della Privacy"}
         textEng={"Privacy  Policy"}
-      />
+      /> */}
       <div className="privacyContainer">
         <ol className="privacy-policy">
           <p>

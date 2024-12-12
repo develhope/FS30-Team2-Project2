@@ -3,9 +3,11 @@
 #continentsCards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #style-cards {
   border: 3px solid #184e77;
+  justify-content: center;
   border-radius: 20px;
   background-image: linear-gradient(#b5e48c, #52b69a);
   margin: 20px;
@@ -21,6 +23,7 @@
   color: #184e77;
 }
 .imageEventsCard {
+  justify-content: center;
   margin-left: 1.3rem;
   margin-top: 5px;
   width: 50px;
@@ -29,11 +32,11 @@
 
 .imagesEvent {
   width: 19rem;
-  height: 13rem;
+  height: 13.5rem;
   position: relative;
 }
 .contentEventsCard {
   text-align: center;
   margin: 10px;
-  margin-top: 10rem;
+  margin-top: 10.5rem;
 }
