@@ -33,9 +33,9 @@
   width: 20px;
 }
 .nav-links {
-  margin-left: 1rem;
   display: flex;
   gap: 1rem;
+  margin-right: 3rem;
 }
 
 .nav-links div {
