@@ -1,11 +1,16 @@
 import React from "react";
 import "./WelcomeSection.css";
+import { useLanguage } from "../context/LanguageContext";
 
 const WelcomeSection = () => {
+  const { language } = useLanguage();
   return (
     <div className="container-welcome-section">
       <h1 className="welcome-section">
-        Come <span className="style-text-welcome">funziona</span>
+        {language === "it" ? "Come" : "How does"}
+        <span className="style-text-welcome">
+          {language === "it" ? "funziona" : "it works"}
+        </span>
       </h1>
 
       <div className="steps">
@@ -16,8 +21,12 @@ const WelcomeSection = () => {
             height={"100px"}
             width={"100px"}
           />
-          <h2>Inizia</h2>
-          <p>Scegli tra le nostre opzioni.</p>
+          <h2>{language === "it" ? "Inizia" : "Start here"}</h2>
+          <p>
+            {language === "it"
+              ? "Scegli tra le nostre opzioni"
+              : "Choose from our options"}
+          </p>
         </div>
 
         <div className="step">
@@ -27,8 +36,12 @@ const WelcomeSection = () => {
             height={"100px"}
             width={"100px"}
           />
-          <h2>Prenota e viaggia</h2>
-          <p>Prenota il tuo viaggio in pochi clic.</p>
+          <h2>{language === "it" ? "Prenota e viaggia" : "Book and travel"}</h2>
+          <p>
+            {language === "it"
+              ? "Prenota il tuo viaggio in pochi click"
+              : "Book your trip in just a few clicks."}
+          </p>
         </div>
 
         <div className="step">
@@ -39,8 +52,12 @@ const WelcomeSection = () => {
             width={"100px"}
           />
 
-          <h2>Recensisci</h2>
-          <p>Lascia una recensione del tuo viaggio.</p>
+          <h2>{language === "it" ? "Recensisci" : "Review"}</h2>
+          <p>
+            {language === "it"
+              ? "Lascia una recensione del tuo viaggio."
+              : "Leave a review of your trip."}
+          </p>
         </div>
       </div>
     </div>

@@ -28,6 +28,7 @@
 }
 .navbar-center {
   display: flex;
+  margin-right: 5rem;
 }
 .icons {
   height: 20px;
@@ -36,7 +37,6 @@
 .nav-links {
   display: flex;
   gap: 1rem;
-  margin-right: 3rem;
 }
 
 .nav-links div {
@@ -84,7 +84,7 @@
   background-image: linear-gradient(to left, #b5e48c, #52b69a);
   border-radius: 20px;
   width: 200px;
-  height: 30px;
+  height: 40px;
   padding: 5px;
   position: relative;
   bottom: 3px;

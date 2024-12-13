@@ -143,7 +143,7 @@ export default function PopUpPayment({ onClick }) {
           <button type="submit" className="submit-button">
             Registrati
           </button>
-          <Elements stripe={stripePromise}>
+          {/* <Elements stripe={stripePromise}>
             <div
               style={{
                 backgroundColor: "blue",
@@ -154,7 +154,7 @@ export default function PopUpPayment({ onClick }) {
             >
               <CheckoutForm />
             </div>
-          </Elements>
+          </Elements> */}
         </form>
       </div>
     </div>
