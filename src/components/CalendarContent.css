@@ -18,7 +18,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #e8f3f7;
+  /* background-color: #e8f3f7; */
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -165,7 +165,7 @@ h2 {
 }
 
 .rbc-selected {
-  background-color: #e0e0e0 !important;
+  background-color: #90caf9 !important;
   color: #168aad;
 }
 
@@ -222,6 +222,37 @@ h2 {
 .rbc-time-content .rbc-time-column {
   display: block;
   box-sizing: border-box;
+}
+/* Pulsanti Today, Back, Next */
+.rbc-btn-group .rbc-btn-selected,
+.rbc-btn-group button:focus {
+  background-color: #90caf9 !important;
+  color: #90caf9;
+  border-color: #90caf9;
+}
+
+/* Pulsante Today */
+.rbc-btn-group .rbc-today-btn:focus {
+  background-color: #90caf9 !important;
+  color: #90caf9;
+  border-color: #90caf9;
+}
+
+/* Pulsanti Day, Work Week, Week, Month */
+.rbc-btn-group .rbc-btn-selected {
+  background-color: #90caf9 !important;
+  color: #90caf9;
+  border-color: #90caf9;
+}
+
+.rbc-btn-group button:hover {
+  background-color: #168aad;
+}
+
+.rbc-btn-group button:focus {
+  background-color: #90caf9 !important;
+  color: #90caf9;
+  border-color: #90caf9;
 }
 
 @media only screen and (max-width: 760px) {
