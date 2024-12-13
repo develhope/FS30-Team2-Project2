@@ -1,7 +1,8 @@
 /** @format */
 .totalServicesDiv {
-  height: 500px;
+  height: 650px;
   text-align: center;
+  background-color: #c7f9cc;
 }
 .containerServices {
   margin-top: 7rem;
@@ -9,7 +10,7 @@
 .servicesFooter {
   color: #184e77;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
   font-size: 1.5vw;
 }
@@ -18,11 +19,9 @@
   margin-top: 7px;
   color: black;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: normal;
 }
-
-
 
 .servicesEnd {
   margin-top: 5rem;

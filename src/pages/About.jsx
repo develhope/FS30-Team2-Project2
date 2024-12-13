@@ -1,6 +1,5 @@
 /** @format */
 import { Animation } from "../components/Animation";
-import { WoodBar } from "../components/WoodBar";
 import "./About.css";
 import Users from "../assets/users";
 import Andrea from "../assets/profileImages/andreaImg.png";

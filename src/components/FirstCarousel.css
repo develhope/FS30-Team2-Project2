@@ -3,10 +3,10 @@
   text-align: center;
   height: 480px;
   margin-bottom: 16px;
-  background-image: url("https://www.ifolor.ch/content/dam/ifolor/inspire-gallery/FFL/photoshop-ein-panorama-aus-einzelaufnahmen-erstellen/Panorama-580.jpg.transform/q60/image.jpg?Panorama-580.jpg");
+  background-image: url("../assets/worldmap.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% 107%;
+  background-size: 100% 100%;
 }
 #carousel {
   margin-right: 38px;
