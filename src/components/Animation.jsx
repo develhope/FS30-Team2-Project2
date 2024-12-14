@@ -17,7 +17,8 @@ export function Animation({ textIt, textEng }) {
   }, []);
   return (
     <div id="animationContainer">
-      <div className="animationLeft">
+      <div id="animationCenter">
+        <h1>{language === "it" ? textIt : textEng}</h1>
         <img
           src="src\assets\ship.png"
           alt="ship"
@@ -27,19 +28,6 @@ export function Animation({ textIt, textEng }) {
             transition: "transform 0.5s ease",
           }}
         />
-        <img src="src\assets\rock.png" alt="rock" className="rock1" />
-        <img src="src\assets\rock.png" alt="rock" className="rock2" />
-      </div>
-      <div id="animationCenter">
-        <h1>{language === "it" ? textIt : textEng}</h1>
-        <img
-          className="treasure"
-          src="src\assets\treasure.png"
-          alt="treasure"
-        />
-      </div>
-      <div className="animationRight">
-        <img src="src\assets\island.png" alt="island" className="island" />
       </div>
     </div>
   );

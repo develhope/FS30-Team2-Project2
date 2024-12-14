@@ -18,31 +18,31 @@ export function Navbar() {
           <div className="nav-links">
             <div href="/eventi">
               <Link to="/events">
-                <img
-                  src="src\assets\planner.png"
+                {/* <img
+                  src="https://cdn-icons-png.flaticon.com/128/6727/6727658.png"
                   alt="events"
                   className="icons"
-                />
+                /> */}
                 <h4>{language === "it" ? "Eventi" : "Events"}</h4>
               </Link>
             </div>
             <div href="/viaggi" id="viaggi">
               <Link to="/travels">
-                <img
+                {/* <img
                   src="src\assets\travel.png"
                   alt="travels"
                   className="icons"
-                />
+                /> */}
                 <h4>{language === "it" ? "Viaggi" : "Travels"}</h4>
               </Link>
             </div>
             <div href="/recensioni">
               <Link to="/reviews">
-                <img
+                {/* <img
                   src="src\assets\reviews.png"
                   alt="reviews"
                   className="icons"
-                />
+                /> */}
 
                 <h4>{language === "it" ? "Recensioni" : "Reviews"}</h4>
               </Link>

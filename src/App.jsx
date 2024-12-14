@@ -42,12 +42,13 @@ function App() {
       <div id="totalContainer">
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/reviews" element={<Reviews />}></Route>
           <Route path="/events" element={<Events />}></Route>
           <Route path="/travels" element={<Travels />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/policy" element={<PrivacyPolicy />}></Route>
-          <Route path="/reviews" element={<Reviews />}></Route>
+          {/* <Route path="/reviews" element={<Reviews />}></Route> */}
           <Route path="/africa" element={<Africa />}></Route>
           <Route path="/Namerica" element={<Namerica />}></Route>
           <Route path="/Samerica" element={<Samerica />}></Route>

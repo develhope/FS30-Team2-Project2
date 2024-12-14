@@ -1,20 +1,27 @@
 #animationContainer {
-  background-image: linear-gradient(to right, cyan, wheat, cyan);
+  /* background-image: linear-gradient(to right, cyan, wheat, cyan); */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url("https://www.ifolor.ch/content/dam/ifolor/inspire-gallery/FFL/photoshop-ein-panorama-aus-einzelaufnahmen-erstellen/Panorama-580.jpg.transform/q60/image.jpg?Panorama-580.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 105%;
   font-size: small;
   height: 130px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 #animationContainer div {
   width: 33vw;
 }
 .ship {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   height: 70px;
   width: 70px;
-  position: relative;
-  top: 20px;
-  left: 11vw;
+  /* position: relative; */
+  top: 5px;
+  left: 14.5vw;
   z-index: 1;
 }
 .rock1 {
@@ -48,8 +55,9 @@
 }
 #animationCenter {
   padding-top: 1rem;
+  justify-content: center;
   text-align: center;
-  color: sienna;
+  /* color: sienna; */
 }
 @media only screen and (max-width: 760px) {
   #animationCenter {

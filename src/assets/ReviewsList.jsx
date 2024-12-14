@@ -9,6 +9,8 @@ export const ReviewsList = [
     titleIt: "Tour culturale in Toscana",
     titleEng: "Cultural tour in Tuscany",
     date: "12/02/2023",
+    image: "https://i.pravatar.cc/150?img=1",
+    reviewerName: "Marco Rossi",
   },
   {
     id: 2,
@@ -20,6 +22,8 @@ export const ReviewsList = [
     titleIt: "Vacanza estiva in Sardegna",
     titleEng: "Summer vacation in Sardinia",
     date: "24/06/2022",
+    image: "https://i.pravatar.cc/150?img=2",
+    reviewerName: "Giuseppe Bianchi",
   },
   {
     id: 3,
@@ -31,6 +35,8 @@ export const ReviewsList = [
     titleIt: "Tour delle città d'arte italiane",
     titleEng: "Tour of Italy's art cities",
     date: "29/03/2023",
+    image: "https://i.pravatar.cc/150?img=3",
+    reviewerName: "Laura Verdi",
   },
   {
     id: 4,
@@ -42,6 +48,8 @@ export const ReviewsList = [
     titleIt: "Escursione nelle Dolomiti",
     titleEng: "Dolomites hiking trip",
     date: "05/09/2023",
+    image: "https://i.pravatar.cc/150?img=4",
+    reviewerName: "Alessandro Neri",
   },
   {
     id: 5,
@@ -53,6 +61,8 @@ export const ReviewsList = [
     titleIt: "Festa tradizionale in Piemonte",
     titleEng: "Traditional festival in Piedmont",
     date: "17/10/2023",
+    image: "https://i.pravatar.cc/150?img=5",
+    reviewerName: "Martina Santini",
   },
   {
     id: 6,
@@ -64,6 +74,8 @@ export const ReviewsList = [
     titleIt: "Viaggio in treno lungo la costa amalfitana",
     titleEng: "Train trip along the Amalfi Coast",
     date: "14/05/2022",
+    image: "https://i.pravatar.cc/150?img=6",
+    reviewerName: "Luigi Mancini",
   },
   {
     id: 7,
@@ -75,6 +87,8 @@ export const ReviewsList = [
     titleIt: "Vacanza romantica a Venezia",
     titleEng: "Romantic vacation in Venice",
     date: "20/08/2023",
+    image: "https://i.pravatar.cc/150?img=7",
+    reviewerName: "Anna Moretti",
   },
   {
     id: 8,
@@ -86,6 +100,8 @@ export const ReviewsList = [
     titleIt: "Tour dei castelli in Baviera",
     titleEng: "Bavarian castle tour",
     date: "02/07/2024",
+    image: "https://i.pravatar.cc/150?img=8",
+    reviewerName: "Giovanni Ferrara",
   },
   {
     id: 9,
@@ -97,6 +113,8 @@ export const ReviewsList = [
     titleIt: "Escursione nelle Cinque Terre",
     titleEng: "Cinque Terre excursion",
     date: "01/06/2023",
+    image: "https://i.pravatar.cc/150?img=9",
+    reviewerName: "Riccardo Conti",
   },
   {
     id: 10,
@@ -108,6 +126,8 @@ export const ReviewsList = [
     titleIt: "Visita guidata a Roma",
     titleEng: "Guided tour of Rome",
     date: "15/03/2024",
+    image: "https://i.pravatar.cc/150?img=10",
+    reviewerName: "Elena Galli",
   },
   {
     id: 11,
@@ -119,6 +139,8 @@ export const ReviewsList = [
     titleIt: "Concerto al Teatro San Carlo",
     titleEng: "Concert at the San Carlo Theater",
     date: "28/04/2023",
+    image: "https://i.pravatar.cc/150?img=11",
+    reviewerName: "Marco De Luca",
   },
   {
     id: 12,
@@ -130,6 +152,8 @@ export const ReviewsList = [
     titleIt: "Escursione alle Isole Eolie",
     titleEng: "Excursion to the Aeolian Islands",
     date: "19/07/2022",
+    image: "https://i.pravatar.cc/150?img=12",
+    reviewerName: "Federico Ricci",
   },
   {
     id: 13,
@@ -141,6 +165,8 @@ export const ReviewsList = [
     titleIt: "Visita alle Grotte di Postumia",
     titleEng: "Visit to Postojna Caves",
     date: "06/11/2023",
+    image: "https://i.pravatar.cc/150?img=13",
+    reviewerName: "Simona Alberti",
   },
   {
     id: 14,
@@ -152,6 +178,8 @@ export const ReviewsList = [
     titleIt: "Tour gastronomico in Emilia-Romagna",
     titleEng: "Food tour in Emilia-Romagna",
     date: "25/09/2023",
+    image: "https://i.pravatar.cc/150?img=14",
+    reviewerName: "Luca Esposito",
   },
   {
     id: 15,
@@ -163,6 +191,8 @@ export const ReviewsList = [
     titleIt: "Viaggio in barca a Capraia",
     titleEng: "Boat trip to Capraia",
     date: "30/05/2023",
+    image: "https://i.pravatar.cc/150?img=15",
+    reviewerName: "Stefano Costa",
   },
   {
     id: 16,
@@ -174,6 +204,8 @@ export const ReviewsList = [
     titleIt: "Tour in autobus della Costa Azzurra",
     titleEng: "Bus tour of the French Riviera",
     date: "18/01/2024",
+    image: "https://i.pravatar.cc/150?img=16",
+    reviewerName: "Giulia Rizzo",
   },
   {
     id: 17,
@@ -185,6 +217,8 @@ export const ReviewsList = [
     titleIt: "Festival del Cinema di Venezia",
     titleEng: "Venice Film Festival",
     date: "03/09/2024",
+    image: "https://i.pravatar.cc/150?img=17",
+    reviewerName: "Francesco Bellini",
   },
   {
     id: 18,
@@ -196,6 +230,8 @@ export const ReviewsList = [
     titleIt: "Tour delle città imperiali",
     titleEng: "Tour of the Imperial Cities",
     date: "21/04/2024",
+    image: "https://i.pravatar.cc/150?img=18",
+    reviewerName: "Elisabetta Conti",
   },
   {
     id: 19,
@@ -207,6 +243,8 @@ export const ReviewsList = [
     titleIt: "Vacanza in Sicilia",
     titleEng: "Sicilian vacation",
     date: "16/08/2022",
+    image: "https://i.pravatar.cc/150?img=19",
+    reviewerName: "Antonio Bianco",
   },
   {
     id: 20,
@@ -218,5 +256,7 @@ export const ReviewsList = [
     titleIt: "Weekend a Firenze",
     titleEng: "Weekend in Florence",
     date: "10/12/2023",
+    image: "https://i.pravatar.cc/150?img=20",
+    reviewerName: "Giorgio Romano",
   },
 ];

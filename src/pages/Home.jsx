@@ -3,6 +3,7 @@ import { FirstCarousel } from "../components/FirstCarousel";
 import { Animation } from "../components/Animation";
 
 import WelcomeSection from "../components/WelcomeSection";
+import { Reviews } from "./Reviews";
 
 export function Home() {
   return (
@@ -12,6 +13,7 @@ export function Home() {
 
       <WelcomeSection />
       <Cards />
+      <Reviews />
     </>
   );
 }

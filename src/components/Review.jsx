@@ -6,14 +6,21 @@ import star4 from "../assets/stars/4.png";
 import star5 from "../assets/stars/5.png";
 import "./Reviews.css";
 
-export default function Review({ title, stars, review, date }) {
+export default function Review({
+  title,
+  stars,
+  review,
+  date,
+  name,
+  image,
+  imageClass,
+}) {
   const [hidden, setHidden] = useState(true);
 
   function handleToggle() {
-    {
-      hidden ? setHidden(false) : setHidden(true);
-    }
+    setHidden(!hidden);
   }
+
   function source() {
     if (stars === 1) {
       return star1;
@@ -27,16 +34,22 @@ export default function Review({ title, stars, review, date }) {
       return star5;
     }
   }
+
   return (
     <div
       className="reviewCard"
       style={
         hidden
-          ? { height: "250px", marginBottom: "220px" }
+          ? { height: "350px", marginBottom: "220px" }
           : { height: "450px", marginBottom: "0px" }
       }
       onClick={handleToggle}
     >
+      <div className="authorInfo">
+        <img className={`authorImage ${imageClass}`} src={image} alt="Author" />{" "}
+        {/* Applica la classe imageClass */}
+        <span className="authorName">{name}</span>
+      </div>
       <h2 style={hidden ? { padding: "0rem" } : { paddingTop: "20px" }}>
         {title}
       </h2>
