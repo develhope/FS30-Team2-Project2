@@ -4,14 +4,23 @@
   justify-content: space-between;
   gap: 1rem;
   color: rgb(33, 33, 33);
-  height: 700px;
+  /* height: 700px; */
   overflow-x: hidden;
   position: absolute;
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
 }
 
 .reviewCardsContainerWrapper {
   position: relative;
   height: 700px;
+  display: flex;
+  /* background-color: red; */
 }
 
 .reviewCards {
@@ -19,8 +28,8 @@
 }
 
 .ratings {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 80px;
   border-radius: 50%;
   background-color: transparent;
   display: flex;
@@ -39,16 +48,16 @@
 .dateImage {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .reviewCard {
   padding: 2rem;
-  background-image: linear-gradient(to left, #83c8f9, #c7ffff);
   border-radius: 10px;
   background-size: 100% 100%;
-  width: 450px;
+  width: 350px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  border: 1px solid #d1e0e0;
+  border: 1px solid #0d47a1;
 }
 
 .authorInfo {
@@ -62,13 +71,14 @@
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .authorName {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
+  margin-left: 12px;
 }
 
 .arrowLeft,
@@ -98,7 +108,9 @@
   cursor: pointer;
   color: #357abd;
 }
-
+.reviewCard {
+  background-color: #fff;
+}
 .reviewCard h2 {
   font-size: 1.5rem;
   color: #333;
@@ -113,4 +125,10 @@
 .reviewCard .dateImage {
   font-size: 0.9rem;
   color: #777;
+}
+
+.date-style {
+  display: flex;
+  justify-content: end;
+  padding: 8px;
 }

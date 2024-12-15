@@ -1,0 +1,24 @@
+.reviews-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 12px;
+  background-color: #fff;
+}
+.reviews-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  gap: 8px;
+  margin-top: 30px;
+}
+.style-text-reviews {
+  background-image: linear-gradient(to left, #00b4d8, #42a5f5);
+
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}

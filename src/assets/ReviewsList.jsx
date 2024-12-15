@@ -10,7 +10,7 @@ export const ReviewsList = [
     titleEng: "Cultural tour in Tuscany",
     date: "12/02/2023",
     image: "https://i.pravatar.cc/150?img=1",
-    reviewerName: "Marco Rossi",
+    reviewerName: "Marco Rosa",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const ReviewsList = [
     titleEng: "Tour of Italy's art cities",
     date: "29/03/2023",
     image: "https://i.pravatar.cc/150?img=3",
-    reviewerName: "Laura Verdi",
+    reviewerName: "Luca Verdi",
   },
   {
     id: 4,

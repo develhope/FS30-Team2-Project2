@@ -40,22 +40,22 @@ export default function Review({
       className="reviewCard"
       style={
         hidden
-          ? { height: "350px", marginBottom: "220px" }
-          : { height: "450px", marginBottom: "0px" }
+          ? { height: "300px", marginBottom: "220px" }
+          : { height: "400px", marginBottom: "0px" }
       }
       onClick={handleToggle}
     >
       <div className="authorInfo">
         <img className={`authorImage ${imageClass}`} src={image} alt="Author" />{" "}
         {/* Applica la classe imageClass */}
-        <span className="authorName">{name}</span>
+        <span className="authorName">{name}</span>{" "}
+        <div className="date-style">{date}</div>
       </div>
       <h2 style={hidden ? { padding: "0rem" } : { paddingTop: "20px" }}>
         {title}
       </h2>
       <div className="dateImage">
         <img className="ratings" src={source()} alt="stars" />
-        {date}
       </div>
       {!hidden && <h4>{review}</h4>}
     </div>

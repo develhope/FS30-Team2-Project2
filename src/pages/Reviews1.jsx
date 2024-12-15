@@ -40,7 +40,7 @@ export function Reviews1() {
               review={language === "it" ? review.reviewIt : review.reviewEng}
               title={language === "it" ? review.titleIt : review.titleEng}
               date={review.date}
-              name={review.name}
+              name={review.reviewerName}
               image={review.image}
               imageClass="reviewImage"
             />
