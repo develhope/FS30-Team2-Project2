@@ -3,8 +3,14 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  flex-wrap: wrap;
   color: rgb(33, 33, 33);
+  height: 700px;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.reviewCardsContainerWrapper {
+  position: relative;
   height: 700px;
 }
 
