@@ -10,12 +10,22 @@ export function Reviews1() {
   const [event, setEvent] = useState(ReviewsList);
   const [leftShift, setleftShift] = useState(0);
 
+  const maxLeft = 300;
+
   useEffect(() => {
     setInterval(() => {
-      setleftShift((prevleftShift) => prevleftShift - 0.5);
-      console.log(leftShift);
+      setleftShift((prevleftShift) => {
+        // la condizione non sarà mai vera dato che il numero massimo è un numero positivo,
+        // con la sottrazione avrai sempre un numero negativo come risultato
+        if (prevleftShift >= maxLeft) {
+          return 0;
+        }
+        return prevleftShift - 0.5;
+      });
     }, 5);
   }, []);
+
+  console.log("leftShift", leftShift);
 
   function left() {
     setEvent((prev) => [...prev.slice(-3), ...prev.slice(0, -3)]);

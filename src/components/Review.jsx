@@ -40,8 +40,8 @@ export default function Review({
       className="reviewCard"
       style={
         hidden
-          ? { height: "300px", marginBottom: "220px" }
-          : { height: "400px", marginBottom: "0px" }
+          ? { height: "250px", marginBottom: "220px" }
+          : { height: "370px", marginBottom: "0px" }
       }
       onClick={handleToggle}
     >
