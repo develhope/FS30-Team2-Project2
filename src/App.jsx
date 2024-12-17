@@ -10,7 +10,7 @@ import { About } from "./pages/About";
 import { Services } from "./pages/Services";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { Pippo } from "./pages/Pippo";
-import { Reviews } from "./pages/Reviews";
+import { Reviews1 } from "./pages/Reviews1";
 import { Africa } from "./pages/continenti/Africa";
 import { Namerica } from "./pages/continenti/Namerica";
 import { Samerica } from "./pages/continenti/Samerica";
@@ -42,12 +42,13 @@ function App() {
       <div id="totalContainer">
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Reviews1 />}></Route>
           <Route path="/events" element={<Events />}></Route>
           <Route path="/travels" element={<Travels />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/policy" element={<PrivacyPolicy />}></Route>
-          <Route path="/reviews" element={<Reviews />}></Route>
+
           <Route path="/africa" element={<Africa />}></Route>
           <Route path="/Namerica" element={<Namerica />}></Route>
           <Route path="/Samerica" element={<Samerica />}></Route>

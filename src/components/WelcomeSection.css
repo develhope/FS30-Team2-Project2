@@ -40,7 +40,8 @@
 }
 
 .style-text-welcome {
-  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  background-image: linear-gradient(to left, #00b4d8, #42a5f5);
+
   background-clip: text;
   color: transparent;
   font-weight: bold;

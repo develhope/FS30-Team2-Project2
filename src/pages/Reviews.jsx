@@ -18,7 +18,7 @@ export function Reviews() {
 
   return (
     <div>
-      <Animation textIt={"Recensioni"} textEng={"Reviews"} />
+      {/* <Animation textIt={"Recensioni"} textEng={"Reviews"} /> */}
       <div className="reviewCardsContainer">
         <img
           src="src\assets\arrowtop.png"
@@ -33,6 +33,9 @@ export function Reviews() {
             review={language === "it" ? review.reviewIt : review.reviewEng}
             title={language === "it" ? review.titleIt : review.titleEng}
             date={review.date}
+            name={review.name}
+            image={review.image}
+            imageClass="reviewImage"
           />
         ))}
         <img

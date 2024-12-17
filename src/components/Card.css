@@ -5,9 +5,9 @@
   width: 450px;
   height: 300px;
   text-align: center;
-  border: 2px solid #b5e48c;
+  border: 2px solid #023e8a;
   border-bottom: none;
-  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  background-image: linear-gradient(to left, #00b4d8, #42a5f5);
   background-position: center;
   background-size: 100% 100%;
   transition: 0.3s ease;
@@ -27,7 +27,7 @@
   margin-bottom: 16px;
 }
 .style-text-top {
-  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  background-image: linear-gradient(to left, #00b4d8, #42a5f5);
   background-clip: text;
   color: transparent;
   font-weight: bold;
@@ -78,14 +78,13 @@
   top: 20px;
   font-size: 1.3em;
   margin: 10px 0;
-  color: rgb(49, 48, 48);
-  text-shadow: 1px 1px sienna;
+  color: rgb(0, 0, 0);
 }
 
 .card-content {
   margin-top: 20px;
   font-size: 0.9em;
-  color: #555;
+  color: black;
 }
 
 .cards-container {
@@ -119,7 +118,7 @@
 .price-container {
   width: 100%;
   padding: 10px;
-  border: 2px solid #4caf50;
+  border: 2px solid #023e8a;
   border-top: none;
   border-bottom-left-radius: 8px;
   margin-bottom: 10px;
@@ -131,7 +130,7 @@
 }
 
 .payment-button {
-  background-color: #4caf50;
+  background-color: #023e8a;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -143,7 +142,7 @@
 }
 
 .payment-button:hover {
-  background-color: #45a049;
+  background-color: #00b4d8;
 }
 
 /* Media queries per responsività */

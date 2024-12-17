@@ -2,7 +2,9 @@
   height: 600px;
   display: flex;
   justify-content: space-around;
-  background-image: linear-gradient(to right, cyan, wheat, cyan);
+  // background-image: linear-gradient(to right, cyan, wheat, cyan);
+
+  margin:80px ;
 }
 @media only screen and (max-width: 1250px) {
   .unicoDiv {

@@ -1,49 +1,107 @@
 .reviewCardsContainer {
   padding-top: 1rem;
-  display: flex;
   justify-content: space-between;
+  color: rgb(33, 33, 33);
+  overflow-x: hidden;
+  position: absolute;
+  display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
-  color: rgb(49, 48, 48);
-  height: 470px;
 }
+
+.reviewCardsContainerWrapper {
+  position: relative;
+  height: 700px;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
 .reviewCards {
   width: 300px;
 }
+
 .ratings {
-  width: 130px;
-  height: 130px;
+  position: relative;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #f5b342;
+  font-family: "Arial", sans-serif;
 }
+
+.ratings i {
+  color: #f5b342;
+  font-size: 2rem;
+}
+
 .dateImage {
   display: flex;
+  align-items: center;
+  position: absolute;
+  top: 160px;
 }
 
 .reviewCard {
-  padding: 3rem;
-  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  padding: 1.5rem;
   border-radius: 10px;
+  background-color: #f9f9f9;
   background-size: 100% 100%;
-  width: 300px;
+  width: 350px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid #0d47a1;
 }
 
-.arrowLeft {
-  height: 40px;
-  width: 40px;
-  position: relative;
-  top: 100px;
-  left: 1rem;
-  rotate: 180deg;
+.authorInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
-.arrowLeft:hover {
-  cursor: pointer;
+
+.authorImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
 }
-.arrowRight:hover {
-  cursor: pointer;
+
+.authorName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 12px;
 }
-.arrowRight {
-  height: 40px;
-  width: 40px;
-  position: relative;
-  top: 100px;
-  right: 1rem;
+
+.reviewCard {
+  background-color: #fff;
+}
+.reviewCard h2 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.reviewCard h4 {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.reviewCard .dateImage {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.date-style {
+  display: flex;
+  justify-content: end;
+  padding: 8px;
+  font-size: 0.9rem;
+  color: #aaa;
 }
