@@ -1,26 +1,19 @@
 .reviewCardsContainer {
   padding-top: 1rem;
-  display: flex;
   justify-content: space-between;
-  gap: 1rem;
   color: rgb(33, 33, 33);
-  /* height: 700px; */
   overflow-x: hidden;
   position: absolute;
-  /* background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 44%,
-    rgba(0, 212, 255, 1) 100%
-  ); */
+  display: flex;
+  gap: 1rem;
 }
 
 .reviewCardsContainerWrapper {
   position: relative;
   height: 700px;
   display: flex;
-  /* background-color: red; */
+  width: 100%;
+  overflow: hidden;
 }
 
 .reviewCards {
