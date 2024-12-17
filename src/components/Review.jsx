@@ -41,7 +41,7 @@ export default function Review({
       style={
         hidden
           ? { height: "250px", marginBottom: "220px" }
-          : { height: "370px", marginBottom: "0px" }
+          : { height: "380px", marginBottom: "0px" }
       }
       onClick={handleToggle}
     >
@@ -54,7 +54,10 @@ export default function Review({
       <h2 style={hidden ? { padding: "0rem" } : { paddingTop: "20px" }}>
         {title}
       </h2>
-      <div className="dateImage">
+      <div
+        className="dateImage"
+        style={hidden ? { top: "160px" } : { top: "270px" }}
+      >
         <img className="ratings" src={source()} alt="stars" />
       </div>
       {!hidden && <h4>{review}</h4>}
