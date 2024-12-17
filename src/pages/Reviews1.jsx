@@ -10,7 +10,7 @@ export function Reviews1() {
   const [event, setEvent] = useState(ReviewsList);
   const [leftShift, setleftShift] = useState(0);
 
-  const maxLeft = 300;
+  const maxLeft = 3000;
 
   useEffect(() => {
     setInterval(() => {
