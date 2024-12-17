@@ -3,9 +3,9 @@
 .footer {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 30px;
-  background: linear-gradient(#0096C7, #90E0EF);
-  color: black;
-  border: 2px solid black;
+  background: linear-gradient(#0096c7, #90e0ef);
+  color: #03045e;
+  border: 2px solid #023e8a;
   height: 15.5dvw;
 }
 
@@ -18,12 +18,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    #footerH4 {
+    #footerH3 {
+      color:  #03045e;
       margin-top: 1vw;
-      margin-bottom: 13px;
+      margin-bottom: 2vw;
       text-align: center;
-      text-shadow: 1px 1px #168AAD;
-       }
+      text-shadow: 1px 1px #023e8a;
+    }
 
     #footerUl {
       padding: 4px;
@@ -31,15 +32,17 @@
       text-align: center;
       .footerLi {
         background-color: transparent;
+        font-size: large;
+
         border: none;
         transition: 0.2s ease;
       }
     }
 
     .footerLi:hover {
-      text-shadow: #03045E;
-      color: black;
-      text-shadow: 1px 1px #03045E;
+      text-shadow: #90e0ef;
+      color: #023e8a;
+      text-shadow: 1px 1px #90e0ef;
       outline: none;
       border: none;
     }
@@ -49,7 +52,7 @@
   }
 }
 .links {
-  color: black;
+  color: #03045e;
 }
 
 .footerLogo {
@@ -62,11 +65,11 @@
   margin-bottom: 1vw;
   opacity: 0.8;
   background-color: azure;
-  border: 2px solid  #184e77;
+  border: 2px solid #184e77;
   border-radius: 10px;
 }
 .endFooter {
-  color: #184e77;
+  color: #03045e;
   position: relative;
   margin-left: 44vw;
   margin-bottom: 3px;

@@ -12,10 +12,10 @@ export function Footer() {
       <footer className="footer">
         <div className="columnsContainer">
           <div className="footerColumns">
-            <h4 className="firstTitle" id="footerH4">
+            <h3 className="firstTitle" id="footerH3">
               {" "}
               {language === "it" ? "Chi Siamo" : "Who we are"}
-            </h4>
+            </h3>
             <ul id="footerUl">
               <li className="footerLi">Noemi D'asta</li>
               <li className="footerLi">Fiamma Ferrone</li>
@@ -25,9 +25,9 @@ export function Footer() {
             </ul>
           </div>
           <div className="footerColumns">
-            <h4 id="footerH4">
+            <h3 id="footerH3">
               {language === "it" ? "Link inerenti" : "Inerhent link"}
-            </h4>
+            </h3>
             <ul id="footerUl">
               <Link to="/About" className="links">
                 <li className="footerLi">
@@ -50,9 +50,9 @@ export function Footer() {
           </div>
 
           <div className="footerColumns">
-            <h4 id="footerH4">
+            <h3 id="footerH3">
               {language === "it" ? "Strumenti" : "Instruments"}
-            </h4>
+            </h3>
             <ul id="footerUl" className="mediaUl">
               <li className="footerLi">React</li>
               <li className="footerLi">GitHub</li>
