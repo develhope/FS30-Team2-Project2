@@ -6,7 +6,6 @@ import "./Samerica.css";
 export function Samerica() {
   return (
     <>
-      <Animation textEng={"South America"} textIt={"Sud America"} />
       <div className="eventsSamerica" id="events-south-america">
         {eventi
           .filter((evento) => evento.continente === "Sud America")

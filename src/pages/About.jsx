@@ -1,6 +1,5 @@
 /** @format */
-import { Animation } from "../components/Animation";
-import { WoodBar } from "../components/WoodBar";
+
 import "./About.css";
 import Users from "../assets/users";
 import Andrea from "../assets/profileImages/andreaImg.png";
@@ -50,7 +49,7 @@ const users = [
 export function About() {
   return (
     <>
-      <Animation textIt={"Contatti"} textEng={"About us"} />
+      {/* <Animation textIt={"Contatti"} textEng={"About us"} /> */}
       <div className="containerCardsAbout">
         {users.map((user, index) => (
           <Users user={user} key={index} />

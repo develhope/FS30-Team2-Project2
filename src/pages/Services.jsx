@@ -12,7 +12,7 @@ export function Services() {
   return (
     <>
       <div className="totalServicesDiv">
-        <Animation textIt={"Servizi"} textEng={"Services"} />
+        {/* <Animation textIt={"Servizi"} textEng={"Services"} /> */}
         <div className="containerServices">
           <h3 className="servicesFooter">
             {language === "it" ? "Assistenza clienti" : "Customer support"}

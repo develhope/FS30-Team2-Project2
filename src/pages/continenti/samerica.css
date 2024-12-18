@@ -5,6 +5,7 @@
 }
 
 #events-south-america{
+    margin: 33px;
     flex-direction: row;
     display:flex;
     justify-content: center;

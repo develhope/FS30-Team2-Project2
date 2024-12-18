@@ -5,7 +5,7 @@
   height: 27rem;
   border: 2px solid #184e77;
   border-radius: 5px;
-  background-image: linear-gradient(#b5e48c, #52b69a);
+  background-image: linear-gradient(#00b4d8, #42a5f5);
   text-align: center;
 }
 .profileCard {
@@ -32,7 +32,7 @@
   text-align: left;
   margin-left: 3px;
   margin-top: 10px;
-  color: #184e77;
+  color: #03045e;
 }
 
 .text {
@@ -44,7 +44,7 @@
 .text-fullstackDev {
   margin-top: 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #184e77;
+  color: #03045e;
 }
 
 .textProfile {
