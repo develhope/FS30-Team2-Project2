@@ -36,17 +36,6 @@ export function Navbar() {
                 <h4>{language === "it" ? "Viaggi" : "Travels"}</h4>
               </Link>
             </div>
-            <div href="/recensioni">
-              <Link to="/reviews">
-                {/* <img
-                  src="src\assets\reviews.png"
-                  alt="reviews"
-                  className="icons"
-                /> */}
-
-                <h4>{language === "it" ? "Recensioni" : "Reviews"}</h4>
-              </Link>
-            </div>
           </div>
         </div>
         <div className="navbar-right">

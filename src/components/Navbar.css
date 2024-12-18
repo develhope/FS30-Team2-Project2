@@ -74,7 +74,7 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
-  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  background-image: linear-gradient(to left, #00b4d8, #42a5f5);
   border-radius: 20px;
   padding: 1rem;
   position: absolute;
@@ -83,7 +83,7 @@
   right: 80px;
 }
 .hiddenDropdown {
-  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  background-image: linear-gradient(to left, #00b4d8, #42a5f5);
   border-radius: 20px;
   width: 200px;
   height: 30px;
@@ -157,10 +157,11 @@
   display: flex;
 }
 #popUpText {
-  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  background-image: linear-gradient(to left, #00b4d8, #42a5f5);
   border-radius: 40px;
   width: 12rem;
   padding: 1rem;
+
   position: fixed;
   bottom: 20px;
   left: 140px;
@@ -191,7 +192,7 @@
   gap: 10px;
   width: 25rem;
   height: 400px;
-  background-image: linear-gradient(to left, #b5e48c, #52b69a);
+  background-image: linear-gradient(to left, #00b4d8, #42a5f5);
   border-radius: 30px;
   padding: 4rem 4vw;
 }
@@ -221,9 +222,11 @@
     height: 30px;
     background-image: none;
     width: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .nav-links div h4 {
-    font-size: 0px;
+    font-size: 15px;
   }
   .unloggedParrot {
     width: 100px;

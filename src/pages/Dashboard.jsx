@@ -88,8 +88,8 @@ export function Dashboard() {
       )}
       <div
         style={{
-          backgroundImage: "linear-gradient(to left, #b5e48c, #52b69a)",
-          border: "2px solid #52b69a",
+          backgroundImage: "linear-gradient(to left, #00b4d8, #42a5f5)",
+
           display: "flex",
           justifyContent: "center",
           padding: "1rem",
@@ -133,12 +133,12 @@ export function Dashboard() {
         style={{
           display: "flex",
           justifyContent: "center",
-          backgroundImage: "linear-gradient(to right, cyan, wheat, cyan)",
+          backgroundImage: "linear-gradient(to left, #00b4d8, #42a5f5)",
         }}
       >
         <h2
           style={{
-            backgroundImage: "linear-gradient(to left, #b5e48c, #52b69a)",
+            backgroundImage: "linear-gradient(to left, #00b4d8, #42a5f5)",
             borderRadius: "20px",
             padding: "10px",
             position: "relative",
@@ -152,11 +152,11 @@ export function Dashboard() {
       </div>
       <div
         style={{
+          backgroundImage: "linear-gradient(to left, #00b4d8, #42a5f5)",
           display: "flex",
           justifyContent: "center",
           position: "relative",
           height: "600px",
-          backgroundImage: "linear-gradient(to right, cyan, wheat, cyan)",
         }}
       >
         <CalendarContent />
