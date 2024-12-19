@@ -1,12 +1,15 @@
-.eventsSamerica{
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
+/** @format */
+
+.eventsSamerica {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#events-south-america{
-    margin: 33px;
-    flex-direction: row;
-    display:flex;
-    justify-content: center;
+#events-south-america {
+  margin: 33px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
