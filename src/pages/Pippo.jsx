@@ -14,7 +14,7 @@ export function Pippo() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            backgroundImage: "linear-gradient(to left, #b5e48c, #52b69a)",
+            backgroundImage: "linear-gradient(to left, #00b4d8, #42a5f5)",
             borderRadius: "40px",
             width: "400px",
             height: "300px",
