@@ -1,10 +1,15 @@
-.eventsNamerica{
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
+/** @format */
+
+.eventsNamerica {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-#events-north-america{
-    display:flex;
-    justify-content: center;
+#events-north-america {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

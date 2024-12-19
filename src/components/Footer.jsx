@@ -12,7 +12,7 @@ export function Footer() {
       <footer className="footer">
         <div className="columnsContainer">
           <div className="footerColumns">
-            <h3 className="firstTitle" id="footerH3">
+            <h3 className="footerTitles" id="firstTitle">
               {" "}
               {language === "it" ? "Chi Siamo" : "Who we are"}
             </h3>
@@ -25,7 +25,7 @@ export function Footer() {
             </ul>
           </div>
           <div className="footerColumns">
-            <h3 id="footerH3">
+            <h3 className="footerTitles">
               {language === "it" ? "Link inerenti" : "Inerhent link"}
             </h3>
             <ul id="footerUl">
@@ -50,7 +50,7 @@ export function Footer() {
           </div>
 
           <div className="footerColumns">
-            <h3 id="footerH3">
+            <h3 className="footerTitles">
               {language === "it" ? "Strumenti" : "Instruments"}
             </h3>
             <ul id="footerUl" className="mediaUl">
@@ -61,14 +61,13 @@ export function Footer() {
           </div>
         </div>
         <div className="mediaLogo">
-          <p className="endFooter">
-            &copy;
-            <Link to="/">EventiveTravels</Link>
-            {language === "it"
-              ? ", tutti i diritti riservati."
-              : ", all rights deserved."}
-          </p>
+          &copy;<Link to="/">EventiveTravels</Link>
         </div>
+        <p className="endFooter">
+          {language === "it"
+            ? " tutti i diritti riservati."
+            : " all rights deserved."}
+        </p>
       </footer>
     </>
   );
